@@ -1,0 +1,472 @@
+{
+  "total_uis": 1401,
+  "total_clusters": 14,
+  "clusters": [
+    {
+      "cluster_id": 1,
+      "characteristics": {
+        "size": 697,
+        "avg_width": 783.4,
+        "avg_height": 461.8,
+        "width_range": [
+          77.3,
+          2148.6
+        ],
+        "height_range": [
+          47.3,
+          1448.8
+        ],
+        "avg_nodes": 34.5,
+        "node_range": [
+          4,
+          145
+        ],
+        "dominant_x_distribution": "left-center-right",
+        "x_distribution_breakdown": {
+          "left-center-right": 697
+        },
+        "has_list_count": 540,
+        "has_image_bg_count": 140,
+        "has_spine_count": 695,
+        "ui_names": [
+          "UI_ActApexPvp",
+          "UI_ActApexPvpBattle",
+          "UI_ActApexPvpComment",
+          "UI_ActApexPvpDesc",
+          "UI_ActApexPvpEvent"
+        ]
+      }
+    },
+    {
+      "cluster_id": 2,
+      "characteristics": {
+        "size": 396,
+        "avg_width": 57.4,
+        "avg_height": 46.5,
+        "width_range": [
+          0.0,
+          1024.0
+        ],
+        "height_range": [
+          0.0,
+          1189.0
+        ],
+        "avg_nodes": 2.9,
+        "node_range": [
+          1,
+          20
+        ],
+        "dominant_x_distribution": "center",
+        "x_distribution_breakdown": {
+          "center-right": 17,
+          "center": 318,
+          "left-center-right": 61
+        },
+        "has_list_count": 3,
+        "has_image_bg_count": 13,
+        "has_spine_count": 125,
+        "ui_names": [
+          "UI_PirateResultFail",
+          "UI_BanquetAdvancedList",
+          "UI_BanquetOfFamilyLimit",
+          "UI_BanquetOpenSucc",
+          "BtnLightTip"
+        ]
+      }
+    },
+    {
+      "cluster_id": 3,
+      "characteristics": {
+        "size": 260,
+        "avg_width": 405.5,
+        "avg_height": 351.3,
+        "width_range": [
+          5.5,
+          1414.2
+        ],
+        "height_range": [
+          3.8,
+          739.4
+        ],
+        "avg_nodes": 13.7,
+        "node_range": [
+          3,
+          49
+        ],
+        "dominant_x_distribution": "left-center-right",
+        "x_distribution_breakdown": {
+          "left-center": 60,
+          "left-center-right": 111,
+          "center": 52,
+          "center-right": 37
+        },
+        "has_list_count": 73,
+        "has_image_bg_count": 40,
+        "has_spine_count": 252,
+        "ui_names": [
+          "UI_ActApexPvpProgress",
+          "UI_ActApexPvpReady",
+          "UI_ActApexPvpSignTip",
+          "UI_GuestCollect",
+          "UI_LimitActivityPreview"
+        ]
+      }
+    },
+    {
+      "cluster_id": 4,
+      "characteristics": {
+        "size": 23,
+        "avg_width": 584.4,
+        "avg_height": 249.7,
+        "width_range": [
+          16.0,
+          2048.0
+        ],
+        "height_range": [
+          0.0,
+          721.2
+        ],
+        "avg_nodes": 10.5,
+        "node_range": [
+          4,
+          24
+        ],
+        "dominant_x_distribution": "left-center-right",
+        "x_distribution_breakdown": {
+          "left-center-right": 23
+        },
+        "has_list_count": 0,
+        "has_image_bg_count": 12,
+        "has_spine_count": 15,
+        "ui_names": [
+          "UI_SkyscraperRedPacketTip",
+          "UI_BeautyTransformResult",
+          "UI_ChildSchoolUp",
+          "UI_ChildUpSchoolTip",
+          "ResAdditionBuffText"
+        ]
+      }
+    },
+    {
+      "cluster_id": 5,
+      "characteristics": {
+        "size": 10,
+        "avg_width": 2508.6,
+        "avg_height": 532.8,
+        "width_range": [
+          1812.3,
+          3561.0
+        ],
+        "height_range": [
+          420.1,
+          812.0
+        ],
+        "avg_nodes": 10.1,
+        "node_range": [
+          3,
+          58
+        ],
+        "dominant_x_distribution": "left-center-right",
+        "x_distribution_breakdown": {
+          "left-center-right": 9,
+          "center": 1
+        },
+        "has_list_count": 0,
+        "has_image_bg_count": 1,
+        "has_spine_count": 10,
+        "ui_names": [
+          "ExpandMap_bg_reuse_dongjihaiyang_03",
+          "ExpandMap_bg_reuse_dongjihaiyang_06",
+          "ExpandMap_bg_reuse_dongjihaiyang_09",
+          "ExpandMap_bg_reuse_dongjihaiyang_10",
+          "ExpandMap_bg_reuse_heianhaidao"
+        ]
+      }
+    },
+    {
+      "cluster_id": 6,
+      "characteristics": {
+        "size": 3,
+        "avg_width": 2477.0,
+        "avg_height": 582.4,
+        "width_range": [
+          2310.9,
+          2560.0
+        ],
+        "height_range": [
+          512.0,
+          723.2
+        ],
+        "avg_nodes": 24.3,
+        "node_range": [
+          5,
+          63
+        ],
+        "dominant_x_distribution": "center-right",
+        "x_distribution_breakdown": {
+          "center-right": 3
+        },
+        "has_list_count": 0,
+        "has_image_bg_count": 1,
+        "has_spine_count": 3,
+        "ui_names": [
+          "UI_PirateInvasion",
+          "ExpandMap_bg_reuse_xiajihaiyang_03",
+          "ExpandMap_bg_reuse_xiajihaiyang_05"
+        ]
+      }
+    },
+    {
+      "cluster_id": 7,
+      "characteristics": {
+        "size": 3,
+        "avg_width": 1202.7,
+        "avg_height": 775.5,
+        "width_range": [
+          896.0,
+          1635.3
+        ],
+        "height_range": [
+          619.8,
+          918.7
+        ],
+        "avg_nodes": 193.0,
+        "node_range": [
+          182,
+          206
+        ],
+        "dominant_x_distribution": "left-center-right",
+        "x_distribution_breakdown": {
+          "left-center-right": 3
+        },
+        "has_list_count": 3,
+        "has_image_bg_count": 3,
+        "has_spine_count": 3,
+        "ui_names": [
+          "UI_Chat",
+          "UI_GuestInfo",
+          "UI_ChoosingCar"
+        ]
+      }
+    },
+    {
+      "cluster_id": 8,
+      "characteristics": {
+        "size": 2,
+        "avg_width": 0.0,
+        "avg_height": 0.0,
+        "width_range": [
+          0.0,
+          0.0
+        ],
+        "height_range": [
+          0.0,
+          0.0
+        ],
+        "avg_nodes": 2.0,
+        "node_range": [
+          2,
+          2
+        ],
+        "dominant_x_distribution": "center",
+        "x_distribution_breakdown": {
+          "center": 2
+        },
+        "has_list_count": 1,
+        "has_image_bg_count": 0,
+        "has_spine_count": 0,
+        "ui_names": [
+          "UI_FloatCoinTips",
+          "expand_xiajihaiyang_chuan01"
+        ]
+      }
+    },
+    {
+      "cluster_id": 9,
+      "characteristics": {
+        "size": 2,
+        "avg_width": 6393.4,
+        "avg_height": 510.6,
+        "width_range": [
+          6393.0,
+          6393.9
+        ],
+        "height_range": [
+          510.0,
+          511.3
+        ],
+        "avg_nodes": 9.0,
+        "node_range": [
+          9,
+          9
+        ],
+        "dominant_x_distribution": "left-center-right",
+        "x_distribution_breakdown": {
+          "left-center-right": 2
+        },
+        "has_list_count": 0,
+        "has_image_bg_count": 0,
+        "has_spine_count": 2,
+        "ui_names": [
+          "ExpandMap_caoyuan",
+          "ExpandMap_xuedi"
+        ]
+      }
+    },
+    {
+      "cluster_id": 10,
+      "characteristics": {
+        "size": 1,
+        "avg_width": 1065.5,
+        "avg_height": 757.0,
+        "width_range": [
+          1065.5,
+          1065.5
+        ],
+        "height_range": [
+          757.0,
+          757.0
+        ],
+        "avg_nodes": 3.0,
+        "node_range": [
+          3,
+          3
+        ],
+        "dominant_x_distribution": "center",
+        "x_distribution_breakdown": {
+          "center": 1
+        },
+        "has_list_count": 0,
+        "has_image_bg_count": 0,
+        "has_spine_count": 1,
+        "ui_names": [
+          "expand_naoshi_bufang02"
+        ]
+      }
+    },
+    {
+      "cluster_id": 11,
+      "characteristics": {
+        "size": 1,
+        "avg_width": 3412.0,
+        "avg_height": 526.5,
+        "width_range": [
+          3412.0,
+          3412.0
+        ],
+        "height_range": [
+          526.5,
+          526.5
+        ],
+        "avg_nodes": 29.0,
+        "node_range": [
+          29,
+          29
+        ],
+        "dominant_x_distribution": "center-right",
+        "x_distribution_breakdown": {
+          "center-right": 1
+        },
+        "has_list_count": 1,
+        "has_image_bg_count": 0,
+        "has_spine_count": 1,
+        "ui_names": [
+          "UI_GuildWarAtkSum"
+        ]
+      }
+    },
+    {
+      "cluster_id": 12,
+      "characteristics": {
+        "size": 1,
+        "avg_width": 4915.5,
+        "avg_height": 2744.5,
+        "width_range": [
+          4915.5,
+          4915.5
+        ],
+        "height_range": [
+          2744.5,
+          2744.5
+        ],
+        "avg_nodes": 153.0,
+        "node_range": [
+          153,
+          153
+        ],
+        "dominant_x_distribution": "left-center-right",
+        "x_distribution_breakdown": {
+          "left-center-right": 1
+        },
+        "has_list_count": 1,
+        "has_image_bg_count": 1,
+        "has_spine_count": 1,
+        "ui_names": [
+          "UI_GuildWarScene"
+        ]
+      }
+    },
+    {
+      "cluster_id": 13,
+      "characteristics": {
+        "size": 1,
+        "avg_width": 3319.7,
+        "avg_height": 665.5,
+        "width_range": [
+          3319.7,
+          3319.7
+        ],
+        "height_range": [
+          665.5,
+          665.5
+        ],
+        "avg_nodes": 99.0,
+        "node_range": [
+          99,
+          99
+        ],
+        "dominant_x_distribution": "left-center-right",
+        "x_distribution_breakdown": {
+          "left-center-right": 1
+        },
+        "has_list_count": 1,
+        "has_image_bg_count": 1,
+        "has_spine_count": 1,
+        "ui_names": [
+          "UI_SilkroadMap"
+        ]
+      }
+    },
+    {
+      "cluster_id": 14,
+      "characteristics": {
+        "size": 1,
+        "avg_width": 2453.0,
+        "avg_height": 592.0,
+        "width_range": [
+          2453.0,
+          2453.0
+        ],
+        "height_range": [
+          592.0,
+          592.0
+        ],
+        "avg_nodes": 80.0,
+        "node_range": [
+          80,
+          80
+        ],
+        "dominant_x_distribution": "left-center",
+        "x_distribution_breakdown": {
+          "left-center": 1
+        },
+        "has_list_count": 1,
+        "has_image_bg_count": 1,
+        "has_spine_count": 1,
+        "ui_names": [
+          "UI_TradeWarBattle"
+        ]
+      }
+    }
+  ]
+}

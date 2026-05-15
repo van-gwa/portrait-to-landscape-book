@@ -1,0 +1,23 @@
+{
+  "id": "conv-1778729722058-390fa84pc",
+  "providerId": "claude",
+  "title": "说明切换模型方式",
+  "titleGenerationStatus": "success",
+  "createdAt": 1778729722058,
+  "updatedAt": 1778729909778,
+  "lastResponseAt": 1778729841573,
+  "sessionId": "2d03a50f-ce13-493c-93b5-1db2c94f94af",
+  "providerState": {
+    "providerSessionId": "2d03a50f-ce13-493c-93b5-1db2c94f94af"
+  },
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 457,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 26112,
+    "contextWindow": 200000,
+    "contextTokens": 26569,
+    "percentage": 13,
+    "contextWindowIsAuthoritative": true
+  }
+}

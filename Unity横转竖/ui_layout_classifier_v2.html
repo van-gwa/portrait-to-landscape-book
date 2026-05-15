@@ -1,0 +1,902 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI 布局分类工具 - 双面板编辑</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            height: 100vh;
+        }
+
+        .header {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .header-toolbar {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .stats {
+            display: flex;
+            gap: 20px;
+            margin-left: auto;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #0066cc;
+        }
+
+        .stat-label {
+            font-size: 12px;
+            color: #666;
+        }
+
+        button {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .btn-danger {
+            background: #ff4444;
+            color: white;
+        }
+
+        .btn-danger:hover {
+            background: #cc0000;
+        }
+
+        .main-panel {
+            display: flex;
+            gap: 20px;
+            flex: 1;
+            overflow: hidden;
+        }
+
+        .left-panel, .right-panel {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .left-panel {
+            flex: 0 0 23%;
+        }
+
+        .right-panel {
+            flex: 1;
+        }
+
+        .panel-header {
+            padding: 15px;
+            border-bottom: 2px solid #f0f0f0;
+            font-weight: bold;
+            color: #333;
+            background: #f8f9fa;
+        }
+
+        .panel-content {
+            flex: 1;
+            overflow-y: auto;
+            padding: 15px;
+        }
+
+        .group-item {
+            margin-bottom: 12px;
+            padding: 10px;
+            border: 2px solid #e0e0e0;
+            border-radius: 6px;
+            background: #fafafa;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .group-item:hover {
+            border-color: #0066cc;
+            background: #f0f5ff;
+        }
+
+        .group-item.selected {
+            border-color: #0066cc;
+            background: #e3f2fd;
+        }
+
+        .group-title {
+            font-weight: bold;
+            margin-bottom: 6px;
+            font-size: 12px;
+            color: #333;
+            cursor: pointer;
+            padding: 4px 6px;
+            border-radius: 3px;
+            transition: background 0.2s;
+            user-select: none;
+        }
+
+        .group-title:hover {
+            background: #fff3cd;
+        }
+
+        .group-title-edit {
+            width: 100%;
+            padding: 4px 6px;
+            border: 1px solid #0066cc;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .group-thumbnail {
+            width: 100%;
+            max-height: 100px;
+            border-radius: 4px;
+            margin-bottom: 6px;
+            object-fit: contain;
+            background: white;
+            border: 1px solid #ddd;
+        }
+
+        .group-info {
+            font-size: 11px;
+            color: #666;
+        }
+
+        .ungroup-search {
+            padding: 10px 15px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .ungroup-search input {
+            width: 100%;
+            padding: 6px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            font-size: 12px;
+        }
+
+        .ungroup-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 10px;
+            padding: 0;
+        }
+
+        .ui-item {
+            aspect-ratio: 16/9;
+            border: 2px solid #e0e0e0;
+            border-radius: 4px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.3s;
+            background: white;
+            position: relative;
+        }
+
+        .ui-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .ui-item:hover {
+            border-color: #0066cc;
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .ui-item.selected {
+            border-color: #28a745;
+            box-shadow: 0 0 0 3px rgba(40,167,69,0.2);
+        }
+
+        .ui-item-name {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,0.6);
+            color: white;
+            font-size: 10px;
+            padding: 2px;
+            text-align: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .action-panel {
+            padding: 15px;
+            border-top: 2px solid #f0f0f0;
+            background: #f8f9fa;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .action-panel button {
+            flex: 1;
+            min-width: 120px;
+            padding: 10px 12px;
+            background: #0066cc;
+            color: white;
+        }
+
+        .action-panel button:hover {
+            background: #0052a3;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal.show {
+            display: flex;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 400px;
+            width: 90%;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+
+        .modal-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .modal-input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+        .modal-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .modal-buttons button {
+            flex: 1;
+            padding: 10px;
+            background: #0066cc;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .modal-buttons button:hover {
+            background: #0052a3;
+        }
+
+        .group-list {
+            max-height: 300px;
+            overflow-y: auto;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .group-option {
+            padding: 10px;
+            border-bottom: 1px solid #e0e0e0;
+            cursor: pointer;
+            transition: background 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .group-option:hover {
+            background: #f0f5ff;
+        }
+
+        .group-option input[type="radio"] {
+            margin: 0;
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+        }
+
+        .group-option-text {
+            flex: 1;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .group-option-count {
+            font-size: 12px;
+            color: #999;
+        }
+
+        .group-ui-item {
+            position: relative;
+            aspect-ratio: 16/9;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            overflow: hidden;
+            cursor: pointer;
+            background: white;
+        }
+
+        .group-ui-item input[type="checkbox"] {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        .group-ui-item.checked {
+            border-color: #0066cc;
+            box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.3);
+        }
+
+        @media (max-width: 1200px) {
+            .main-panel {
+                flex-direction: column;
+            }
+
+            .left-panel, .right-panel {
+                flex: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎨 UI 布局分类工具 - 双面板编辑</h1>
+            <div class="header-toolbar">
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-value" id="groupCount">0</div>
+                        <div class="stat-label">分组数</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="ungroupCount">910</div>
+                        <div class="stat-label">未分组</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value" id="totalCount">910</div>
+                        <div class="stat-label">总计</div>
+                    </div>
+                </div>
+                <button class="btn-danger" onclick="resetAll()">🔄 清空所有分组</button>
+            </div>
+        </div>
+
+        <div class="main-panel">
+            <div class="left-panel">
+                <div class="panel-header">📦 已分组 (点击选择组)</div>
+                <div class="panel-content" id="groupsPanel">
+                    <p style="color: #999; text-align: center;">暂无分组</p>
+                </div>
+            </div>
+
+            <div class="right-panel">
+                <div class="panel-header">🔓 未分组的 UI 列表 (点击选择)</div>
+                <div class="ungroup-search">
+                    <input type="text" id="ungroupSearch" placeholder="搜索 UI...">
+                </div>
+                <div style="display: flex; flex: 1; gap: 10px; overflow: hidden;">
+                    <div style="flex: 1; display: flex; flex-direction: column; overflow: hidden;">
+                        <div class="panel-content">
+                            <div class="ungroup-list" id="ungroupList"></div>
+                        </div>
+                    </div>
+                    <div id="previewPanel" style="display: none; flex: 0 0 450px; padding: 15px; border-left: 1px solid #e0e0e0; overflow-y: auto; background: #f8f9fa;">
+                        <div style="font-size: 12px; font-weight: bold; color: #666; margin-bottom: 10px;">预览</div>
+                        <img id="previewImage" style="width: 100%; border-radius: 4px; border: 1px solid #ddd;" />
+                        <div id="previewName" style="margin-top: 15px; font-size: 13px; color: #333; word-break: break-all; line-height: 1.5;"></div>
+                    </div>
+                </div>
+                <div class="action-panel">
+                    <button onclick="addNewGroup()">➕ 新建组</button>
+                    <button onclick="addToGroup()">➕ 加入已有组</button>
+                    <button onclick="exportData()">📥 导出 JSON</button>
+                    <button onclick="exportCSV()">📊 导出 CSV</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="groupDetailModal">
+        <div class="modal-content" style="max-width: 600px;">
+            <div class="modal-title" id="groupDetailTitle">分组详情</div>
+            <div style="display: flex; gap: 10px; margin-bottom: 10px; align-items: center;">
+                <label style="cursor: pointer; display: flex; align-items: center; gap: 5px;">
+                    <input type="checkbox" id="selectAllGroupUI" onchange="toggleSelectAllGroupUI()">
+                    <span style="font-size: 12px;">全选</span>
+                </label>
+                <button id="removeGroupUIBtn" style="padding: 6px 12px; background: #ff4444; color: white; border: none; border-radius: 3px; cursor: pointer; font-size: 12px;" onclick="removeUIFromGroup()">移除选中</button>
+                <span id="groupUISelectCount" style="font-size: 12px; color: #666; margin-left: auto;"></span>
+            </div>
+            <div style="max-height: 450px; overflow-y: auto; border: 1px solid #ddd; border-radius: 4px; padding: 10px; background: white;">
+                <div id="groupDetailList" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px;"></div>
+            </div>
+            <div class="modal-buttons" style="margin-top: 15px;">
+                <button onclick="closeModal()">关闭</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="newGroupModal">
+        <div class="modal-content">
+            <div class="modal-title">新建分组</div>
+            <input type="text" class="modal-input" id="groupNameInput" placeholder="输入分组名称（如：布局A）">
+            <div class="modal-buttons">
+                <button onclick="confirmNewGroup()">确定</button>
+                <button onclick="closeModal()">取消</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="joinGroupModal">
+        <div class="modal-content">
+            <div class="modal-title">加入分组</div>
+            <p style="margin-bottom: 10px; color: #666;">选择要加入的分组：</p>
+            <div class="group-list" id="groupSelectList"></div>
+            <div class="modal-buttons">
+                <button onclick="confirmJoinGroup()">加入</button>
+                <button onclick="closeModal()">取消</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const ALL_UIS = ["UI_Achievement","UI_AcitveAd","UI_ActApexPvp","UI_ActApexPvpBattle","UI_ActApexPvpDesc","UI_ActApexPvpEvent","UI_ActApexPvpGetSign","UI_ActApexPvpMarket","UI_ActApexPvpPreview","UI_ActApexPvpProgress","UI_ActApexPvpRank","UI_ActApexPvpReady","UI_ActApexPvpRecord","UI_ActApexPvpResult","UI_ActApexPvpReward","UI_ActApexPvpShop","UI_ActApexPvpWager","UI_ActArena","UI_ActArenaOtherMarket","UI_ActArenaOtherMarketInfo","UI_ActArenaRank","UI_ActArenaResult","UI_ActArenaSolo","UI_ActArenaSoloMarket","UI_ActArenaTarget","UI_ActCumulativeRecharge","UI_ActivityBuyGuest","UI_ActivityBuyGuest2","UI_ActivityCalender","UI_ActivityLobby","UI_ActivityRank","UI_ActivityReward","UI_ActivityShop","UI_ActivitySubScribe","UI_ActivityUpRedTip","UI_ActKingOfSnowBattle","UI_ActKingOfSnowBattleResult","UI_ActKingOfSnowLevel","UI_ActKingOfSnowMain","UI_ActKingOfSnowTask","UI_ActMoonSpurt","UI_ActSnowCityRedRain","UI_ActSnowCityRedRainReward","UI_ActSnowMain","UI_ActSnowMan","UI_ActSnowManPreview","UI_ActSnowManTask","UI_ActSnowWheel","UI_ActSnowWheelLimitAward","UI_ActSnowWheelPreview","UI_ActSnowWheelResult","UI_ActSpurtGift","UI_ActStreet","UI_ActStrengthSpurt","UI_AddShortCut","UI_AgeTips","UI_AgreementDesc","UI_AgreementTips","UI_AirRoutePrivilege","UI_ALiFirstVisit","UI_AliMinGameClub","UI_ALiPCLogIn","UI_AliRepetitionVisit","UI_AssistantGuildSetting","UI_AssistantPanel","UI_AssistantReward","UI_AssistantRouteTrade","UI_AssistantShop","UI_AssistantShopPurchase","UI_AuthSelect","UI_AuthTips","UI_Bag","UI_BagComposeTips","UI_BanquetAddTips","UI_BanquetAdvancedList","UI_BanquetFinish","UI_BanquetGiftSelect","UI_BanquetGuest","UI_BanquetJoinSetting","UI_BanquetJoinSucc","UI_BanquetMain","UI_BanquetNormalList","UI_BanquetObtainingTimes","UI_BanquetOfBaiFuDetail","UI_BanquetOfBaiFuList","UI_BanquetOfBaiFuSelectV2","UI_BanquetOfFamilyDetail","UI_BanquetOfFamilyLimit","UI_BanquetOfFamilyOpen","UI_BanquetOfFamilySelect","UI_BanquetOfOfficialDetail","UI_BanquetOfOfficialList","UI_BanquetOfOfficialSelect","UI_BanquetOpenSucc","UI_BanquetPopularityReward","UI_BanquetRank","UI_BanquetRecord","UI_BattleBaseStart","UI_BattlePass","UI_BattlePassBigRewardPreview","UI_BattlePassBuyExp","UI_BattlePassBuyLicense","UI_BattlePassRewardOverview","UI_BattlePassTask","UI_BattlePassUpgradeAni","UI_Beauty","UI_BeautyBook","UI_BeautyBookGet","UI_BeautyBookInfo","UI_BeautyCompAwardPreview","UI_BeautyCompBuy","UI_BeautyCompEnter","UI_BeautyCompMap","UI_BeautyCompRank","UI_BeautyCompRecord","UI_BeautyCompResult","UI_BeautyCompRewardTips","UI_BeautyCompTitleChange","UI_BeautyCompUpgrade","UI_BeautyCompView","UI_BeautyEditor","UI_BeautyFame","UI_BeautyFameUpSuc","UI_BeautyGetting","UI_BeautyInfo","UI_BeautyOutings","UI_BeautyPromoteSucc","UI_BeautyPropsUseSucc","UI_BeautySelect","UI_BeautyShow","UI_BeautyTalentSkillTips","UI_BeautyTalk","UI_BeautyTalkMore","UI_BeautyTalkTip","UI_BeautyTransform","UI_BeautyTransformPreview","UI_BeautyTransformResult","UI_BeautyTravel","UI_BeautyTravelSharedGift","UI_BeautyTravelTip","UI_BeautyUpQuality","UI_BeautyUpSkillSucc","UI_Billionaires","UI_BillionairesRank","UI_Black","UI_BlockBattleActFinish","UI_BlockBattleMap","UI_BlockBattleMinMap","UI_BlockBattleRecord","UI_BlockBattleResult","UI_BlockBattleTarget","UI_BlockBattleTask","UI_BossRedPacket","UI_BossRedPacketGetReward","UI_Chat","UI_ChildBeauty","UI_ChildCultivateVit","UI_ChildFamily","UI_ChildGetTip","UI_ChildGraduateTip","UI_ChildInfo","UI_ChildMail","UI_ChildMarry","UI_ChildMarryFailTip","UI_ChildMessageTip","UI_ChildPublicPropose","UI_ChildRecoverVit","UI_ChildRecoverVitSucc","UI_ChildRenameSuccTip","UI_ChildRenameTip","UI_ChildResume","UI_ChildSchool","UI_ChildSchoolUp","UI_ChildSpecialSuitors","UI_ChildSpecifiedPropose","UI_ChildSuitorInfo","UI_ChildSuitors","UI_ChildTravelApply","UI_ChildTravelFailTip","UI_ChildTravelList","UI_ChildTravelSuccTip","UI_ChildTravelTip","UI_ChildUpgradeSuccTip","UI_ChildUpSchoolTip","UI_ChildWaitPropose","UI_ChoosingCar","UI_CoatingActiveTips","UI_CoatingInfo","UI_CoatingMain","UI_CoatingPreview2","UI_CoatingResolveTips","UI_CoatingSelectUpLevelMat","UI_CoatingSelectUpStarMat","UI_CoatingTask","UI_CoatingUpgrade","UI_CombineAccounting","UI_CombineLeader","UI_CombineMain","UI_CombineManager","UI_CombineManagerStar","UI_CombinePersonnel","UI_CombinePersonnelGuest","UI_CombinePublicity","UI_CombinePublicityCup","UI_CombineRemould","UI_CombineRemouldSucc","UI_CombineRemouldTips","UI_CombineTactic","UI_CombineTacticInfo","UI_CombineUpgradeCond","UI_CombineUpSucc","UI_CommandMonitor","UI_CommonComposite","UI_CommonGetItems","UI_CommonPurchase","UI_CommonRoleInfo","UI_CommonSkin","UI_CommonUseSucc","UI_ContinueRechargeAct","UI_CreateRole","UI_CupGetting","UI_CupInfo","UI_CyberIllusionAuto","UI_CyberIllusionBreakThrough","UI_CyberIllusionEquip","UI_CyberIllusionEquipMessage","UI_CyberIllusionMain","UI_CyberIllusionRemouldSucc","UI_CyberIllusionRoleUp","UI_CyberIllusionSelectMarket","UI_CyberIllusionSkill","UI_CyberIllusionUpSucc","UI_CyberPve","UI_CyberPveResult","UI_DailyGift","UI_DailyRefreshTips","UI_DailySign","UI_DailySignBadInfo","UI_DailySystem","UI_DebugLogPanel","UI_DivineTip","UI_Expand","UI_ExpandAgentResult","UI_ExpandAgentStart","UI_ExpandAgentStop","UI_ExpandAisleMap","UI_ExpandAisleResult","UI_ExpandAkfPreview","UI_ExpandAkfReward","UI_ExpandAkfSpeed","UI_ExpandAutoResult","UI_ExpandAutoTip","UI_ExpandBattle","UI_ExpandBuffResult","UI_ExpandDispatch","UI_ExpandDispatchList","UI_ExpandEventNew","UI_ExpandEventResult","UI_ExpandEventSelect","UI_ExpandEventTip","UI_ExpandFogMap","UI_ExpandFogResult","UI_ExpandMap","UI_ExpandMapNewTip","UI_ExpandNameTip","UI_ExpandRank","UI_ExpandResult","UI_ExpandResultFail","UI_ExpandRoll","UI_ExpandSeaFailResult","UI_ExpandSeaResult","UI_ExpandSidInfo","UI_ExpGetPath","UI_FashionShop","UI_FashionShopBuySucc","UI_FashionShopEff","UI_FirstChargeBonus","UI_FirstStarTips","UI_FloatCoinTips","UI_FloatMoneyTips","UI_FloatStrTip","UI_FlyItem","UI_FlyItem1","UI_FlyItem2","UI_FriendsMain","UI_FuLiDaTingWeiXin","UI_FullSceneTips","UI_FuncOpen","UI_FuncOpenTip2","UI_FuncPreview","UI_FuncUnlock","UI_Fund","UI_FundBeautyInfo","UI_FundGuestInfo","UI_FundPreview","UI_GachaAutoTypeSelect","UI_GachaCoinShop","UI_GachaExchange","UI_GachaExchangeConfirm","UI_GachaJackpot","UI_GachaLimitWish","UI_GachaLuckTips","UI_GachaMain","UI_GachaPreview","UI_GachaResult","UI_GachaSwitchBeautyPool","UI_GachaSwitchPool","UI_GetPaths","UI_GetPaths2","UI_GetPaths3","UI_GoGuestTip","UI_GoodsActive","UI_GrowSystem","UI_Guest","UI_GuestActive","UI_GuestActiveSkill","UI_GuestATKUpPath","UI_GuestAttrUpTip","UI_GuestAureole","UI_GuestAureoleSkillSucc","UI_GuestAureoleTips","UI_GuestBuy","UI_GuestCollect","UI_GuestDivine","UI_GuestDivineTips","UI_GuestEquipMount","UI_GuestFashionActive","UI_GuestFetterAdd","UI_GuestGetPath","UI_GuestGetSkinItem","UI_GuestInfo","UI_GuestManagerSkinBuy","UI_GuestNotActive","UI_GuestPath","UI_GuestPromote","UI_GuestPromoteItem","UI_GuestPromoteSucc","UI_GuestQueryAttr","UI_GuestRareTip","UI_GuestRechargeBuy","UI_GuestSelectCard","UI_GuestSetInfo","UI_GuestSetMain","UI_GuestStarPreview","UI_GuestStarSucc","UI_GuestSupplyInfo","UI_GuestSupplyPath","UI_GuestSupplyRecords","UI_GuestTalentSkill","UI_GuestUp","UI_GuestUpQuality","UI_GuestUseItem","UI_Guide","UI_GuildActivity","UI_GuildApply","UI_GuildApplyList","UI_GuildBuild","UI_GuildChallangeLevel","UI_GuildChallengeContrib","UI_GuildColorCodeDesc","UI_GuildCreate","UI_GuildDunChallengeRecord","UI_GuildDunExpReward","UI_GuildDungeonBattle","UI_GuildDungeonBattlePhase","UI_GuildDungeonBattleResult","UI_GuildDungeonBattleSucc","UI_GuildDungeonBattleTail","UI_GuildDungeonChallenge","UI_GuildDungeonEliteBattle","UI_GuildDungeonsList","UI_GuildDungeonsNew","UI_GuildDunGroupRankAndReward","UI_GuildDunLineUp","UI_GuildDunRankAndReward","UI_GuildEliteAttackUp","UI_GuildGroupBuyNew","UI_GuildHaggleRank","UI_GuildHallOfHonor","UI_GuildHallOfHonorTips","UI_GuildHonorRecord","UI_GuildHonorUnLock","UI_GuildList","UI_GuildLobby","UI_GuildMain","UI_GuildManager","UI_GuildMemberBattle","UI_GuildMemberBattleResult","UI_GuildMemberBattleTarget","UI_GuildMemberManager","UI_GuildMsgs","UI_GuildNotic","UI_GuildNoticEditor","UI_GuildNoticPreview","UI_GuildNoticTemplate","UI_GuildOpenDungenon","UI_GuildOptPopup","UI_GuildParty","UI_GuildPartyPreview","UI_GuildPartyResult","UI_GuildPhaseReward","UI_GuildPosition","UI_GuildPositionDesc","UI_GuildSameNameSetting","UI_GuildSearch","UI_GuildSearchInfo","UI_GuildSetFlags","UI_GuildSetting","UI_GuildUpgradeTips","UI_GuildWarAlliance","UI_GuildWarAppoint","UI_GuildWarAtkRandTip","UI_GuildWarAtkSum","UI_GuildWarAuthorize","UI_GuildWarBaseInfo","UI_GuildWarBattle","UI_GuildWarCommander","UI_GuildWarGroup","UI_GuildWarMain","UI_GuildWarOpTips","UI_GuildWarPlan","UI_GuildWarProtactTips","UI_GuildWarRank","UI_GuildWarRecord","UI_GuildWarRstFail","UI_GuildWarRstMult","UI_GuildWarRstWin","UI_GuildWarSchedule","UI_GuildWarStreet","UI_GuildWarTask","UI_HistoryEvent","UI_HistoryEventGet","UI_HistoryEventTip","UI_HistoryStageLock","UI_HistoryStageTip","UI_InvestMarketUp","UI_InvestmentBattle","UI_InvestmentBidding","UI_InvestmentBiddingResult","UI_InvestmentCancel","UI_InvestmentCreateSucc","UI_InvestmentDetail","UI_InvestmentFightTips","UI_InvestmentJoinAddTips","UI_InvestmentMain","UI_InvestmentPropStop","UI_InvestmentPropsUse","UI_InvestmentRecord","UI_InvestmentResult","UI_InvestmentSkill","UI_InvestmentSkillAddition","UI_InvestmentSkillUpgrade","UI_InvestmentUnlock","UI_ItemTip","UI_ItemUseTip","UI_LimitActivity","UI_LimitActivityPreview","UI_LimitActRechargeGift","UI_LimitExchange","UI_LimitLottery","UI_LimitLotteryGift","UI_LimitLotteryTask","UI_LimitWish","UI_LimitWishTip","UI_Loading","UI_Login","UI_LotteryBigReward","UI_LotterySkinItem","UI_Mail","UI_Main","UI_MainPowerDetail","UI_Market","UI_MarketActive","UI_MarketActiveAdvanced","UI_MarketActiveFloor","UI_MarketAdvanced","UI_MarketAllBell","UI_MarketAllBellResult","UI_MarketAureoleTips","UI_MarketAutoTip","UI_MarketBaseInfo","UI_MarketBeauty","UI_MarketBeautyAdd","UI_MarketBeautyBest","UI_MarketBeautyDispatchSucc","UI_MarketChild","UI_MarketCommodity","UI_MarketFacilityTip","UI_MarketGetSkinItem","UI_MarketGuest","UI_MarketHarvest","UI_MarketLightInfo","UI_MarketList","UI_MarketOffer","UI_MarketQuality","UI_MarketRateTips","UI_MarketRecommend","UI_MarketRepresentAdd","UI_MarketRevenue","UI_MarketRobotInfo","UI_MarketSkin","UI_MarketSkinLook","UI_MarketSlotAdd","UI_MarketStarActive","UI_MarketStrategyActive","UI_MarketStrength","UI_MarketSuggest","UI_MarketSurvey","UI_MarketTransfer","UI_MarketWarAddVit","UI_MarketWarAgentResult","UI_MarketWarAgentTip","UI_MarketWarBattle","UI_MarketWarCapture","UI_MarketWarCaptureNew","UI_MarketWarEmployer","UI_MarketWarRank","UI_MarketWarRankReward","UI_MarketWarReady","UI_MarketWarReport","UI_MarketWarRescure","UI_MarketWarResult","UI_MarketWarSupport","UI_MarketWarTactic","UI_MarketWarTacticUse","UI_MarketWarTarget","UI_MarketWarTask","UI_MarketWarTea","UI_MarketWarUseItem","UI_MessageTip1","UI_MessageTip2","UI_MountActive","UI_MountAureole","UI_MountBuildInfo","UI_MountBuildSpeedUpTips","UI_MountCharactersActive","UI_MountInfo","UI_MountLevelUp","UI_MountMain","UI_MountOneKeyUpdateTips","UI_MountPartRemake","UI_MountPartRemakeTip","UI_MountPreviewInfo","UI_MountQualityUpgrade","UI_MountQueryAttr","UI_MountResolve","UI_MountResolveTips","UI_MountSelectUpStarMat","UI_MountStarPreview","UI_MountUpgradeResult","UI_MulDayRechargeGift","UI_MultiAwardItemTips","UI_MultiAwardItemUse","UI_MuseumAntiqueHistory","UI_MuseumAntiqueList","UI_MuseumAntiquePut","UI_MuseumCollectionSucc","UI_MuseumExhibition","UI_MuseumExhibitionList","UI_MuseumExhibitionSucc","UI_MuseumGacha","UI_MuseumGachaResult","UI_MuseumGachaShop","UI_MuseumJackpot","UI_MuseumMain","UI_MuseumMedalInfo","UI_MuseumMedalWall","UI_MuseumStarUpSucc","UI_NetError","UI_Notice","UI_OpenCustomBox","UI_OpenCustomSkin","UI_OtherRoleBattleAttr","UI_OtherRoleGuest","UI_OtherRoleMarket","UI_OtherTechnoCup","UI_PanelGuideBtn","UI_PirateChallengeResult","UI_PirateEvent","UI_PirateFightBattle","UI_PirateIntelStation","UI_PirateInvasion","UI_PirateInvasionMain","UI_PirateLottery","UI_PiratePreview","UI_PirateResultFail","UI_PirateServerBoss","UI_PirateTask","UI_PirateTips","UI_PlayerSkinPreview","UI_PreviewAwards","UI_PrivilegeCardInfo","UI_PrivilegeDayCard","UI_PrivilegeMain","UI_PrivilegeMonthlyCard","UI_PrivilegeMonthlyCard2","UI_PurchaseBattleActivity","UI_PurchaseBattleExchange","UI_PurchaseBattleGuildRank","UI_PurchaseBattleInject","UI_PurchaseBattleMain","UI_PurchaseBattleRank","UI_PurchaseBattleReward","UI_PurchaseBattleSchedule","UI_RankAct","UI_RankActAd","UI_RankActAddTip","UI_RankActEntrance","UI_RankActGift","UI_RankActGuildMemberRank","UI_RankActItem","UI_RankActPath","UI_RankActPreview","UI_RankActReward","UI_RankActRewardGuild","UI_RankActServerRank","UI_RankActSingleServerRank","UI_RankActSpecifyAd","UI_RankActSprint","UI_RankActTask","UI_RankActTaskMemberRank","UI_RankActTwo","UI_RankEntry","UI_RankGobal","UI_RankGuildVoteReward","UI_RankLocal","UI_RankPlayerVoteReward","UI_RechargeGift","UI_RechargeMain","UI_RechargeTokens","UI_RecruitConfirm","UI_RecruitMain","UI_RecruitProgressTips","UI_RecruitTips","UI_RedPacketInfo","UI_RedPacketOpen","UI_RedPacketSetting","UI_RelayAddCar","UI_RelayCommonEquip","UI_RelayCommonFleet","UI_RelayRaceInfo","UI_RelayRaceMain","UI_RelayRaceMap","UI_RelayRaceMapUI","UI_RelayRaceNpc","UI_RelayRacePeakGraph","UI_RelayRacePlayers","UI_RelayRacePlayersMult","UI_RelayRacePlayersRank","UI_RelayRacePvpRank","UI_RelayRaceRecordRank","UI_RelayRaceResult","UI_RelayRaceRwds","UI_RelayRaceTab","UI_RelayRankDetail","UI_RelayTrainFightTips","UI_RelayTrainFleetUp","UI_RelayTrainGradeUp","UI_RelayTrainGradeUpSucc","UI_RelayTrainMain","UI_RelayTrainRstFail","UI_RelayTrainRstWin","UI_RelayTrainRwd","UI_RelayTrainTask","UI_RelayTrainUpPath","UI_RelayUpgradePath","UI_ResAddition","UI_ResRetrieve","UI_ResUpdateTip","UI_Role","UI_RoleBeautyTip","UI_RoleEvalEquipTips","UI_RoleEvaluate","UI_RoleEvaluateSucc","UI_RoleGuestsTip","UI_RoleHeadTip","UI_RoleObtainingTitleTips","UI_RoleOthter","UI_RoleRenameTip","UI_RoleSkinTip","UI_RoleStageTip","UI_RoleUpTip","UI_RouteTrade","UI_RouteTradeAccelerate","UI_RouteTradeAddition","UI_RouteTradeBoss","UI_RouteTradeBossResult","UI_RouteTradeDispatch","UI_RouteTradeDispatchSucc","UI_RouteTradeItem","UI_RouteTradeTip","UI_RuleTip","UI_SDKLogin","UI_SeaEvidence","UI_SeaEvidenceAdd","UI_SeaEvidenceAddSucc","UI_SeaEvidenceArea","UI_SeaEvidenceTip","UI_ServerList","UI_Setting","UI_SettingPush","UI_Shop","UI_ShopCommonActShop","UI_ShopGiftPurchase","UI_ShopPurchase","UI_ShopUnlockTips","UI_Sidebar","UI_SilkCaravan","UI_SilkroadAccelerate","UI_SilkroadActGift","UI_SilkroadAppraisal","UI_SilkroadAppraisalPreview","UI_SilkroadAppraisalReward","UI_SilkroadAssistant","UI_SilkroadBattleTailReward","UI_SilkroadBox","UI_SilkroadBuffEvent","UI_SilkroadBuffEventResult","UI_SilkroadCashGift","UI_SilkroadDamageRank","UI_SilkroadEncourageReward","UI_SilkroadFightSelectGuest","UI_SilkroadGains","UI_SilkroadGuestInfo","UI_SilkroadInspire","UI_SilkroadMain","UI_SilkroadManuals","UI_SilkroadMap","UI_SilkroadMeetEvent","UI_SilkroadMemberSelect","UI_SilkroadMission","UI_SilkroadMonsterFight","UI_SilkroadMonsterSwitch","UI_SilkroadOasisOverview","UI_SilkroadQucikTeleport","UI_SilkroadQuickBuffResult","UI_SilkroadRank","UI_SilkroadRankReward","UI_SilkroadRankServerRank","UI_SilkroadRetreatRuleTip","UI_SilkroadTeleport","UI_SilkroadTeleportReward","UI_SilkroadTrade","UI_SilkroadTradeConfirm","UI_SilkroadTreasure","UI_SingleMarketOut","UI_SkyscraperActivity","UI_SkyscraperRank","UI_SkyscraperReco","UI_SkyscraperRedPacket","UI_SkyscraperRedPacketTip","UI_SoloMarket","UI_SpaceHonor","UI_SpaceInfo","UI_SpaceRank","UI_SpaceTop","UI_StarWorks","UI_StarWorksChoiceBeauty","UI_StarWorksChoiceUp","UI_StarWorksEndorse","UI_StarWorksLevelInfo","UI_StarWorksLevelUp","UI_StarWorksUpAni","UI_StarWorksUpResult","UI_StreetFight","UI_StreetFightAddVit","UI_StreetFightAttrTip","UI_StreetFightBattle","UI_StreetFightJumpResult","UI_StreetFightMarket","UI_StreetFightResult","UI_StreetFightSolo","UI_StreetFightSweep","UI_StreetFightSweepResult","UI_StreetFightTarget","UI_StreetFightTask","UI_StreetFightTip","UI_StreetFightWait","UI_StreetTreasureDetail","UI_StreetTreasureFind","UI_StreetTreasureList","UI_SurpriseGift","UI_SurpriseSeriesGift","UI_TalkReview","UI_TalkSelect","UI_Task","UI_TaskChapter","UI_TaskChapterTip","UI_TaskGroupReward","UI_TaskProgressTip","UI_TaskSprint","UI_TaskTalk","UI_TeamApplyList","UI_TeamEnterFail","UI_TeamFriend","UI_TeamGuestTrial","UI_TeamInfo","UI_TeamInviteList","UI_TeamList","UI_TeamMarket","UI_TeamTip","UI_Techno","UI_TechnoCourse","UI_TechnoCourseTip","UI_TechnoCup","UI_TechnoCupAchi","UI_TechnoCupInfo","UI_TechnoCupShow","UI_TechnoExam","UI_TechnoExam_backup","UI_TechnoTips","UI_TestServer","UI_TimerTravel","UI_TimerTravelInfo","UI_TitleTips","UI_TokensError","UI_TokensLimit","UI_TopLeague","UI_TopLeagueBattle","UI_TopLeagueBetRank","UI_TopLeagueDesc","UI_TopLeagueEvent","UI_TopLeagueGetSign","UI_TopLeagueMarket","UI_TopLeagueProgress","UI_TopLeagueRank","UI_TopLeagueReady","UI_TopLeagueRecord","UI_TopLeagueResult","UI_TopLeagueReward","UI_TopLeagueShop","UI_TopLeagueWager","UI_TradePvp","UI_TradeWar","UI_TradeWarAddVit","UI_TradeWarAnnounce","UI_TradeWarBattle","UI_TradeWarBatttleSet","UI_TradeWarBoss","UI_TradeWarBossJump","UI_TradeWarConsume","UI_TradeWarFind","UI_TradeWarFloor","UI_TradeWarGuests","UI_TradeWarItem","UI_TradeWarMarket","UI_TradeWarPetition","UI_TradeWarPetitionUp","UI_TradeWarPveResult","UI_TradeWarReport","UI_TradeWarResult","UI_TradeWarSetting","UI_TradeWarTech","UI_TradeWarTechGet","UI_TradeWarTechTip","UI_TradingPort","UI_TradingPortChangeShip","UI_TradingPortCompose","UI_TradingPortComposeQuick","UI_TradingPortDeCombine","UI_TradingPortDecorateBag","UI_TradingPortDecorateResolve","UI_TradingPortDock","UI_TradingPortDockUnlock","UI_TradingPortFactory","UI_TradingPortFleet","UI_TradingPortNewShip","UI_TradingPortQueryAttr","UI_TradingPortShipPosUnlock","UI_TradingPortSupplyInfo","UI_TradingPortSupplyLvUnlock","UI_TradingPortSupplyRecords","UI_TradingPorttUseItem","UI_TradingPortUpPreview","UI_TrialSpacetime","UI_TrialSpacetimeBoss","UI_TrialSpacetimeHighResult","UI_TrialSpacetimeMiddleResult","UI_TrialSpacetimeRecord","UI_TrialSpacetimeRewardPreview","UI_TrialSpacetimeSnatchResult","UI_TrialSpacetimeTradeWar","UI_UpgradeCoatingSucc","UI_UseMultItem","UI_UseViceCurrency","UI_VipGift","UI_VisitMain","UI_VisitPlayerTitle","UI_VisitRecord","UI_VisitUsePropsConfirm","UI_VWo12","UI_WishMakingExchange","UI_WishMakingGift","UI_WishMakingGiftTips","UI_WishMakingLotteryTips","UI_WishMakingMain","UI_WishMakingPreview","UI_WishMakingResetTips","UI_WishMakingSelectReward","UI_WorldBuild","UI_WorldBuildFinish","UI_WorldWonderBuildSucc","UI_WorldWonders","UI_XiaoZhuShou","UI_YardDispach","UI_YardDispachResult","UI_YardMeet","UI_YardMentInfo","UI_YardRankTips","UI_YardResultTips"];
+
+        let groups = {};
+        let selectedUI = null;
+        let selectedGroup = null;
+
+        // 嵌入的 JSON 分类数据（2026-05-03）- 从原始 JSON 文件直接复制，已验证无重复
+        const DEFAULT_GROUPS = { "左标签+中图+右信息": [ "UI_BanquetOfFamilySelect", "UI_BanquetOfOfficialSelect", "UI_BanquetOfBaiFuSelectV2", "UI_ContinueRechargeAct", "UI_CyberIllusionSkill", "UI_TradeWarTech" ], "活动打脸弹窗": [ "UI_ActivityBuyGuest", "UI_AddShortCut", "UI_ALiFirstVisit", "UI_AliRepetitionVisit", "UI_BossRedPacketGetReward", "UI_MountActive", "UI_RecruitMain", "UI_GuestPromote", "UI_GuestManagerSkinBuy", "UI_GuestRechargeBuy", "UI_RoleSkinTip", "UI_SurpriseGift", "UI_GuestBuy", "UI_ActivityUpRedTip", "UI_GuestAureole", "UI_ActivityBuyGuest2", "UI_ALiPCLogIn", "UI_GuestSetInfo", "UI_PrivilegeCardInfo", "UI_PrivilegeMonthlyCard", "UI_SilkroadAccelerate", "UI_AirRoutePrivilege", "UI_XiaoZhuShou", "UI_VWo12", "UI_PirateLottery", "UI_RankActAd", "UI_RankActPreview", "UI_SilkCaravan", "UI_SilkroadAppraisal", "UI_BattlePassBuyLicense" ], "使用弹框": [ "UI_CommonComposite", "UI_CommonPurchase", "UI_ChildRecoverVit", "UI_TradingPorttUseItem", "UI_UseMultItem", "UI_TopLeagueWager", "UI_InvestmentJoinAddTips", "UI_ItemUseTip", "UI_MultiAwardItemUse", "UI_ShopPurchase", "UI_SeaEvidenceAdd", "UI_BeautyCompBuy", "UI_ActApexPvpWager", "UI_GuestUseItem", "UI_InvestmentPropsUse", "UI_PurchaseBattleExchange", "UI_StreetFightAddVit", "UI_StreetFightSweep", "UI_TradingPortCompose", "UI_WishMakingGiftTips", "UI_AssistantShopPurchase", "UI_OpenCustomBox", "UI_CoatingResolveTips", "UI_AssistantGuildSetting" ], "确认弹框": [ "UI_BagComposeTips", "UI_AuthTips", "UI_BeautyTalkTip", "UI_ChildMessageTip", "UI_VisitUsePropsConfirm", "UI_TradeWarBossJump", "UI_GoGuestTip", "UI_InvestmentPropStop", "UI_MarketWarAgentTip", "UI_MarketWarAddVit", "UI_MarketWarUseItem", "UI_MessageTip1", "UI_MessageTip2", "UI_MountBuildSpeedUpTips", "UI_MountOneKeyUpdateTips", "UI_MountLevelUp", "UI_MountPartRemakeTip", "UI_MountResolveTips", "UI_RouteTradeAccelerate", "UI_TokensError", "UI_TokensLimit", "UI_UseViceCurrency", "UI_TeamTip", "UI_TeamEnterFail", "UI_StreetFightTip", "UI_SilkroadTeleport", "UI_SilkroadTrade", "UI_SilkroadTradeConfirm", "UI_SilkroadBox", "UI_RouteTradeTip", "UI_RelayTrainFightTips", "UI_MarketWarCaptureNew", "UI_MarketAutoTip", "UI_GuildWarAtkRandTip", "UI_GuildOptPopup", "UI_GuildOpenDungenon", "UI_GuildHallOfHonorTips", "UI_GuestSupplyInfo", "UI_GuestFetterAdd", "UI_ExpandAutoTip", "UI_ExpandAgentStop", "UI_ExpandAgentStart", "UI_ExpandAkfSpeed", "UI_DailySignBadInfo", "UI_BeautyCompRewardTips", "UI_AgreementTips", "UI_ChildRenameTip", "UI_ExpandRoll", "UI_BanquetOfFamilyLimit", "UI_ChildMail", "UI_CyberIllusionAuto", "UI_ExpandAkfReward", "UI_GachaExchangeConfirm", "UI_GuildSameNameSetting", "UI_PirateTips", "UI_ResUpdateTip", "UI_RoleRenameTip", "UI_ShopGiftPurchase", "UI_GuildApply", "UI_LimitWishTip", "UI_PurchaseBattleInject", "UI_RecruitConfirm", "UI_SilkroadCashGift", "UI_TalkSelect", "UI_TradingPortDockUnlock", "UI_WishMakingLotteryTips", "UI_WishMakingResetTips", "UI_BossRedPacket", "UI_CombineRemouldTips", "UI_DebugLogPanel", "UI_ExpandDispatchList", "UI_GuildNoticPreview", "UI_InvestmentSkillUpgrade", "UI_MarketWarRescure", "UI_CoatingActiveTips", "UI_StreetTreasureFind", "UI_TradeWarBatttleSet", "UI_TradeWarSetting", "UI_GuestSelectCard", "UI_SeaEvidenceArea", "UI_Sidebar", "UI_InvestmentFightTips", "UI_MarketWarSupport", "UI_TradingPortComposeQuick", "UI_TradingPortSupplyInfo", "UI_TradeWarPetition", "UI_BanquetOfFamilyOpen" ], "tips": [ "UI_ExpandNameTip", "UI_ExpandMapNewTip", "UI_GuestAttrUpTip", "UI_FloatStrTip", "UI_FloatMoneyTips", "UI_FlyItem", "UI_FlyItem2", "UI_FlyItem1", "UI_FloatCoinTips", "UI_FullSceneTips", "UI_GoodsActive", "UI_RankActAddTip", "UI_RecruitProgressTips", "UI_RecruitTips", "UI_RoleUpTip", "UI_TradeWarItem", "UI_CupGetting", "UI_DailyRefreshTips", "UI_HistoryStageTip", "UI_MarketWarTactic", "UI_PrivilegeMonthlyCard2", "UI_RelayRaceTab", "UI_RelayTrainUpPath", "UI_SilkroadBuffEventResult", "UI_SilkroadQucikTeleport", "UI_StreetTreasureList", "UI_TechnoCourseTip", "UI_TechnoTips", "UI_TitleTips", "UI_YardDispachResult", "UI_StreetFightAttrTip", "UI_RuleTip", "UI_RouteTradeItem", "UI_RedPacketOpen", "UI_RedPacketSetting", "UI_NetError", "UI_MultiAwardItemTips", "UI_MarketWarTea", "UI_MarketFacilityTip", "UI_Guide", "UI_GuestPromoteItem", "UI_GuestATKUpPath", "UI_FundPreview", "UI_ExpandEventTip", "UI_DivineTip", "UI_CupInfo", "UI_CyberIllusionEquipMessage", "UI_ChildCultivateVit", "UI_BeautyTalentSkillTips", "UI_BattlePassUpgradeAni", "UI_FuncUnlock", "UI_GuestRareTip", "UI_AgeTips", "UI_AgreementDesc", "UI_ResAddition", "UI_ShopUnlockTips", "UI_GachaLuckTips", "UI_GuestSupplyPath", "UI_GuestSupplyRecords", "UI_HistoryStageLock", "UI_ItemTip", "UI_MarketActiveAdvanced", "UI_RelayTrainRwd", "UI_VisitPlayerTitle", "UI_CommonSkin", "UI_ExpandSidInfo", "UI_FashionShopEff", "UI_GetPaths3", "UI_GetPaths2", "UI_GuestPath", "UI_GuildDunExpReward", "UI_GuildEliteAttackUp", "UI_GuildPartyPreview", "UI_GuildSetting", "UI_GuildWarProtactTips", "UI_InvestmentRecord", "UI_InvestmentSkillAddition", "UI_InvestmentUnlock", "UI_MainPowerDetail", "UI_MarketStrength", "UI_PreviewAwards", "UI_BeautyEditor", "UI_BeautyTravelTip", "UI_TaskProgressTip", "UI_TalkReview", "UI_StarWorksUpAni", "UI_SilkroadRetreatRuleTip", "UI_GuildColorCodeDesc", "UI_MarketRepresentAdd", "UI_SeaEvidenceTip", "UI_MarketChild", "UI_TradingPortSupplyLvUnlock", "UI_FundGuestInfo", "UI_FundBeautyInfo", "UI_TopLeagueDesc", "UI_PlayerSkinPreview", "UI_PirateEvent", "UI_MarketSkinLook", "UI_ActApexPvpDesc", "UI_BanquetAddTips" ], "mainUI": [ "UI_TradingPort", "UI_VisitMain", "UI_StarWorks", "UI_MuseumMain", "UI_Market", "UI_Main", "UI_CombineMain", "UI_MountMain" ], "红框方形玩法入口": [ "UI_ActKingOfSnowMain", "UI_ActSnowCityRedRain", "UI_ActSnowMan", "UI_ActSnowWheel", "UI_PurchaseBattleActivity", "UI_PirateInvasion", "UI_PirateInvasionMain", "UI_SilkroadMonsterFight", "UI_GuildWarMain", "UI_RelayRaceMain", "UI_WishMakingMain", "UI_LimitActivity", "UI_SkyscraperActivity", "UI_SilkroadMain", "UI_LimitLottery" ], "功能开启&展示": [ "UI_FuncOpen", "UI_FuncOpenTip2", "UI_GuildUpgradeTips", "UI_LotteryBigReward", "UI_MarketAllBell", "UI_MarketAllBellResult", "UI_MarketStrategyActive", "UI_BeautyCompUpgrade", "UI_BeautyTalk", "UI_BeautyBookGet", "UI_BeautyBook", "UI_BanquetOpenSucc", "UI_SkyscraperRedPacketTip", "UI_StreetFightWait" ], "上标题+下横列表": [ "UI_BanquetJoinSetting", "UI_BanquetGiftSelect" ], "T型-上标题-左标签-右竖列表": [ "UI_BeautyTravel", "UI_GuildWarTask", "UI_RankActTask", "UI_StreetFightTask", "UI_BattlePassTask", "UI_ExpandAkfPreview", "UI_GuildWarRank", "UI_GuildWarRecord", "UI_ActivityReward", "UI_RankActGift", "UI_GuestQueryAttr", "UI_GuildChallengeContrib", "UI_GuildWarAlliance", "UI_MarketAdvanced", "UI_MarketBaseInfo", "UI_TeamList", "UI_TradeWarFloor", "UI_TaskSprint", "UI_CombinePublicityCup", "UI_SilkroadGains", "UI_RankActSprint", "UI_LimitLotteryTask", "UI_ActStrengthSpurt", "UI_AliMinGameClub", "UI_ActApexPvpEvent", "UI_TopLeagueEvent", "UI_InvestmentSkill", "UI_ActMoonSpurt" ], "战斗": [ "UI_GuildWarBattle", "UI_PirateFightBattle", "UI_ActApexPvpBattle", "UI_GuildMemberBattle", "UI_MarketWarBattle", "UI_ActKingOfSnowBattle", "UI_InvestmentBattle", "UI_StreetFightBattle", "UI_TopLeagueBattle" ], "测试界面": [ "UI_TestServer", "UI_CommandMonitor" ], "上标题-中上标签-中竖列表-下信息": [ "UI_GuildDunGroupRankAndReward", "UI_GuildDunRankAndReward", "UI_PirateIntelStation", "UI_SilkroadManuals", "UI_SilkroadDamageRank", "UI_SoloMarket", "UI_TradeWarFind", "UI_GuildPhaseReward", "UI_RelayRacePvpRank", "UI_TeamMarket", "UI_MarketWarReport" ], "待确认": [ "UI_MarketList", "UI_Black", "UI_GuildMemberBattleResult", "UI_MarketWarTacticUse", "UI_PanelGuideBtn", "UI_BeautyBookInfo", "UI_GuildDunChallengeRecord", "UI_MountBuildInfo" ], "展示-横条-横列表": [ "UI_ChildUpgradeSuccTip", "UI_BeautyPropsUseSucc", "UI_ChildRecoverVitSucc", "UI_ChildRenameSuccTip", "UI_CommonGetItems", "UI_ExpandAgentResult", "UI_ExpandAutoResult" ], "展示-横条-上图-下信息": [ "UI_ChildUpSchoolTip", "UI_ChildSchoolUp" ], "展示-横条-左右对比": [ "UI_CombineRemouldSucc", "UI_WorldWonderBuildSucc", "UI_BeautyCompTitleChange", "UI_BeautyFameUpSuc", "UI_BeautyTransformResult", "UI_FirstStarTips", "UI_MuseumExhibitionSucc", "UI_UpgradeCoatingSucc", "UI_RouteTradeDispatchSucc", "UI_TradingPortUpPreview", "UI_CyberIllusionBreakThrough" ], "展示-横条-左图-右信息": [ "UI_CombineUpSucc", "UI_CyberIllusionRemouldSucc", "UI_CyberPveResult", "UI_GuildWarRstFail", "UI_BlockBattleResult", "UI_MarketGetSkinItem", "UI_StreetFightJumpResult", "UI_StreetFightResult", "UI_TrialSpacetimeMiddleResult", "UI_TrialSpacetimeHighResult", "UI_TrialSpacetimeSnatchResult", "UI_MuseumCollectionSucc", "UI_MuseumStarUpSucc", "UI_RoleEvalEquipTips", "UI_CyberIllusionUpSucc" ], "展示-横条-条内信息": [ "UI_ExpandFogResult", "UI_ExpandResult", "UI_ExpandSeaFailResult", "UI_ExpandResultFail", "UI_ExpandSeaResult", "UI_GachaResult", "UI_GuestAureoleSkillSucc", "UI_GuestStarSucc", "UI_GuestTalentSkill", "UI_GuildDungeonBattlePhase", "UI_GuildDungeonBattleResult", "UI_GuildDungeonBattleSucc", "UI_GuildDungeonBattleTail", "UI_GuildPartyResult", "UI_GuildWarRstMult", "UI_GuildWarRstWin", "UI_InvestmentBiddingResult", "UI_InvestmentCancel", "UI_InvestmentCreateSucc", "UI_InvestmentResult", "UI_MarketWarAgentResult", "UI_MountCharactersActive", "UI_MountQualityUpgrade", "UI_MuseumGachaResult", "UI_PirateChallengeResult", "UI_PirateResultFail", "UI_RankGuildVoteReward", "UI_BanquetFinish", "UI_BanquetJoinSucc", "UI_BeautyCompResult", "UI_BeautyUpSkillSucc", "UI_BlockBattleActFinish", "UI_RelayTrainGradeUpSucc", "UI_CommonUseSucc", "UI_ExpandAisleResult", "UI_MarketWarResult", "UI_RoleObtainingTitleTips", "UI_RouteTradeBossResult", "UI_SeaEvidenceAddSucc", "UI_SilkroadAppraisalReward", "UI_SilkroadTeleportReward", "UI_StarWorksLevelUp", "UI_StarWorksUpResult", "UI_StreetFightSweepResult", "UI_TopLeagueResult", "UI_TradeWarTechGet", "UI_YardResultTips", "UI_TradeWarPveResult", "UI_TradeWarResult", "UI_SilkroadQuickBuffResult", "UI_RelayTrainRstFail", "UI_RelayTrainRstWin", "UI_ChildMarryFailTip", "UI_AssistantReward", "UI_ActSnowWheelResult", "UI_ActKingOfSnowBattleResult", "UI_ActArenaResult", "UI_ActApexPvpResult", "UI_ExpandBuffResult", "UI_ExpandEventNew", "UI_ExpandEventResult", "UI_ExpandEventSelect", "UI_RelayRaceResult" ], "大背景-展示": [ "UI_ChildTravelSuccTip", "UI_ChildTravelTip", "UI_SilkroadBattleTailReward", "UI_ChildGraduateTip", "UI_ChildGetTip", "UI_MuseumGacha", "UI_CoatingMain" ], "新展示-横条-左模型-右信息": [ "UI_FashionShopBuySucc", "UI_GuestActiveSkill", "UI_GuestFashionActive", "UI_GuestGetSkinItem", "UI_GuestPromoteSucc", "UI_GuestUpQuality", "UI_LotterySkinItem", "UI_MarketBeautyDispatchSucc", "UI_TopLeagueGetSign", "UI_TradingPortNewShip", "UI_BeautyPromoteSucc", "UI_BeautyGetting", "UI_BattlePassRewardOverview", "UI_BattlePassBigRewardPreview", "UI_ActApexPvpGetSign", "UI_BeautyUpQuality", "UI_TeamGuestTrial", "UI_RankPlayerVoteReward" ], "左标签页-右框内-上标题-中竖列表-下信息": [ "UI_RelayRacePlayersMult", "UI_RelayRacePlayersRank", "UI_RelayRankDetail", "UI_ActArenaRank", "UI_RankActReward", "UI_BeautyCompRecord", "UI_PurchaseBattleMain" ], "上标题-中横列表-下信息": [ "UI_WishMakingSelectReward", "UI_YardDispach", "UI_SilkroadInspire", "UI_ShopCommonActShop", "UI_CombineManagerStar", "UI_CoatingSelectUpLevelMat", "UI_CoatingSelectUpStarMat", "UI_CoatingPreview2", "UI_CoatingInfo", "UI_ChildTravelList", "UI_BlockBattleTarget", "UI_BeautySelect", "UI_ActSnowWheelLimitAward", "UI_ActSnowWheelPreview", "UI_ActSnowManPreview", "UI_ActSnowCityRedRainReward", "UI_ActivityShop", "UI_ActArenaTarget", "UI_ActArenaSolo", "UI_ActArenaOtherMarketInfo", "UI_ActApexPvpShop", "UI_BeautyCompView", "UI_GuildDunLineUp", "UI_MarketOffer", "UI_PiratePreview", "UI_RelayTrainFleetUp", "UI_SilkroadFightSelectGuest", "UI_StarWorksEndorse", "UI_StreetFightTarget", "UI_StreetFightSolo", "UI_TeamFriend", "UI_TeamInfo", "UI_TopLeagueShop", "UI_GuildBuild", "UI_LimitActivityPreview", "UI_MountSelectUpStarMat", "UI_MountUpgradeResult", "UI_MuseumAntiquePut", "UI_MuseumMedalWall", "UI_GuildMemberBattleTarget", "UI_InvestMarketUp", "UI_InvestmentDetail", "UI_MarketSkin", "UI_RankActPath", "UI_RelayUpgradePath", "UI_SettingPush", "UI_TechnoCourse", "UI_TradeWarGuests", "UI_SingleMarketOut", "UI_GuestUp", "UI_ExpandDispatch", "UI_ActivitySubScribe", "UI_BattlePassBuyExp", "UI_CombineRemould", "UI_TopLeagueProgress", "UI_PurchaseBattleSchedule", "UI_RelayCommonEquip" ], "上标题-中竖列表-下信息": [ "UI_RankActServerRank", "UI_RankActSingleServerRank", "UI_RankActTaskMemberRank", "UI_RelayRaceRecordRank", "UI_RelayRaceRwds", "UI_StreetFightMarket", "UI_ActKingOfSnowLevel", "UI_BanquetPopularityReward", "UI_BanquetRecord", "UI_BanquetRank", "UI_BeautyCompAwardPreview", "UI_BeautyCompRank", "UI_ChildPublicPropose", "UI_CoatingTask", "UI_MountAureole", "UI_MarketWarTask", "UI_PurchaseBattleGuildRank", "UI_AssistantRouteTrade", "UI_AuthSelect", "UI_BanquetGuest", "UI_GuildWarAppoint", "UI_GuildWarAuthorize", "UI_GuildWarCommander", "UI_GuildWarOpTips", "UI_GuildWarPlan", "UI_RelayRacePlayers", "UI_ActivityRank", "UI_ActApexPvpRecord", "UI_GuildHaggleRank", "UI_GuildNoticTemplate", "UI_MarketBeautyAdd", "UI_MarketBeautyBest", "UI_RelayTrainTask", "UI_RouteTradeAddition", "UI_SilkroadActGift", "UI_SilkroadEncourageReward", "UI_SilkroadMonsterSwitch", "UI_SilkroadRank", "UI_StreetTreasureDetail", "UI_TaskGroupReward", "UI_TeamApplyList", "UI_TeamInviteList", "UI_TopLeagueReward", "UI_TradeWarPetitionUp", "UI_TradingPortSupplyRecords", "UI_YardRankTips", "UI_VisitRecord", "UI_TrialSpacetimeRewardPreview", "UI_TradingPortShipPosUnlock", "UI_TradeWarReport", "UI_TopLeagueRecord", "UI_SilkroadMemberSelect", "UI_SkyscraperReco", "UI_CombineUpgradeCond", "UI_BeautyTravelSharedGift", "UI_ActArenaSoloMarket", "UI_ActArenaOtherMarket", "UI_GuildChallangeLevel", "UI_ExpandFogMap", "UI_GuildApplyList", "UI_GuildHonorRecord", "UI_LimitLotteryGift", "UI_MarketActiveFloor", "UI_MarketWarCapture", "UI_OtherRoleBattleAttr", "UI_SpaceRank", "UI_TradeWarConsume", "UI_GuestStarPreview", "UI_GuildWarAtkSum", "UI_GuildWarGroup", "UI_MountStarPreview", "UI_MuseumMedalInfo", "UI_GuildPositionDesc", "UI_MarketWarRank", "UI_GachaAutoTypeSelect", "UI_RouteTrade", "UI_MarketStarActive", "UI_MarketSuggest", "UI_MarketRateTips", "UI_MarketRevenue", "UI_GuestGetPath", "UI_GachaPreview", "UI_LimitActRechargeGift", "UI_MarketBeauty", "UI_ActApexPvpReward", "UI_ActKingOfSnowTask", "UI_ActSnowManTask", "UI_ActSpurtGift", "UI_BlockBattleRecord", "UI_ResRetrieve", "UI_SilkroadOasisOverview", "UI_SilkroadRankReward" ], "四边木栏（蒸笼标签）+横列表": [ "UI_RoleBeautyTip", "UI_Beauty", "UI_GachaCoinShop", "UI_Guest", "UI_StarWorksChoiceBeauty", "UI_TradingPortFleet", "UI_RoleGuestsTip", "UI_YardMeet", "UI_ActApexPvpProgress", "UI_MuseumGachaShop" ], "四边木栏（蒸笼标签）+左中右": [ "UI_BeautyInfo", "UI_BeautyShow", "UI_Bag", "UI_ChildSchool", "UI_GuestNotActive", "UI_GuestInfo", "UI_OtherRoleGuest", "UI_TradingPortDock", "UI_MuseumAntiqueList", "UI_MountInfo", "UI_ChildFamily" ], "全屏背景界面": [ "UI_Techno", "UI_TechnoCup", "UI_OtherTechnoCup", "UI_SpaceHonor", "UI_SpaceInfo", "UI_SpaceTop", "UI_Role", "UI_RoleEvaluateSucc", "UI_RoleEvaluate", "UI_RoleOthter", "UI_CreateRole", "UI_CyberIllusionMain" ], "打开书页": [ "UI_TechnoExam", "UI_TechnoExam_backup" ], "横条-VS": [ "UI_TopLeagueReady", "UI_InvestmentBidding", "UI_MarketWarReady", "UI_ActApexPvpReady", "UI_BattleBaseStart" ], "左标签-右信息": [ "UI_TrialSpacetimeRecord", "UI_WishMakingGift", "UI_TradingPortQueryAttr", "UI_MarketAureoleTips", "UI_ActivityLobby" ], "T型-上标题-左-右": [ "UI_CombineAccounting", "UI_CombineLeader", "UI_CombineManager", "UI_CombinePersonnel", "UI_CombinePublicity", "UI_CombineTactic", "UI_TradingPortDecorateResolve", "UI_GuildSearchInfo", "UI_GuildSetFlags", "UI_MarketLightInfo", "UI_MountQueryAttr", "UI_MountResolve", "UI_MuseumAntiqueHistory", "UI_TradingPortDeCombine", "UI_RankAct", "UI_RouteTradeDispatch", "UI_TechnoCupShow", "UI_TradeWarAddVit", "UI_StarWorksChoiceUp", "UI_StarWorksLevelInfo", "UI_TradingPortDecorateBag", "UI_RankActGuildMemberRank", "UI_FuncPreview", "UI_MarketSurvey", "UI_GachaLimitWish", "UI_ChildSpecifiedPropose" ], "左-右": [ "UI_WorldBuildFinish", "UI_WorldBuild", "UI_GuildSearch", "UI_HistoryEventTip", "UI_HistoryEventGet", "UI_MarketActive", "UI_MarketCommodity", "UI_MarketRobotInfo", "UI_ExpGetPath", "UI_RouteTradeBoss", "UI_RoleHeadTip", "UI_SilkroadGuestInfo", "UI_TradingPortChangeShip", "UI_GetPaths", "UI_LimitWish", "UI_ExpandRank", "UI_Billionaires", "UI_BeautyOutings", "UI_BeautyCompMap", "UI_BillionairesRank", "UI_BeautyCompEnter", "UI_TechnoCupInfo", "UI_RelayAddCar", "UI_RankActTwo", "UI_OtherRoleMarket", "UI_GuestEquipMount", "UI_TaskChapterTip", "UI_ActApexPvpPreview", "UI_ChildWaitPropose", "UI_ActStreet", "UI_BattlePass", "UI_ActArena", "UI_DailySign", "UI_CombinePersonnelGuest", "UI_Notice", "UI_Fund" ], "左标签+右竖列表": [ "UI_ChildSpecialSuitors", "UI_ChildSuitors", "UI_PurchaseBattleReward", "UI_PurchaseBattleRank", "UI_RankActItem", "UI_RankActEntrance", "UI_RankActRewardGuild", "UI_TopLeagueBetRank", "UI_SkyscraperRank", "UI_FuLiDaTingWeiXin", "UI_PrivilegeMain", "UI_GuildActivity", "UI_BlockBattleTask", "UI_ActApexPvpRank" ], "登录加载全屏": [ "UI_Login", "UI_Loading", "UI_SDKLogin" ], "左右对比": [ "UI_BeautyTransform", "UI_BeautyTransformPreview", "UI_CoatingUpgrade", "UI_CyberIllusionEquip", "UI_MarketTransfer", "UI_CyberIllusionRoleUp", "UI_TopLeagueMarket", "UI_ActApexPvpMarket" ], "一体框": [ "UI_Setting", "UI_SilkroadAppraisalPreview", "UI_RoleStageTip", "UI_TechnoCupAchi", "UI_TradingPortFactory", "UI_MarketSlotAdd", "UI_MarketRecommend", "UI_GuestDivineTips", "UI_GuestAureoleTips", "UI_GuildNotic", "UI_GuildNoticEditor", "UI_MarketQuality", "UI_MountPartRemake", "UI_MountPreviewInfo", "UI_WishMakingPreview", "UI_BeautyFame", "UI_MarketHarvest", "UI_MarketWarRankReward", "UI_TaskTalk", "UI_CombineTacticInfo", "UI_CommonRoleInfo", "UI_Chat" ], "左广告图-右列表": [ "UI_SilkroadAssistant", "UI_SilkroadMission", "UI_SilkroadMeetEvent", "UI_SkyscraperRedPacket", "UI_TradeWarMarket", "UI_TrialSpacetimeBoss", "UI_RelayRaceNpc", "UI_RedPacketInfo", "UI_PirateTask", "UI_MarketWarEmployer", "UI_ChildSuitorInfo", "UI_CyberIllusionSelectMarket", "UI_ChildResume" ], "抽屉": [ "UI_MarketGuest" ], "全屏获得新奖励": [ "UI_GachaJackpot", "UI_GuestActive", "UI_MuseumJackpot" ], "四边木栏（蒸笼标签）+入口": [ "UI_TradeWar", "UI_TradeWarBattle" ], "panel+入口": [ "UI_TradeWarBoss", "UI_TrialSpacetimeTradeWar", "UI_TradePvp", "UI_SilkroadMap", "UI_RelayRaceMapUI", "UI_RankActSpecifyAd", "UI_GuildDungeonBattle", "UI_GuildDungeonChallenge", "UI_GuildDungeonEliteBattle", "UI_ExpandBattle", "UI_GuildWarBaseInfo", "UI_Expand", "UI_MarketWarTarget" ], "四边木栏（蒸笼标签）底": [ "UI_GuildList", "UI_GuildMain", "UI_GrowSystem", "UI_GuildDungeonsNew", "UI_RankGobal", "UI_RankLocal" ], "panel": [ "UI_GuildHonorUnLock", "UI_GuildMemberManager", "UI_FirstChargeBonus", "UI_Achievement", "UI_DailyGift", "UI_DailySystem", "UI_ExpandAisleMap", "UI_GachaMain", "UI_GuildDungeonsList", "UI_GuildLobby", "UI_GuildMsgs", "UI_GuildManager", "UI_GuildHallOfHonor", "UI_GuildPosition", "UI_GuildParty", "UI_GuildWarStreet", "UI_GuildGroupBuyNew", "UI_MulDayRechargeGift", "UI_PrivilegeDayCard", "UI_RechargeGift", "UI_SilkroadRankServerRank", "UI_MuseumExhibition", "UI_SilkroadBuffEvent", "UI_RelayRaceInfo", "UI_AcitveAd", "UI_TrialSpacetime" ], "横列表": [ "UI_RechargeTokens", "UI_BeautyTalkMore", "UI_GachaSwitchBeautyPool", "UI_GachaSwitchPool", "UI_GuestSetMain", "UI_TradeWarTechTip", "UI_YardMentInfo", "UI_RankEntry", "UI_OpenCustomSkin", "UI_SurpriseSeriesGift", "UI_RelayTrainGradeUp", "UI_GuildWarSchedule", "UI_RelayCommonFleet" ], "左右艺术设计+横列表": [ "UI_ChildBeauty", "UI_GuestCollect", "UI_TaskChapter" ], "左艺术设计+左-右": [ "UI_GuildCreate", "UI_GuestDivine", "UI_ChildMarry", "UI_AssistantPanel", "UI_BanquetOfBaiFuDetail", "UI_BanquetObtainingTimes", "UI_BanquetOfOfficialDetail", "UI_BanquetOfFamilyDetail", "UI_FriendsMain", "UI_ServerList", "UI_VipGift", "UI_Task", "UI_ActCumulativeRecharge", "UI_ActivityCalender" ], "左右艺术设计+一体": [ "UI_ChildTravelApply", "UI_ChildTravelFailTip", "UI_WorldWonders", "UI_TimerTravelInfo" ], "地图底": [ "UI_BlockBattleMinMap", "UI_BlockBattleMap", "UI_TimerTravel", "UI_SeaEvidence", "UI_RelayRaceMap" ], "左右艺术设计+竖列表": [ "UI_BanquetOfBaiFuList", "UI_BanquetOfOfficialList", "UI_TradeWarAnnounce" ], "四边木栏（蒸笼标签）+格子排": [ "UI_BanquetMain" ], "灯笼标签+彩带+全屏": [ "UI_BanquetAdvancedList", "UI_BanquetNormalList" ], "墙+小旗+横列表": [ "UI_AssistantShop", "UI_GachaExchange", "UI_Shop" ], "木屏风+横列表": [ "UI_WishMakingExchange", "UI_RechargeMain", "UI_LimitExchange" ], "左图-右竖列表": [ "UI_TopLeagueRank" ], "左-中-右": [ "UI_StreetFight", "UI_SilkroadTreasure", "UI_CyberPve", "UI_PirateServerBoss", "UI_FashionShop" ], "赛程": [ "UI_TopLeague", "UI_RelayRacePeakGraph", "UI_ActApexPvp" ], "左标签+框内横列表": [ "UI_MuseumExhibitionList" ], "左标签-框内左+右": [ "UI_Mail" ], "全屏入口": [ "UI_ActSnowMain" ], "四边木栏（蒸笼标签）+左标签+中图+右信息": [ "UI_ChildInfo", "UI_InvestmentMain" ], "左标签+框内整图": [ "UI_RelayTrainMain", "UI_ExpandMap" ], "多列": [ "UI_ChoosingCar", "UI_HistoryEvent" ] };
+
+        function init() {
+            // 清空所有旧数据
+            localStorage.removeItem('uiGroups');
+            // 加载默认分组（当前 JSON 数据）
+            groups = JSON.parse(JSON.stringify(DEFAULT_GROUPS));
+            saveToStorage();
+            renderAll();
+            setupListeners();
+            showInitMessage();
+        }
+
+        function loadFromStorage() {
+            const saved = localStorage.getItem('uiGroups');
+            if (saved) {
+                try {
+                    groups = JSON.parse(saved);
+                } catch (e) {
+                    groups = {};
+                }
+            }
+        }
+
+        function showInitMessage() {
+            console.log('✓ UI 分类工具已初始化');
+            console.log('✓ 已清空旧数据，加载当前分类（2026-05-03）');
+            console.log('✓ 布局类型: ' + Object.keys(groups).length);
+            console.log('✓ 已分类 UI: ' + Object.values(groups).flat().length);
+        }
+
+        function saveToStorage() {
+            localStorage.setItem('uiGroups', JSON.stringify(groups));
+        }
+
+        function getUngroupedUIs() {
+            const grouped = new Set();
+            Object.values(groups).forEach(uis => {
+                uis.forEach(ui => grouped.add(ui));
+            });
+            return ALL_UIS.filter(ui => !grouped.has(ui));
+        }
+
+        function renderAll() {
+            renderGroups();
+            renderUngrouped();
+            updateStats();
+        }
+
+        function renderGroups() {
+            const panel = document.getElementById('groupsPanel');
+            if (Object.keys(groups).length === 0) {
+                panel.innerHTML = '<p style="color: #999; text-align: center; padding: 20px;">暂无分组</p>';
+                return;
+            }
+
+            let html = '';
+            Object.entries(groups).forEach(([groupName, uis]) => {
+                const firstUI = uis[0];
+                const imgPath = 'attachments/UI_Images/' + firstUI + '.png';
+
+                html += `
+                    <div class="group-item" style="cursor: pointer;" onclick="selectGroup('${groupName}', event)">
+                        <div class="group-title" onclick="editGroupName(event, '${groupName}')" title="点击修改分组名称">${groupName}</div>
+                        <img src="${imgPath}" class="group-thumbnail" onerror="this.style.display='none'">
+                        <div class="group-info">${uis.length} 个 UI</div>
+                    </div>
+                `;
+            });
+            panel.innerHTML = html;
+        }
+
+        function renderUngrouped(filter = '') {
+            const panel = document.getElementById('ungroupList');
+            let ungrouped = getUngroupedUIs();
+
+            if (filter) {
+                ungrouped = ungrouped.filter(ui => ui.toLowerCase().includes(filter.toLowerCase()));
+            }
+
+            if (ungrouped.length === 0) {
+                panel.innerHTML = '<p style="grid-column: 1/-1; text-align: center; color: #999; padding: 20px;">✅ 全部 UI 已分组</p>';
+                return;
+            }
+
+            let html = '';
+            ungrouped.forEach(ui => {
+                const imgPath = 'attachments/UI_Images/' + ui + '.png';
+                const isSelected = selectedUI === ui;
+
+                html += `
+                    <div class="ui-item ${isSelected ? 'selected' : ''}" onclick="selectUI('${ui}')">
+                        <img src="${imgPath}" onerror="this.style.display='none'">
+                        <div class="ui-item-name">${ui}</div>
+                    </div>
+                `;
+            });
+            panel.innerHTML = html;
+        }
+
+        function selectUI(uiName) {
+            if (selectedUI === uiName) {
+                selectedUI = null;
+                document.getElementById('previewPanel').style.display = 'none';
+            } else {
+                selectedUI = uiName;
+                // 显示预览
+                const imgPath = 'attachments/UI_Images/' + uiName + '.png';
+                document.getElementById('previewImage').src = imgPath;
+                document.getElementById('previewName').textContent = uiName;
+                document.getElementById('previewPanel').style.display = 'block';
+            }
+            renderUngrouped();
+        }
+
+        function selectGroup(groupName, event) {
+            if (event) {
+                event.stopPropagation();
+            }
+            // 显示分组详情窗口
+            showGroupDetail(groupName);
+        }
+
+        let currentGroupDetail = null;
+        let groupDetailSelected = new Set();
+
+        function showGroupDetail(groupName) {
+            currentGroupDetail = groupName;
+            groupDetailSelected.clear();
+            const uis = groups[groupName];
+            document.getElementById('groupDetailTitle').textContent = `${groupName} - ${uis.length} 个 UI`;
+            document.getElementById('selectAllGroupUI').checked = false;
+            updateGroupUISelectCount();
+
+            let html = '';
+            uis.forEach(ui => {
+                const imgPath = 'attachments/UI_Images/' + ui + '.png';
+                html += `
+                    <div class="group-ui-item" id="groupui_${ui}">
+                        <input type="checkbox" data-ui="${ui}" onchange="updateGroupUISelectCount()">
+                        <img src="${imgPath}" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'" onclick="showUIPreview('${ui}')">
+                        <div style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.6); color: white; font-size: 11px; padding: 3px; text-align: center; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${ui}</div>
+                    </div>
+                `;
+            });
+            document.getElementById('groupDetailList').innerHTML = html;
+            document.getElementById('groupDetailModal').classList.add('show');
+        }
+
+        function updateGroupUISelectCount() {
+            const checkboxes = document.querySelectorAll('#groupDetailList input[type="checkbox"]');
+            let count = 0;
+            checkboxes.forEach(cb => {
+                if (cb.checked) {
+                    count++;
+                    groupDetailSelected.add(cb.dataset.ui);
+                } else {
+                    groupDetailSelected.delete(cb.dataset.ui);
+                }
+                const item = cb.closest('.group-ui-item');
+                if (cb.checked) {
+                    item.classList.add('checked');
+                } else {
+                    item.classList.remove('checked');
+                }
+            });
+            document.getElementById('groupUISelectCount').textContent = count > 0 ? `已选 ${count} 个` : '';
+        }
+
+        function toggleSelectAllGroupUI() {
+            const checkboxes = document.querySelectorAll('#groupDetailList input[type="checkbox"]');
+            const selectAll = document.getElementById('selectAllGroupUI').checked;
+            checkboxes.forEach(cb => {
+                cb.checked = selectAll;
+                const item = cb.closest('.group-ui-item');
+                if (selectAll) {
+                    item.classList.add('checked');
+                    groupDetailSelected.add(cb.dataset.ui);
+                } else {
+                    item.classList.remove('checked');
+                    groupDetailSelected.delete(cb.dataset.ui);
+                }
+            });
+            updateGroupUISelectCount();
+        }
+
+        function removeUIFromGroup() {
+            if (groupDetailSelected.size === 0) {
+                alert('请选择要移除的 UI');
+                return;
+            }
+            if (!confirm(`确定要移除选中的 ${groupDetailSelected.size} 个 UI 吗？`)) {
+                return;
+            }
+            // 从当前分组中移除选中的 UI
+            groups[currentGroupDetail] = groups[currentGroupDetail].filter(ui => !groupDetailSelected.has(ui));
+
+            // 如果分组为空，删除该分组
+            if (groups[currentGroupDetail].length === 0) {
+                delete groups[currentGroupDetail];
+            }
+
+            saveToStorage();
+            renderAll();
+            closeModal();
+        }
+
+        function showUIPreview(uiName) {
+            // 在预览区域显示选中的UI
+            const imgPath = 'attachments/UI_Images/' + uiName + '.png';
+            document.getElementById('previewImage').src = imgPath;
+            document.getElementById('previewName').textContent = uiName;
+            document.getElementById('previewPanel').style.display = 'block';
+        }
+
+        function editGroupName(event, oldName) {
+            event.stopPropagation();
+            const titleElement = event.target;
+            const input = document.createElement('input');
+            input.type = 'text';
+            input.className = 'group-title-edit';
+            input.value = oldName;
+
+            titleElement.replaceWith(input);
+            input.focus();
+            input.select();
+
+            function saveNewName() {
+                const newName = input.value.trim();
+                if (!newName) {
+                    alert('分组名称不能为空');
+                    renderGroups();
+                    return;
+                }
+                if (newName === oldName) {
+                    renderGroups();
+                    return;
+                }
+                if (groups[newName]) {
+                    alert('分组名称已存在');
+                    renderGroups();
+                    return;
+                }
+                // 重命名分组
+                groups[newName] = groups[oldName];
+                delete groups[oldName];
+                selectedGroup = newName;
+                saveToStorage();
+                renderGroups();
+            }
+
+            input.addEventListener('blur', saveNewName);
+            input.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    saveNewName();
+                }
+            });
+            input.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') {
+                    renderGroups();
+                }
+            });
+        }
+
+        function addNewGroup() {
+            if (!selectedUI) {
+                alert('请先在右侧选择一个 UI');
+                return;
+            }
+            document.getElementById('groupNameInput').value = '';
+            document.getElementById('newGroupModal').classList.add('show');
+        }
+
+        function confirmNewGroup() {
+            const name = document.getElementById('groupNameInput').value.trim();
+            if (!name) {
+                alert('请输入分组名称');
+                return;
+            }
+            if (groups[name]) {
+                alert('分组已存在');
+                return;
+            }
+            groups[name] = [selectedUI];
+            selectedUI = null;
+            selectedGroup = name;
+            saveToStorage();
+            renderAll();
+            closeModal();
+        }
+
+        function addToGroup() {
+            if (!selectedUI) {
+                alert('请先在右侧选择一个 UI');
+                return;
+            }
+
+            const groupList = document.getElementById('groupSelectList');
+            let html = '';
+            Object.keys(groups).forEach(groupName => {
+                html += `
+                    <label class="group-option">
+                        <input type="radio" name="groupSelect" value="${groupName}">
+                        <span class="group-option-text">${groupName}</span>
+                        <span class="group-option-count">${groups[groupName].length} 个 UI</span>
+                    </label>
+                `;
+            });
+            groupList.innerHTML = html;
+            document.getElementById('joinGroupModal').classList.add('show');
+        }
+
+        function confirmJoinGroup() {
+            const selected = document.querySelector('input[name="groupSelect"]:checked');
+            if (!selected) {
+                alert('请选择一个分组');
+                return;
+            }
+            const groupName = selected.value;
+            if (!groups[groupName].includes(selectedUI)) {
+                groups[groupName].push(selectedUI);
+            }
+            selectedUI = null;
+            selectedGroup = groupName;
+            saveToStorage();
+            renderAll();
+            closeModal();
+        }
+
+        function closeModal() {
+            document.getElementById('newGroupModal').classList.remove('show');
+            document.getElementById('joinGroupModal').classList.remove('show');
+            document.getElementById('groupDetailModal').classList.remove('show');
+        }
+
+        function updateStats() {
+            document.getElementById('groupCount').textContent = Object.keys(groups).length;
+            document.getElementById('ungroupCount').textContent = getUngroupedUIs().length;
+            document.getElementById('totalCount').textContent = ALL_UIS.length;
+        }
+
+        function exportData() {
+            const data = JSON.stringify(groups, null, 2);
+            const blob = new Blob([data], { type: 'application/json;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'ui_groups_' + new Date().toISOString().split('T')[0] + '.json';
+            a.click();
+        }
+
+        function exportCSV() {
+            let csv = 'Group,UI Name\n';
+            Object.entries(groups).forEach(([groupName, uis]) => {
+                uis.forEach(ui => {
+                    csv += `"${groupName}","${ui}"\n`;
+                });
+            });
+            const blob = new Blob([csv], { type: 'text/csv;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'ui_groups_' + new Date().toISOString().split('T')[0] + '.csv';
+            a.click();
+        }
+
+        function resetAll() {
+            if (confirm('确定要清空所有分组吗？这个操作无法撤销。')) {
+                groups = {};
+                selectedUI = null;
+                selectedGroup = null;
+                saveToStorage();
+                renderAll();
+            }
+        }
+
+        function setupListeners() {
+            document.getElementById('ungroupSearch').addEventListener('input', (e) => {
+                renderUngrouped(e.target.value);
+            });
+        }
+
+        window.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>

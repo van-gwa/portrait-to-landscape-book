@@ -1,0 +1,24 @@
+{
+  "id": "conv-1777872713579-cmgwpgj2x",
+  "providerId": "claude",
+  "title": "同步 UI 布局分类到 LLM Wiki",
+  "titleGenerationStatus": "success",
+  "createdAt": 1777872713580,
+  "updatedAt": 1777874557350,
+  "lastResponseAt": 1777873602050,
+  "sessionId": "0a9bfed6-5585-4f1f-8feb-24f07c19a075",
+  "providerState": {
+    "providerSessionId": "0a9bfed6-5585-4f1f-8feb-24f07c19a075"
+  },
+  "currentNote": "llm_wiki/wiki/guides/实战演示.md",
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 3,
+    "cacheCreationInputTokens": 3622,
+    "cacheReadInputTokens": 110879,
+    "contextWindow": 200000,
+    "contextTokens": 114504,
+    "percentage": 57,
+    "contextWindowIsAuthoritative": true
+  }
+}

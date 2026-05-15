@@ -1,0 +1,23 @@
+{
+  "id": "conv-1777573024257-irznybtcg",
+  "providerId": "claude",
+  "title": "分析重复背景图和尺寸",
+  "titleGenerationStatus": "success",
+  "createdAt": 1777573024257,
+  "updatedAt": 1777870269686,
+  "lastResponseAt": 1777846156130,
+  "sessionId": "9a1a7e42-df30-46a0-947c-984373f2289d",
+  "providerState": {
+    "providerSessionId": "9a1a7e42-df30-46a0-947c-984373f2289d"
+  },
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 1340,
+    "cacheReadInputTokens": 62088,
+    "contextWindow": 200000,
+    "contextTokens": 63430,
+    "percentage": 32,
+    "contextWindowIsAuthoritative": true
+  }
+}

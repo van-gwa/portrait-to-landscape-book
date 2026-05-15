@@ -1,0 +1,23 @@
+{
+  "id": "conv-1777997218941-tasa8qiwc",
+  "providerId": "claude",
+  "title": "整理布局类型分类及识别标准",
+  "titleGenerationStatus": "success",
+  "createdAt": 1777997218941,
+  "updatedAt": 1778000342145,
+  "lastResponseAt": 1777999723581,
+  "sessionId": "aaf1a956-c572-45f4-9fce-6d4361cad367",
+  "providerState": {
+    "providerSessionId": "aaf1a956-c572-45f4-9fce-6d4361cad367"
+  },
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 5,
+    "cacheCreationInputTokens": 7047,
+    "cacheReadInputTokens": 147831,
+    "contextWindow": 200000,
+    "contextTokens": 154883,
+    "percentage": 77,
+    "contextWindowIsAuthoritative": true
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "conv-1777438861429-yz8whk83t",
+  "providerId": "claude",
+  "title": "分析Prefab相似度并分类统计",
+  "titleGenerationStatus": "success",
+  "createdAt": 1777438861429,
+  "updatedAt": 1777563233266,
+  "lastResponseAt": 1777442762592,
+  "sessionId": "50525f4f-2539-4276-a2d1-6fe5feef9e50",
+  "providerState": {
+    "providerSessionId": "50525f4f-2539-4276-a2d1-6fe5feef9e50"
+  },
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 4,
+    "cacheCreationInputTokens": 1207,
+    "cacheReadInputTokens": 118122,
+    "contextWindow": 200000,
+    "contextTokens": 119333,
+    "percentage": 60,
+    "contextWindowIsAuthoritative": true
+  }
+}

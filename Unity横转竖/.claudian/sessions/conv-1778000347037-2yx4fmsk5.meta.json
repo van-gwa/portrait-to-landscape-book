@@ -1,0 +1,23 @@
+{
+  "id": "conv-1778000347037-2yx4fmsk5",
+  "providerId": "claude",
+  "title": "识别UI布局类型",
+  "titleGenerationStatus": "success",
+  "createdAt": 1778000347037,
+  "updatedAt": 1778147945316,
+  "lastResponseAt": 1778071276652,
+  "sessionId": "6ea59f31-ff5a-4de1-890f-eaf8e3eb3fa6",
+  "providerState": {
+    "providerSessionId": "6ea59f31-ff5a-4de1-890f-eaf8e3eb3fa6"
+  },
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 2,
+    "cacheCreationInputTokens": 200,
+    "cacheReadInputTokens": 76356,
+    "contextWindow": 200000,
+    "contextTokens": 76558,
+    "percentage": 38,
+    "contextWindowIsAuthoritative": true
+  }
+}

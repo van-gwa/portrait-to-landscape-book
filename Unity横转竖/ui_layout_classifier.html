@@ -1,0 +1,601 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI 布局分类工具</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .toolbar {
+            padding: 20px 40px;
+            background: #f8f9fa;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            align-items: center;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .toolbar input, .toolbar button, .toolbar select {
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 1em;
+        }
+
+        .toolbar button {
+            background: #667eea;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: none;
+            font-weight: 600;
+        }
+
+        .toolbar button:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .toolbar select {
+            background: white;
+        }
+
+        .stats {
+            margin-left: auto;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .stat-label {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .content {
+            padding: 40px;
+            margin-bottom: 100px;
+        }
+
+        .layout-group {
+            margin-bottom: 50px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            background: #fafafa;
+        }
+
+        .group-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .group-header input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .group-title {
+            flex: 1;
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .group-count {
+            background: #e8eef7;
+            color: #667eea;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+
+        .ui-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 15px;
+        }
+
+        .ui-card {
+            position: relative;
+            cursor: pointer;
+            transition: all 0.3s;
+            border-radius: 8px;
+            overflow: hidden;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border: 2px solid transparent;
+        }
+
+        .ui-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+        }
+
+        .ui-card input[type="checkbox"] {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        .ui-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            display: block;
+            background: #f0f0f0;
+        }
+
+        .ui-name {
+            padding: 10px;
+            font-size: 0.85em;
+            color: #333;
+            border-top: 1px solid #e0e0e0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .ui-card.checked {
+            border: 2px solid #667eea;
+            background: #f0f4ff;
+        }
+
+        .action-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            border-top: 2px solid #e0e0e0;
+            padding: 20px 40px;
+            display: flex;
+            gap: 15px;
+            justify-content: flex-end;
+            box-shadow: 0 -5px 20px rgba(0,0,0,0.1);
+        }
+
+        .action-bar button {
+            padding: 12px 30px;
+            font-size: 1em;
+            font-weight: 600;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: #f0f0f0;
+            color: #333;
+            border: 1px solid #ddd;
+        }
+
+        .btn-secondary:hover {
+            background: #e0e0e0;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+        }
+
+        .modal-content {
+            background-color: white;
+            margin: 5% auto;
+            padding: 30px;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 600px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        .modal-content h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .modal-content textarea {
+            width: 100%;
+            height: 300px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+
+        .modal-buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+        }
+
+        .close {
+            color: #999;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover {
+            color: #333;
+        }
+
+        .toast {
+            position: fixed;
+            bottom: 120px;
+            right: 20px;
+            background: #667eea;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 6px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+            z-index: 2000;
+        }
+
+        @media (max-width: 768px) {
+            .ui-grid {
+                grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            }
+
+            .toolbar {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .stats {
+                margin-left: 0;
+                width: 100%;
+                justify-content: space-around;
+            }
+
+            .action-bar {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎨 UI 布局分类工具</h1>
+            <p>选择和分组具有相似布局的界面</p>
+        </header>
+
+        <div class="toolbar">
+            <input type="text" id="searchInput" placeholder="搜索 UI 名称...">
+            <button onclick="selectAll()">全选</button>
+            <button onclick="deselectAll()">取消全选</button>
+            <button onclick="resetGroups()">重置分组</button>
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number" id="totalCount">0</div>
+                    <div class="stat-label">总数</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="selectedCount">0</div>
+                    <div class="stat-label">已选</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content" id="content">
+            <div style="text-align: center; padding: 60px 20px; color: #999;">
+                <p>加载中...</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="action-bar">
+        <button class="btn-secondary" onclick="exportJSON()">📥 导出 JSON</button>
+        <button class="btn-secondary" onclick="exportCSV()">📊 导出 CSV</button>
+        <button class="btn-primary" onclick="showResults()">✅ 查看结果</button>
+    </div>
+
+    <div id="resultModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>分类结果</h2>
+            <textarea id="resultText" readonly></textarea>
+            <div class="modal-buttons">
+                <button class="btn-secondary" onclick="copyToClipboard()">复制</button>
+                <button class="btn-secondary" onclick="downloadResult()">下载</button>
+                <button class="btn-primary" onclick="closeModal()">关闭</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const UI_IMAGES_PATH = 'attachments/UI_Images/';
+        const ALL_UIS = ["UI_Achievement","UI_AcitveAd","UI_ActApexPvp","UI_ActApexPvpBattle","UI_ActApexPvpDesc","UI_ActApexPvpEvent","UI_ActApexPvpGetSign","UI_ActApexPvpMarket","UI_ActApexPvpPreview","UI_ActApexPvpProgress","UI_ActApexPvpRank","UI_ActApexPvpReady","UI_ActApexPvpRecord","UI_ActApexPvpResult","UI_ActApexPvpReward","UI_ActApexPvpShop","UI_ActApexPvpWager","UI_ActArena","UI_ActArenaOtherMarket","UI_ActArenaOtherMarketInfo","UI_ActArenaRank","UI_ActArenaResult","UI_ActArenaSolo","UI_ActArenaSoloMarket","UI_ActArenaTarget","UI_ActCumulativeRecharge","UI_ActivityBuyGuest","UI_ActivityBuyGuest2","UI_ActivityCalender","UI_ActivityLobby","UI_ActivityRank","UI_ActivityReward","UI_ActivityShop","UI_ActivitySubScribe","UI_ActivityUpRedTip","UI_ActKingOfSnowBattle","UI_ActKingOfSnowBattleResult","UI_ActKingOfSnowLevel","UI_ActKingOfSnowMain","UI_ActKingOfSnowTask","UI_ActMoonSpurt","UI_ActSnowCityRedRain","UI_ActSnowCityRedRainReward","UI_ActSnowMain","UI_ActSnowMan","UI_ActSnowManPreview","UI_ActSnowManTask","UI_ActSnowWheel","UI_ActSnowWheelLimitAward","UI_ActSnowWheelPreview","UI_ActSnowWheelResult","UI_ActSpurtGift","UI_ActStreet","UI_ActStrengthSpurt","UI_AddShortCut","UI_AgeTips","UI_AgreementDesc","UI_AgreementTips","UI_AirRoutePrivilege","UI_ALiFirstVisit","UI_AliMinGameClub","UI_ALiPCLogIn","UI_AliRepetitionVisit","UI_AssistantGuildSetting","UI_AssistantPanel","UI_AssistantReward","UI_AssistantRouteTrade","UI_AssistantShop","UI_AssistantShopPurchase","UI_AuthSelect","UI_AuthTips","UI_Bag","UI_BagComposeTips","UI_BanquetAddTips","UI_BanquetAdvancedList","UI_BanquetFinish","UI_BanquetGiftSelect","UI_BanquetGuest","UI_BanquetJoinSetting","UI_BanquetJoinSucc","UI_BanquetMain","UI_BanquetNormalList","UI_BanquetObtainingTimes","UI_BanquetOfBaiFuDetail","UI_BanquetOfBaiFuList","UI_BanquetOfBaiFuSelectV2","UI_BanquetOfFamilyDetail","UI_BanquetOfFamilyLimit","UI_BanquetOfFamilyOpen","UI_BanquetOfFamilySelect","UI_BanquetOfOfficialDetail","UI_BanquetOfOfficialList","UI_BanquetOfOfficialSelect","UI_BanquetOpenSucc","UI_BanquetPopularityReward","UI_BanquetRank","UI_BanquetRecord","UI_BattleBaseStart","UI_BattlePass","UI_BattlePassBigRewardPreview","UI_BattlePassBuyExp","UI_BattlePassBuyLicense","UI_BattlePassRewardOverview","UI_BattlePassTask","UI_BattlePassUpgradeAni","UI_Beauty","UI_BeautyBook","UI_BeautyBookGet","UI_BeautyBookInfo","UI_BeautyCompAwardPreview","UI_BeautyCompBuy","UI_BeautyCompEnter","UI_BeautyCompMap","UI_BeautyCompRank","UI_BeautyCompRecord","UI_BeautyCompResult","UI_BeautyCompRewardTips","UI_BeautyCompTitleChange","UI_BeautyCompUpgrade","UI_BeautyCompView","UI_BeautyEditor","UI_BeautyFame","UI_BeautyFameUpSuc","UI_BeautyGetting","UI_BeautyInfo","UI_BeautyOutings","UI_BeautyPromoteSucc","UI_BeautyPropsUseSucc","UI_BeautySelect","UI_BeautyShow","UI_BeautyTalentSkillTips","UI_BeautyTalk","UI_BeautyTalkMore","UI_BeautyTalkTip","UI_BeautyTransform","UI_BeautyTransformPreview","UI_BeautyTransformResult","UI_BeautyTravel","UI_BeautyTravelSharedGift","UI_BeautyTravelTip","UI_BeautyUpQuality","UI_BeautyUpSkillSucc","UI_Billionaires","UI_BillionairesRank","UI_Black","UI_BlockBattleActFinish","UI_BlockBattleMap","UI_BlockBattleMinMap","UI_BlockBattleRecord","UI_BlockBattleResult","UI_BlockBattleTarget","UI_BlockBattleTask","UI_BossRedPacket","UI_BossRedPacketGetReward","UI_Chat","UI_ChildBeauty","UI_ChildCultivateVit","UI_ChildFamily","UI_ChildGetTip","UI_ChildGraduateTip","UI_ChildInfo","UI_ChildMail","UI_ChildMarry","UI_ChildMarryFailTip","UI_ChildMessageTip","UI_ChildPublicPropose","UI_ChildRecoverVit","UI_ChildRecoverVitSucc","UI_ChildRenameSuccTip","UI_ChildRenameTip","UI_ChildResume","UI_ChildSchool","UI_ChildSchoolUp","UI_ChildSpecialSuitors","UI_ChildSpecifiedPropose","UI_ChildSuitorInfo","UI_ChildSuitors","UI_ChildTravelApply","UI_ChildTravelFailTip","UI_ChildTravelList","UI_ChildTravelSuccTip","UI_ChildTravelTip","UI_ChildUpgradeSuccTip","UI_ChildUpSchoolTip","UI_ChildWaitPropose","UI_ChoosingCar","UI_CoatingActiveTips","UI_CoatingInfo","UI_CoatingMain","UI_CoatingPreview2","UI_CoatingResolveTips","UI_CoatingSelectUpLevelMat","UI_CoatingSelectUpStarMat","UI_CoatingTask","UI_CoatingUpgrade","UI_CombineAccounting","UI_CombineLeader","UI_CombineMain","UI_CombineManager","UI_CombineManagerStar","UI_CombinePersonnel","UI_CombinePersonnelGuest","UI_CombinePublicity","UI_CombinePublicityCup","UI_CombineRemould","UI_CombineRemouldSucc","UI_CombineRemouldTips","UI_CombineTactic","UI_CombineTacticInfo","UI_CombineUpgradeCond","UI_CombineUpSucc","UI_CommandMonitor","UI_CommonComposite","UI_CommonGetItems","UI_CommonPurchase","UI_CommonRoleInfo","UI_CommonSkin","UI_CommonUseSucc","UI_ContinueRechargeAct","UI_CreateRole","UI_CupGetting","UI_CupInfo","UI_CyberIllusionAuto","UI_CyberIllusionBreakThrough","UI_CyberIllusionEquip","UI_CyberIllusionEquipMessage","UI_CyberIllusionMain","UI_CyberIllusionRemouldSucc","UI_CyberIllusionRoleUp","UI_CyberIllusionSelectMarket","UI_CyberIllusionSkill","UI_CyberIllusionUpSucc","UI_CyberPve","UI_CyberPveResult","UI_DailyGift","UI_DailyRefreshTips","UI_DailySign","UI_DailySignBadInfo","UI_DailySystem","UI_DebugLogPanel","UI_DivineTip","UI_Expand","UI_ExpandAgentResult","UI_ExpandAgentStart","UI_ExpandAgentStop","UI_ExpandAisleMap","UI_ExpandAisleResult","UI_ExpandAkfPreview","UI_ExpandAkfReward","UI_ExpandAkfSpeed","UI_ExpandAutoResult","UI_ExpandAutoTip","UI_ExpandBattle","UI_ExpandBuffResult","UI_ExpandDispatch","UI_ExpandDispatchList","UI_ExpandEventNew","UI_ExpandEventResult","UI_ExpandEventSelect","UI_ExpandEventTip","UI_ExpandFogMap","UI_ExpandFogResult","UI_ExpandMap","UI_ExpandMapNewTip","UI_ExpandNameTip","UI_ExpandRank","UI_ExpandResult","UI_ExpandResultFail","UI_ExpandRoll","UI_ExpandSeaFailResult","UI_ExpandSeaResult","UI_ExpandSidInfo","UI_ExpGetPath","UI_FashionShop","UI_FashionShopBuySucc","UI_FashionShopEff","UI_FirstChargeBonus","UI_FirstStarTips","UI_FloatCoinTips","UI_FloatMoneyTips","UI_FloatStrTip","UI_FlyItem","UI_FlyItem1","UI_FlyItem2","UI_FriendsMain","UI_FuLiDaTingWeiXin","UI_FullSceneTips","UI_FuncOpen","UI_FuncOpenTip2","UI_FuncPreview","UI_FuncUnlock","UI_Fund","UI_FundBeautyInfo","UI_FundGuestInfo","UI_FundPreview","UI_GachaAutoTypeSelect","UI_GachaCoinShop","UI_GachaExchange","UI_GachaExchangeConfirm","UI_GachaJackpot","UI_GachaLimitWish","UI_GachaLuckTips","UI_GachaMain","UI_GachaPreview","UI_GachaResult","UI_GachaSwitchBeautyPool","UI_GachaSwitchPool","UI_GetPaths","UI_GetPaths2","UI_GetPaths3","UI_GoGuestTip","UI_GoodsActive","UI_GrowSystem","UI_Guest","UI_GuestActive","UI_GuestActiveSkill","UI_GuestATKUpPath","UI_GuestAttrUpTip","UI_GuestAureole","UI_GuestAureoleSkillSucc","UI_GuestAureoleTips","UI_GuestBuy","UI_GuestCollect","UI_GuestDivine","UI_GuestDivineTips","UI_GuestEquipMount","UI_GuestFashionActive","UI_GuestFetterAdd","UI_GuestGetPath","UI_GuestGetSkinItem","UI_GuestInfo","UI_GuestManagerSkinBuy","UI_GuestNotActive","UI_GuestPath","UI_GuestPromote","UI_GuestPromoteItem","UI_GuestPromoteSucc","UI_GuestQueryAttr","UI_GuestRareTip","UI_GuestRechargeBuy","UI_GuestSelectCard","UI_GuestSetInfo","UI_GuestSetMain","UI_GuestStarPreview","UI_GuestStarSucc","UI_GuestSupplyInfo","UI_GuestSupplyPath","UI_GuestSupplyRecords","UI_GuestTalentSkill","UI_GuestUp","UI_GuestUpQuality","UI_GuestUseItem","UI_Guide","UI_GuildActivity","UI_GuildApply","UI_GuildApplyList","UI_GuildBuild","UI_GuildChallangeLevel","UI_GuildChallengeContrib","UI_GuildColorCodeDesc","UI_GuildCreate","UI_GuildDunChallengeRecord","UI_GuildDunExpReward","UI_GuildDungeonBattle","UI_GuildDungeonBattlePhase","UI_GuildDungeonBattleResult","UI_GuildDungeonBattleSucc","UI_GuildDungeonBattleTail","UI_GuildDungeonChallenge","UI_GuildDungeonEliteBattle","UI_GuildDungeonsList","UI_GuildDungeonsNew","UI_GuildDunGroupRankAndReward","UI_GuildDunLineUp","UI_GuildDunRankAndReward","UI_GuildEliteAttackUp","UI_GuildGroupBuyNew","UI_GuildHaggleRank","UI_GuildHallOfHonor","UI_GuildHallOfHonorTips","UI_GuildHonorRecord","UI_GuildHonorUnLock","UI_GuildList","UI_GuildLobby","UI_GuildMain","UI_GuildManager","UI_GuildMemberBattle","UI_GuildMemberBattleResult","UI_GuildMemberBattleTarget","UI_GuildMemberManager","UI_GuildMsgs","UI_GuildNotic","UI_GuildNoticEditor","UI_GuildNoticPreview","UI_GuildNoticTemplate","UI_GuildOpenDungenon","UI_GuildOptPopup","UI_GuildParty","UI_GuildPartyPreview","UI_GuildPartyResult","UI_GuildPhaseReward","UI_GuildPosition","UI_GuildPositionDesc","UI_GuildSameNameSetting","UI_GuildSearch","UI_GuildSearchInfo","UI_GuildSetFlags","UI_GuildSetting","UI_GuildUpgradeTips","UI_GuildWarAlliance","UI_GuildWarAppoint","UI_GuildWarAtkRandTip","UI_GuildWarAtkSum","UI_GuildWarAuthorize","UI_GuildWarBaseInfo","UI_GuildWarBattle","UI_GuildWarCommander","UI_GuildWarGroup","UI_GuildWarMain","UI_GuildWarOpTips","UI_GuildWarPlan","UI_GuildWarProtactTips","UI_GuildWarRank","UI_GuildWarRecord","UI_GuildWarRstFail","UI_GuildWarRstMult","UI_GuildWarRstWin","UI_GuildWarSchedule","UI_GuildWarStreet","UI_GuildWarTask","UI_HistoryEvent","UI_HistoryEventGet","UI_HistoryEventTip","UI_HistoryStageLock","UI_HistoryStageTip","UI_InvestMarketUp","UI_InvestmentBattle","UI_InvestmentBidding","UI_InvestmentBiddingResult","UI_InvestmentCancel","UI_InvestmentCreateSucc","UI_InvestmentDetail","UI_InvestmentFightTips","UI_InvestmentJoinAddTips","UI_InvestmentMain","UI_InvestmentPropStop","UI_InvestmentPropsUse","UI_InvestmentRecord","UI_InvestmentResult","UI_InvestmentSkill","UI_InvestmentSkillAddition","UI_InvestmentSkillUpgrade","UI_InvestmentUnlock","UI_ItemTip","UI_ItemUseTip","UI_LimitActivity","UI_LimitActivityPreview","UI_LimitActRechargeGift","UI_LimitExchange","UI_LimitLottery","UI_LimitLotteryGift","UI_LimitLotteryTask","UI_LimitWish","UI_LimitWishTip","UI_Loading","UI_Login","UI_LotteryBigReward","UI_LotterySkinItem","UI_Mail","UI_Main","UI_MainPowerDetail","UI_Market","UI_MarketActive","UI_MarketActiveAdvanced","UI_MarketActiveFloor","UI_MarketAdvanced","UI_MarketAllBell","UI_MarketAllBellResult","UI_MarketAureoleTips","UI_MarketAutoTip","UI_MarketBaseInfo","UI_MarketBeauty","UI_MarketBeautyAdd","UI_MarketBeautyBest","UI_MarketBeautyDispatchSucc","UI_MarketChild","UI_MarketCommodity","UI_MarketFacilityTip","UI_MarketGetSkinItem","UI_MarketGuest","UI_MarketHarvest","UI_MarketLightInfo","UI_MarketList","UI_MarketOffer","UI_MarketQuality","UI_MarketRateTips","UI_MarketRecommend","UI_MarketRepresentAdd","UI_MarketRevenue","UI_MarketRobotInfo","UI_MarketSkin","UI_MarketSkinLook","UI_MarketSlotAdd","UI_MarketStarActive","UI_MarketStrategyActive","UI_MarketStrength","UI_MarketSuggest","UI_MarketSurvey","UI_MarketTransfer","UI_MarketWarAddVit","UI_MarketWarAgentResult","UI_MarketWarAgentTip","UI_MarketWarBattle","UI_MarketWarCapture","UI_MarketWarCaptureNew","UI_MarketWarEmployer","UI_MarketWarRank","UI_MarketWarRankReward","UI_MarketWarReady","UI_MarketWarReport","UI_MarketWarRescure","UI_MarketWarResult","UI_MarketWarSupport","UI_MarketWarTactic","UI_MarketWarTacticUse","UI_MarketWarTarget","UI_MarketWarTask","UI_MarketWarTea","UI_MarketWarUseItem","UI_MessageTip1","UI_MessageTip2","UI_MountActive","UI_MountAureole","UI_MountBuildInfo","UI_MountBuildSpeedUpTips","UI_MountCharactersActive","UI_MountInfo","UI_MountLevelUp","UI_MountMain","UI_MountOneKeyUpdateTips","UI_MountPartRemake","UI_MountPartRemakeTip","UI_MountPreviewInfo","UI_MountQualityUpgrade","UI_MountQueryAttr","UI_MountResolve","UI_MountResolveTips","UI_MountSelectUpStarMat","UI_MountStarPreview","UI_MountUpgradeResult","UI_MulDayRechargeGift","UI_MultiAwardItemTips","UI_MultiAwardItemUse","UI_MuseumAntiqueHistory","UI_MuseumAntiqueList","UI_MuseumAntiquePut","UI_MuseumCollectionSucc","UI_MuseumExhibition","UI_MuseumExhibitionList","UI_MuseumExhibitionSucc","UI_MuseumGacha","UI_MuseumGachaResult","UI_MuseumGachaShop","UI_MuseumJackpot","UI_MuseumMain","UI_MuseumMedalInfo","UI_MuseumMedalWall","UI_MuseumStarUpSucc","UI_NetError","UI_Notice","UI_OpenCustomBox","UI_OpenCustomSkin","UI_OtherRoleBattleAttr","UI_OtherRoleGuest","UI_OtherRoleMarket","UI_OtherTechnoCup","UI_PanelGuideBtn","UI_PirateChallengeResult","UI_PirateEvent","UI_PirateFightBattle","UI_PirateIntelStation","UI_PirateInvasion","UI_PirateInvasionMain","UI_PirateLottery","UI_PiratePreview","UI_PirateResultFail","UI_PirateServerBoss","UI_PirateTask","UI_PirateTips","UI_PlayerSkinPreview","UI_PreviewAwards","UI_PrivilegeCardInfo","UI_PrivilegeDayCard","UI_PrivilegeMain","UI_PrivilegeMonthlyCard","UI_PrivilegeMonthlyCard2","UI_PurchaseBattleActivity","UI_PurchaseBattleExchange","UI_PurchaseBattleGuildRank","UI_PurchaseBattleInject","UI_PurchaseBattleMain","UI_PurchaseBattleRank","UI_PurchaseBattleReward","UI_PurchaseBattleSchedule","UI_RankAct","UI_RankActAd","UI_RankActAddTip","UI_RankActEntrance","UI_RankActGift","UI_RankActGuildMemberRank","UI_RankActItem","UI_RankActPath","UI_RankActPreview","UI_RankActReward","UI_RankActRewardGuild","UI_RankActServerRank","UI_RankActSingleServerRank","UI_RankActSpecifyAd","UI_RankActSprint","UI_RankActTask","UI_RankActTaskMemberRank","UI_RankActTwo","UI_RankEntry","UI_RankGobal","UI_RankGuildVoteReward","UI_RankLocal","UI_RankPlayerVoteReward","UI_RechargeGift","UI_RechargeMain","UI_RechargeTokens","UI_RecruitConfirm","UI_RecruitMain","UI_RecruitProgressTips","UI_RecruitTips","UI_RedPacketInfo","UI_RedPacketOpen","UI_RedPacketSetting","UI_RelayAddCar","UI_RelayCommonEquip","UI_RelayCommonFleet","UI_RelayRaceInfo","UI_RelayRaceMain","UI_RelayRaceMap","UI_RelayRaceMapUI","UI_RelayRaceNpc","UI_RelayRacePeakGraph","UI_RelayRacePlayers","UI_RelayRacePlayersMult","UI_RelayRacePlayersRank","UI_RelayRacePvpRank","UI_RelayRaceRecordRank","UI_RelayRaceResult","UI_RelayRaceRwds","UI_RelayRaceTab","UI_RelayRankDetail","UI_RelayTrainFightTips","UI_RelayTrainFleetUp","UI_RelayTrainGradeUp","UI_RelayTrainGradeUpSucc","UI_RelayTrainMain","UI_RelayTrainRstFail","UI_RelayTrainRstWin","UI_RelayTrainRwd","UI_RelayTrainTask","UI_RelayTrainUpPath","UI_RelayUpgradePath","UI_ResAddition","UI_ResRetrieve","UI_ResUpdateTip","UI_Role","UI_RoleBeautyTip","UI_RoleEvalEquipTips","UI_RoleEvaluate","UI_RoleEvaluateSucc","UI_RoleGuestsTip","UI_RoleHeadTip","UI_RoleObtainingTitleTips","UI_RoleOthter","UI_RoleRenameTip","UI_RoleSkinTip","UI_RoleStageTip","UI_RoleUpTip","UI_RouteTrade","UI_RouteTradeAccelerate","UI_RouteTradeAddition","UI_RouteTradeBoss","UI_RouteTradeBossResult","UI_RouteTradeDispatch","UI_RouteTradeDispatchSucc","UI_RouteTradeItem","UI_RouteTradeTip","UI_RuleTip","UI_SDKLogin","UI_SeaEvidence","UI_SeaEvidenceAdd","UI_SeaEvidenceAddSucc","UI_SeaEvidenceArea","UI_SeaEvidenceTip","UI_ServerList","UI_Setting","UI_SettingPush","UI_Shop","UI_ShopCommonActShop","UI_ShopGiftPurchase","UI_ShopPurchase","UI_ShopUnlockTips","UI_Sidebar","UI_SilkCaravan","UI_SilkroadAccelerate","UI_SilkroadActGift","UI_SilkroadAppraisal","UI_SilkroadAppraisalPreview","UI_SilkroadAppraisalReward","UI_SilkroadAssistant","UI_SilkroadBattleTailReward","UI_SilkroadBox","UI_SilkroadBuffEvent","UI_SilkroadBuffEventResult","UI_SilkroadCashGift","UI_SilkroadDamageRank","UI_SilkroadEncourageReward","UI_SilkroadFightSelectGuest","UI_SilkroadGains","UI_SilkroadGuestInfo","UI_SilkroadInspire","UI_SilkroadMain","UI_SilkroadManuals","UI_SilkroadMap","UI_SilkroadMeetEvent","UI_SilkroadMemberSelect","UI_SilkroadMission","UI_SilkroadMonsterFight","UI_SilkroadMonsterSwitch","UI_SilkroadOasisOverview","UI_SilkroadQucikTeleport","UI_SilkroadQuickBuffResult","UI_SilkroadRank","UI_SilkroadRankReward","UI_SilkroadRankServerRank","UI_SilkroadRetreatRuleTip","UI_SilkroadTeleport","UI_SilkroadTeleportReward","UI_SilkroadTrade","UI_SilkroadTradeConfirm","UI_SilkroadTreasure","UI_SingleMarketOut","UI_SkyscraperActivity","UI_SkyscraperRank","UI_SkyscraperReco","UI_SkyscraperRedPacket","UI_SkyscraperRedPacketTip","UI_SoloMarket","UI_SpaceHonor","UI_SpaceInfo","UI_SpaceRank","UI_SpaceTop","UI_StarWorks","UI_StarWorksChoiceBeauty","UI_StarWorksChoiceUp","UI_StarWorksEndorse","UI_StarWorksLevelInfo","UI_StarWorksLevelUp","UI_StarWorksUpAni","UI_StarWorksUpResult","UI_StreetFight","UI_StreetFightAddVit","UI_StreetFightAttrTip","UI_StreetFightBattle","UI_StreetFightJumpResult","UI_StreetFightMarket","UI_StreetFightResult","UI_StreetFightSolo","UI_StreetFightSweep","UI_StreetFightSweepResult","UI_StreetFightTarget","UI_StreetFightTask","UI_StreetFightTip","UI_StreetFightWait","UI_StreetTreasureDetail","UI_StreetTreasureFind","UI_StreetTreasureList","UI_SurpriseGift","UI_SurpriseSeriesGift","UI_TalkReview","UI_TalkSelect","UI_Task","UI_TaskChapter","UI_TaskChapterTip","UI_TaskGroupReward","UI_TaskProgressTip","UI_TaskSprint","UI_TaskTalk","UI_TeamApplyList","UI_TeamEnterFail","UI_TeamFriend","UI_TeamGuestTrial","UI_TeamInfo","UI_TeamInviteList","UI_TeamList","UI_TeamMarket","UI_TeamTip","UI_Techno","UI_TechnoCourse","UI_TechnoCourseTip","UI_TechnoCup","UI_TechnoCupAchi","UI_TechnoCupInfo","UI_TechnoCupShow","UI_TechnoExam","UI_TechnoExam_backup","UI_TechnoTips","UI_TestServer","UI_TimerTravel","UI_TimerTravelInfo","UI_TitleTips","UI_TokensError","UI_TokensLimit","UI_TopLeague","UI_TopLeagueBattle","UI_TopLeagueBetRank","UI_TopLeagueDesc","UI_TopLeagueEvent","UI_TopLeagueGetSign","UI_TopLeagueMarket","UI_TopLeagueProgress","UI_TopLeagueRank","UI_TopLeagueReady","UI_TopLeagueRecord","UI_TopLeagueResult","UI_TopLeagueReward","UI_TopLeagueShop","UI_TopLeagueWager","UI_TradePvp","UI_TradeWar","UI_TradeWarAddVit","UI_TradeWarAnnounce","UI_TradeWarBattle","UI_TradeWarBatttleSet","UI_TradeWarBoss","UI_TradeWarBossJump","UI_TradeWarConsume","UI_TradeWarFind","UI_TradeWarFloor","UI_TradeWarGuests","UI_TradeWarItem","UI_TradeWarMarket","UI_TradeWarPetition","UI_TradeWarPetitionUp","UI_TradeWarPveResult","UI_TradeWarReport","UI_TradeWarResult","UI_TradeWarSetting","UI_TradeWarTech","UI_TradeWarTechGet","UI_TradeWarTechTip","UI_TradingPort","UI_TradingPortChangeShip","UI_TradingPortCompose","UI_TradingPortComposeQuick","UI_TradingPortDeCombine","UI_TradingPortDecorateBag","UI_TradingPortDecorateResolve","UI_TradingPortDock","UI_TradingPortDockUnlock","UI_TradingPortFactory","UI_TradingPortFleet","UI_TradingPortNewShip","UI_TradingPortQueryAttr","UI_TradingPortShipPosUnlock","UI_TradingPortSupplyInfo","UI_TradingPortSupplyLvUnlock","UI_TradingPortSupplyRecords","UI_TradingPorttUseItem","UI_TradingPortUpPreview","UI_TrialSpacetime","UI_TrialSpacetimeBoss","UI_TrialSpacetimeHighResult","UI_TrialSpacetimeMiddleResult","UI_TrialSpacetimeRecord","UI_TrialSpacetimeRewardPreview","UI_TrialSpacetimeSnatchResult","UI_TrialSpacetimeTradeWar","UI_UpgradeCoatingSucc","UI_UseMultItem","UI_UseViceCurrency","UI_VipGift","UI_VisitMain","UI_VisitPlayerTitle","UI_VisitRecord","UI_VisitUsePropsConfirm","UI_VWo12","UI_WishMakingExchange","UI_WishMakingGift","UI_WishMakingGiftTips","UI_WishMakingLotteryTips","UI_WishMakingMain","UI_WishMakingPreview","UI_WishMakingResetTips","UI_WishMakingSelectReward","UI_WorldBuild","UI_WorldBuildFinish","UI_WorldWonderBuildSucc","UI_WorldWonders","UI_XiaoZhuShou","UI_YardDispach","UI_YardDispachResult","UI_YardMeet","UI_YardMentInfo","UI_YardRankTips","UI_YardResultTips"];
+        let classifications = {};
+
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeApp();
+        });
+
+        function initializeApp() {
+            // 从 localStorage 恢复或创建新的分组
+            const saved = localStorage.getItem('uiClassifications');
+            if (saved) {
+                try {
+                    classifications = JSON.parse(saved);
+                } catch (e) {
+                    createDefaultGroups();
+                }
+            } else {
+                createDefaultGroups();
+            }
+            renderUI();
+            updateStats();
+        }
+
+        function createDefaultGroups() {
+            classifications = {};
+            const groupSize = 15;
+            for (let i = 0; i < ALL_UIS.length; i += groupSize) {
+                const groupNum = Math.floor(i / groupSize) + 1;
+                const groupName = 'Group ' + groupNum;
+                classifications[groupName] = ALL_UIS.slice(i, i + groupSize);
+            }
+        }
+
+        function renderUI() {
+            const content = document.getElementById('content');
+            content.innerHTML = '';
+
+            Object.entries(classifications).forEach(([groupName, uiList]) => {
+                const groupDiv = document.createElement('div');
+                groupDiv.className = 'layout-group';
+
+                const headerDiv = document.createElement('div');
+                headerDiv.className = 'group-header';
+
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.onchange = function() {
+                    const uiCheckboxes = groupDiv.querySelectorAll('.ui-card input[type="checkbox"]');
+                    uiCheckboxes.forEach(cb => cb.checked = this.checked);
+                    updateStats();
+                };
+
+                const title = document.createElement('div');
+                title.className = 'group-title';
+                title.textContent = groupName;
+
+                const count = document.createElement('div');
+                count.className = 'group-count';
+                count.textContent = uiList.length + ' 个 UI';
+
+                headerDiv.appendChild(checkbox);
+                headerDiv.appendChild(title);
+                headerDiv.appendChild(count);
+                groupDiv.appendChild(headerDiv);
+
+                const grid = document.createElement('div');
+                grid.className = 'ui-grid';
+
+                uiList.forEach(uiName => {
+                    const card = document.createElement('div');
+                    card.className = 'ui-card';
+
+                    const cb = document.createElement('input');
+                    cb.type = 'checkbox';
+                    cb.onchange = function() {
+                        updateStats();
+                        if (this.checked) {
+                            card.classList.add('checked');
+                        } else {
+                            card.classList.remove('checked');
+                        }
+                    };
+
+                    const img = document.createElement('img');
+                    img.src = UI_IMAGES_PATH + uiName + '.png';
+                    img.alt = uiName;
+                    img.onerror = function() { this.style.opacity = '0.3'; };
+
+                    const name = document.createElement('div');
+                    name.className = 'ui-name';
+                    name.textContent = uiName;
+
+                    card.appendChild(cb);
+                    card.appendChild(img);
+                    card.appendChild(name);
+                    grid.appendChild(card);
+                });
+
+                groupDiv.appendChild(grid);
+                content.appendChild(groupDiv);
+            });
+        }
+
+        function updateStats() {
+            const total = Object.values(classifications).flat().length;
+            const selected = document.querySelectorAll('.ui-card input[type="checkbox"]:checked').length;
+            document.getElementById('totalCount').textContent = total;
+            document.getElementById('selectedCount').textContent = selected;
+        }
+
+        function selectAll() {
+            document.querySelectorAll('.ui-card input[type="checkbox"]').forEach(cb => cb.checked = true);
+            document.querySelectorAll('.ui-card').forEach(card => card.classList.add('checked'));
+            updateStats();
+        }
+
+        function deselectAll() {
+            document.querySelectorAll('.ui-card input[type="checkbox"]').forEach(cb => cb.checked = false);
+            document.querySelectorAll('.ui-card').forEach(card => card.classList.remove('checked'));
+            updateStats();
+        }
+
+        function resetGroups() {
+            if (confirm('确定要重置所有分组吗？')) {
+                localStorage.removeItem('uiClassifications');
+                createDefaultGroups();
+                renderUI();
+                updateStats();
+            }
+        }
+
+        function showResults() {
+            const results = {};
+            document.querySelectorAll('.layout-group').forEach(group => {
+                const groupName = group.querySelector('.group-title').textContent;
+                const checkedUIs = Array.from(group.querySelectorAll('.ui-card input[type="checkbox"]:checked'))
+                    .map(cb => cb.parentElement.querySelector('.ui-name').textContent);
+                if (checkedUIs.length > 0) {
+                    results[groupName] = checkedUIs;
+                }
+            });
+            document.getElementById('resultText').value = JSON.stringify(results, null, 2);
+            document.getElementById('resultModal').style.display = 'block';
+        }
+
+        function exportJSON() {
+            const results = {};
+            document.querySelectorAll('.layout-group').forEach(group => {
+                const groupName = group.querySelector('.group-title').textContent;
+                const checkedUIs = Array.from(group.querySelectorAll('.ui-card input[type="checkbox"]:checked'))
+                    .map(cb => cb.parentElement.querySelector('.ui-name').textContent);
+                if (checkedUIs.length > 0) {
+                    results[groupName] = checkedUIs;
+                }
+            });
+            const dataStr = JSON.stringify(results, null, 2);
+            downloadFile(dataStr, 'ui_classifications.json', 'application/json');
+        }
+
+        function exportCSV() {
+            let csv = 'Group,UI Name\n';
+            document.querySelectorAll('.layout-group').forEach(group => {
+                const groupName = group.querySelector('.group-title').textContent;
+                const checkedUIs = Array.from(group.querySelectorAll('.ui-card input[type="checkbox"]:checked'))
+                    .map(cb => cb.parentElement.querySelector('.ui-name').textContent);
+                checkedUIs.forEach(ui => {
+                    csv += '"' + groupName + '","' + ui + '"\n';
+                });
+            });
+            downloadFile(csv, 'ui_classifications.csv', 'text/csv;charset=utf-8;');
+        }
+
+        function downloadFile(content, filename, type) {
+            const blob = new Blob([content], { type: type });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = filename;
+            link.click();
+            showToast('已下载: ' + filename);
+        }
+
+        function copyToClipboard() {
+            const text = document.getElementById('resultText');
+            text.select();
+            document.execCommand('copy');
+            showToast('已复制到剪贴板');
+        }
+
+        function downloadResult() {
+            const text = document.getElementById('resultText').value;
+            downloadFile(text, 'ui_classifications.json', 'application/json');
+        }
+
+        function closeModal() {
+            document.getElementById('resultModal').style.display = 'none';
+        }
+
+        function showToast(message) {
+            const toast = document.createElement('div');
+            toast.className = 'toast';
+            toast.textContent = message;
+            document.body.appendChild(toast);
+            setTimeout(() => toast.remove(), 3000);
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById('resultModal');
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

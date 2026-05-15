@@ -1,0 +1,23 @@
+{
+  "id": "conv-1778481553267-ownrgkk1u",
+  "providerId": "claude",
+  "title": "确认当前使用的大语言模型",
+  "titleGenerationStatus": "success",
+  "createdAt": 1778481553267,
+  "updatedAt": 1778729633997,
+  "lastResponseAt": 1778481624613,
+  "sessionId": "b7a10289-822b-40b1-be10-035f6eec8fa7",
+  "providerState": {
+    "providerSessionId": "b7a10289-822b-40b1-be10-035f6eec8fa7"
+  },
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 442,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 26880,
+    "contextWindow": 200000,
+    "contextTokens": 27322,
+    "percentage": 14,
+    "contextWindowIsAuthoritative": true
+  }
+}

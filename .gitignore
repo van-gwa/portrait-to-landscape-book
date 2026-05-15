@@ -1,0 +1,21 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Obsidian workspace
+.obsidian/workspace*.json
+.obsidian/workspace-mobile.json
+
+# Claude sessions
+.claudian/sessions/
+
+# Claude scheduled tasks lock
+.claude/scheduled_tasks.lock
+
+# Log files
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,6381 @@
+{
+  "ui_info": {
+    "UI_ALiFirstVisit": {
+      "file": "UI_ALiFirstVisit.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ALiPCLogIn": {
+      "file": "UI_ALiPCLogIn.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_Achievement": {
+      "file": "UI_Achievement.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_AcitveAd": {
+      "file": "UI_AcitveAd.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActApexPvp": {
+      "file": "UI_ActApexPvp.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActApexPvpBattle": {
+      "file": "UI_ActApexPvpBattle.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActApexPvpDesc": {
+      "file": "UI_ActApexPvpDesc.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActApexPvpEvent": {
+      "file": "UI_ActApexPvpEvent.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActApexPvpGetSign": {
+      "file": "UI_ActApexPvpGetSign.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActApexPvpMarket": {
+      "file": "UI_ActApexPvpMarket.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActApexPvpPreview": {
+      "file": "UI_ActApexPvpPreview.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActApexPvpProgress": {
+      "file": "UI_ActApexPvpProgress.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActApexPvpRank": {
+      "file": "UI_ActApexPvpRank.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActApexPvpReady": {
+      "file": "UI_ActApexPvpReady.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActApexPvpRecord": {
+      "file": "UI_ActApexPvpRecord.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActApexPvpResult": {
+      "file": "UI_ActApexPvpResult.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActApexPvpReward": {
+      "file": "UI_ActApexPvpReward.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActApexPvpShop": {
+      "file": "UI_ActApexPvpShop.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActApexPvpWager": {
+      "file": "UI_ActApexPvpWager.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActArena": {
+      "file": "UI_ActArena.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActArenaOtherMarket": {
+      "file": "UI_ActArenaOtherMarket.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActArenaOtherMarketInfo": {
+      "file": "UI_ActArenaOtherMarketInfo.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActArenaRank": {
+      "file": "UI_ActArenaRank.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActArenaResult": {
+      "file": "UI_ActArenaResult.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActArenaSolo": {
+      "file": "UI_ActArenaSolo.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActArenaSoloMarket": {
+      "file": "UI_ActArenaSoloMarket.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActArenaTarget": {
+      "file": "UI_ActArenaTarget.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActCumulativeRecharge": {
+      "file": "UI_ActCumulativeRecharge.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActKingOfSnowBattle": {
+      "file": "UI_ActKingOfSnowBattle.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActKingOfSnowBattleResult": {
+      "file": "UI_ActKingOfSnowBattleResult.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActKingOfSnowLevel": {
+      "file": "UI_ActKingOfSnowLevel.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActKingOfSnowMain": {
+      "file": "UI_ActKingOfSnowMain.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActKingOfSnowTask": {
+      "file": "UI_ActKingOfSnowTask.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActMoonSpurt": {
+      "file": "UI_ActMoonSpurt.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActSnowCityRedRain": {
+      "file": "UI_ActSnowCityRedRain.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActSnowCityRedRainReward": {
+      "file": "UI_ActSnowCityRedRainReward.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActSnowMain": {
+      "file": "UI_ActSnowMain.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActSnowMan": {
+      "file": "UI_ActSnowMan.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActSnowManPreview": {
+      "file": "UI_ActSnowManPreview.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActSnowManTask": {
+      "file": "UI_ActSnowManTask.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActSnowWheel": {
+      "file": "UI_ActSnowWheel.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActSnowWheelLimitAward": {
+      "file": "UI_ActSnowWheelLimitAward.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActSnowWheelPreview": {
+      "file": "UI_ActSnowWheelPreview.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActSnowWheelResult": {
+      "file": "UI_ActSnowWheelResult.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActSpurtGift": {
+      "file": "UI_ActSpurtGift.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActStreet": {
+      "file": "UI_ActStreet.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActStrengthSpurt": {
+      "file": "UI_ActStrengthSpurt.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActivityBuyGuest": {
+      "file": "UI_ActivityBuyGuest.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActivityBuyGuest2": {
+      "file": "UI_ActivityBuyGuest2.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActivityCalender": {
+      "file": "UI_ActivityCalender.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActivityLobby": {
+      "file": "UI_ActivityLobby.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActivityRank": {
+      "file": "UI_ActivityRank.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActivityReward": {
+      "file": "UI_ActivityReward.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActivityShop": {
+      "file": "UI_ActivityShop.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActivitySubScribe": {
+      "file": "UI_ActivitySubScribe.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ActivityUpRedTip": {
+      "file": "UI_ActivityUpRedTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_AddShortCut": {
+      "file": "UI_AddShortCut.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_AgeTips": {
+      "file": "UI_AgeTips.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_AgreementDesc": {
+      "file": "UI_AgreementDesc.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_AgreementTips": {
+      "file": "UI_AgreementTips.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_AirRoutePrivilege": {
+      "file": "UI_AirRoutePrivilege.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_AliMinGameClub": {
+      "file": "UI_AliMinGameClub.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_AliRepetitionVisit": {
+      "file": "UI_AliRepetitionVisit.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_AssistantGuildSetting": {
+      "file": "UI_AssistantGuildSetting.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_AssistantPanel": {
+      "file": "UI_AssistantPanel.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_AssistantReward": {
+      "file": "UI_AssistantReward.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_AssistantRouteTrade": {
+      "file": "UI_AssistantRouteTrade.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_AssistantShop": {
+      "file": "UI_AssistantShop.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_AssistantShopPurchase": {
+      "file": "UI_AssistantShopPurchase.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_AuthSelect": {
+      "file": "UI_AuthSelect.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_AuthTips": {
+      "file": "UI_AuthTips.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_Bag": {
+      "file": "UI_Bag.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BagComposeTips": {
+      "file": "UI_BagComposeTips.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BanquetAddTips": {
+      "file": "UI_BanquetAddTips.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BanquetAdvancedList": {
+      "file": "UI_BanquetAdvancedList.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BanquetFinish": {
+      "file": "UI_BanquetFinish.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BanquetGiftSelect": {
+      "file": "UI_BanquetGiftSelect.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BanquetGuest": {
+      "file": "UI_BanquetGuest.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BanquetJoinSetting": {
+      "file": "UI_BanquetJoinSetting.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BanquetJoinSucc": {
+      "file": "UI_BanquetJoinSucc.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BanquetMain": {
+      "file": "UI_BanquetMain.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BanquetNormalList": {
+      "file": "UI_BanquetNormalList.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BanquetObtainingTimes": {
+      "file": "UI_BanquetObtainingTimes.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BanquetOfBaiFuDetail": {
+      "file": "UI_BanquetOfBaiFuDetail.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BanquetOfBaiFuList": {
+      "file": "UI_BanquetOfBaiFuList.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BanquetOfBaiFuSelectV2": {
+      "file": "UI_BanquetOfBaiFuSelectV2.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BanquetOfFamilyDetail": {
+      "file": "UI_BanquetOfFamilyDetail.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BanquetOfFamilyLimit": {
+      "file": "UI_BanquetOfFamilyLimit.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BanquetOfFamilyOpen": {
+      "file": "UI_BanquetOfFamilyOpen.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BanquetOfFamilySelect": {
+      "file": "UI_BanquetOfFamilySelect.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BanquetOfOfficialDetail": {
+      "file": "UI_BanquetOfOfficialDetail.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BanquetOfOfficialList": {
+      "file": "UI_BanquetOfOfficialList.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BanquetOfOfficialSelect": {
+      "file": "UI_BanquetOfOfficialSelect.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BanquetOpenSucc": {
+      "file": "UI_BanquetOpenSucc.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BanquetPopularityReward": {
+      "file": "UI_BanquetPopularityReward.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BanquetRank": {
+      "file": "UI_BanquetRank.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BanquetRecord": {
+      "file": "UI_BanquetRecord.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BattleBaseStart": {
+      "file": "UI_BattleBaseStart.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BattlePass": {
+      "file": "UI_BattlePass.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BattlePassBigRewardPreview": {
+      "file": "UI_BattlePassBigRewardPreview.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BattlePassBuyExp": {
+      "file": "UI_BattlePassBuyExp.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BattlePassBuyLicense": {
+      "file": "UI_BattlePassBuyLicense.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BattlePassRewardOverview": {
+      "file": "UI_BattlePassRewardOverview.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BattlePassTask": {
+      "file": "UI_BattlePassTask.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BattlePassUpgradeAni": {
+      "file": "UI_BattlePassUpgradeAni.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_Beauty": {
+      "file": "UI_Beauty.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BeautyBook": {
+      "file": "UI_BeautyBook.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BeautyBookGet": {
+      "file": "UI_BeautyBookGet.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BeautyBookInfo": {
+      "file": "UI_BeautyBookInfo.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BeautyCompAwardPreview": {
+      "file": "UI_BeautyCompAwardPreview.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BeautyCompBuy": {
+      "file": "UI_BeautyCompBuy.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BeautyCompEnter": {
+      "file": "UI_BeautyCompEnter.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BeautyCompMap": {
+      "file": "UI_BeautyCompMap.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BeautyCompRank": {
+      "file": "UI_BeautyCompRank.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BeautyCompRecord": {
+      "file": "UI_BeautyCompRecord.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BeautyCompResult": {
+      "file": "UI_BeautyCompResult.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BeautyCompRewardTips": {
+      "file": "UI_BeautyCompRewardTips.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BeautyCompTitleChange": {
+      "file": "UI_BeautyCompTitleChange.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BeautyCompUpgrade": {
+      "file": "UI_BeautyCompUpgrade.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BeautyCompView": {
+      "file": "UI_BeautyCompView.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BeautyEditor": {
+      "file": "UI_BeautyEditor.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BeautyFame": {
+      "file": "UI_BeautyFame.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BeautyFameUpSuc": {
+      "file": "UI_BeautyFameUpSuc.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BeautyGetting": {
+      "file": "UI_BeautyGetting.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BeautyInfo": {
+      "file": "UI_BeautyInfo.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BeautyOutings": {
+      "file": "UI_BeautyOutings.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BeautyPromoteSucc": {
+      "file": "UI_BeautyPromoteSucc.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BeautyPropsUseSucc": {
+      "file": "UI_BeautyPropsUseSucc.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BeautySelect": {
+      "file": "UI_BeautySelect.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BeautyShow": {
+      "file": "UI_BeautyShow.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BeautyTalentSkillTips": {
+      "file": "UI_BeautyTalentSkillTips.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BeautyTalk": {
+      "file": "UI_BeautyTalk.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BeautyTalkMore": {
+      "file": "UI_BeautyTalkMore.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BeautyTalkTip": {
+      "file": "UI_BeautyTalkTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BeautyTransform": {
+      "file": "UI_BeautyTransform.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BeautyTransformPreview": {
+      "file": "UI_BeautyTransformPreview.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BeautyTransformResult": {
+      "file": "UI_BeautyTransformResult.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BeautyTravel": {
+      "file": "UI_BeautyTravel.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BeautyTravelSharedGift": {
+      "file": "UI_BeautyTravelSharedGift.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BeautyTravelTip": {
+      "file": "UI_BeautyTravelTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BeautyUpQuality": {
+      "file": "UI_BeautyUpQuality.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BeautyUpSkillSucc": {
+      "file": "UI_BeautyUpSkillSucc.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_Billionaires": {
+      "file": "UI_Billionaires.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BillionairesRank": {
+      "file": "UI_BillionairesRank.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_Black": {
+      "file": "UI_Black.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BlockBattleActFinish": {
+      "file": "UI_BlockBattleActFinish.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BlockBattleMap": {
+      "file": "UI_BlockBattleMap.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BlockBattleMinMap": {
+      "file": "UI_BlockBattleMinMap.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BlockBattleRecord": {
+      "file": "UI_BlockBattleRecord.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BlockBattleResult": {
+      "file": "UI_BlockBattleResult.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BlockBattleTarget": {
+      "file": "UI_BlockBattleTarget.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BlockBattleTask": {
+      "file": "UI_BlockBattleTask.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BossRedPacket": {
+      "file": "UI_BossRedPacket.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_BossRedPacketGetReward": {
+      "file": "UI_BossRedPacketGetReward.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_Chat": {
+      "file": "UI_Chat.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ChildBeauty": {
+      "file": "UI_ChildBeauty.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ChildCultivateVit": {
+      "file": "UI_ChildCultivateVit.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ChildFamily": {
+      "file": "UI_ChildFamily.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ChildGetTip": {
+      "file": "UI_ChildGetTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ChildGraduateTip": {
+      "file": "UI_ChildGraduateTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ChildInfo": {
+      "file": "UI_ChildInfo.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ChildMail": {
+      "file": "UI_ChildMail.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ChildMarry": {
+      "file": "UI_ChildMarry.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ChildMarryFailTip": {
+      "file": "UI_ChildMarryFailTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ChildMessageTip": {
+      "file": "UI_ChildMessageTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ChildPublicPropose": {
+      "file": "UI_ChildPublicPropose.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ChildRecoverVit": {
+      "file": "UI_ChildRecoverVit.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ChildRecoverVitSucc": {
+      "file": "UI_ChildRecoverVitSucc.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ChildRenameSuccTip": {
+      "file": "UI_ChildRenameSuccTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ChildRenameTip": {
+      "file": "UI_ChildRenameTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ChildResume": {
+      "file": "UI_ChildResume.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ChildSchool": {
+      "file": "UI_ChildSchool.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ChildSchoolUp": {
+      "file": "UI_ChildSchoolUp.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ChildSpecialSuitors": {
+      "file": "UI_ChildSpecialSuitors.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ChildSpecifiedPropose": {
+      "file": "UI_ChildSpecifiedPropose.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ChildSuitorInfo": {
+      "file": "UI_ChildSuitorInfo.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ChildSuitors": {
+      "file": "UI_ChildSuitors.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ChildTravelApply": {
+      "file": "UI_ChildTravelApply.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ChildTravelFailTip": {
+      "file": "UI_ChildTravelFailTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ChildTravelList": {
+      "file": "UI_ChildTravelList.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ChildTravelSuccTip": {
+      "file": "UI_ChildTravelSuccTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ChildTravelTip": {
+      "file": "UI_ChildTravelTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ChildUpSchoolTip": {
+      "file": "UI_ChildUpSchoolTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ChildUpgradeSuccTip": {
+      "file": "UI_ChildUpgradeSuccTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ChildWaitPropose": {
+      "file": "UI_ChildWaitPropose.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ChoosingCar": {
+      "file": "UI_ChoosingCar.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_CoatingActiveTips": {
+      "file": "UI_CoatingActiveTips.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_CoatingInfo": {
+      "file": "UI_CoatingInfo.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_CoatingMain": {
+      "file": "UI_CoatingMain.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_CoatingPreview2": {
+      "file": "UI_CoatingPreview2.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_CoatingResolveTips": {
+      "file": "UI_CoatingResolveTips.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_CoatingSelectUpLevelMat": {
+      "file": "UI_CoatingSelectUpLevelMat.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_CoatingSelectUpStarMat": {
+      "file": "UI_CoatingSelectUpStarMat.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_CoatingTask": {
+      "file": "UI_CoatingTask.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_CoatingUpgrade": {
+      "file": "UI_CoatingUpgrade.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_CombineAccounting": {
+      "file": "UI_CombineAccounting.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_CombineLeader": {
+      "file": "UI_CombineLeader.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_CombineMain": {
+      "file": "UI_CombineMain.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_CombineManager": {
+      "file": "UI_CombineManager.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_CombineManagerStar": {
+      "file": "UI_CombineManagerStar.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_CombinePersonnel": {
+      "file": "UI_CombinePersonnel.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_CombinePersonnelGuest": {
+      "file": "UI_CombinePersonnelGuest.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_CombinePublicity": {
+      "file": "UI_CombinePublicity.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_CombinePublicityCup": {
+      "file": "UI_CombinePublicityCup.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_CombineRemould": {
+      "file": "UI_CombineRemould.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_CombineRemouldSucc": {
+      "file": "UI_CombineRemouldSucc.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_CombineRemouldTips": {
+      "file": "UI_CombineRemouldTips.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_CombineTactic": {
+      "file": "UI_CombineTactic.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_CombineTacticInfo": {
+      "file": "UI_CombineTacticInfo.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_CombineUpSucc": {
+      "file": "UI_CombineUpSucc.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_CombineUpgradeCond": {
+      "file": "UI_CombineUpgradeCond.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_CommandMonitor": {
+      "file": "UI_CommandMonitor.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_CommonComposite": {
+      "file": "UI_CommonComposite.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_CommonGetItems": {
+      "file": "UI_CommonGetItems.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_CommonPurchase": {
+      "file": "UI_CommonPurchase.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_CommonRoleInfo": {
+      "file": "UI_CommonRoleInfo.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_CommonSkin": {
+      "file": "UI_CommonSkin.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_CommonUseSucc": {
+      "file": "UI_CommonUseSucc.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ContinueRechargeAct": {
+      "file": "UI_ContinueRechargeAct.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_CreateRole": {
+      "file": "UI_CreateRole.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_CupGetting": {
+      "file": "UI_CupGetting.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_CupInfo": {
+      "file": "UI_CupInfo.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_CyberIllusionAuto": {
+      "file": "UI_CyberIllusionAuto.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_CyberIllusionBreakThrough": {
+      "file": "UI_CyberIllusionBreakThrough.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_CyberIllusionEquip": {
+      "file": "UI_CyberIllusionEquip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_CyberIllusionEquipMessage": {
+      "file": "UI_CyberIllusionEquipMessage.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_CyberIllusionMain": {
+      "file": "UI_CyberIllusionMain.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_CyberIllusionRemouldSucc": {
+      "file": "UI_CyberIllusionRemouldSucc.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_CyberIllusionRoleUp": {
+      "file": "UI_CyberIllusionRoleUp.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_CyberIllusionSelectMarket": {
+      "file": "UI_CyberIllusionSelectMarket.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_CyberIllusionSkill": {
+      "file": "UI_CyberIllusionSkill.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_CyberIllusionUpSucc": {
+      "file": "UI_CyberIllusionUpSucc.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_CyberPve": {
+      "file": "UI_CyberPve.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_CyberPveResult": {
+      "file": "UI_CyberPveResult.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_DailyGift": {
+      "file": "UI_DailyGift.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_DailyRefreshTips": {
+      "file": "UI_DailyRefreshTips.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_DailySign": {
+      "file": "UI_DailySign.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_DailySignBadInfo": {
+      "file": "UI_DailySignBadInfo.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_DailySystem": {
+      "file": "UI_DailySystem.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_DebugLogPanel": {
+      "file": "UI_DebugLogPanel.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_DivineTip": {
+      "file": "UI_DivineTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ExpGetPath": {
+      "file": "UI_ExpGetPath.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_Expand": {
+      "file": "UI_Expand.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ExpandAgentResult": {
+      "file": "UI_ExpandAgentResult.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ExpandAgentStart": {
+      "file": "UI_ExpandAgentStart.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ExpandAgentStop": {
+      "file": "UI_ExpandAgentStop.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ExpandAisleMap": {
+      "file": "UI_ExpandAisleMap.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ExpandAisleResult": {
+      "file": "UI_ExpandAisleResult.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ExpandAkfPreview": {
+      "file": "UI_ExpandAkfPreview.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ExpandAkfReward": {
+      "file": "UI_ExpandAkfReward.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ExpandAkfSpeed": {
+      "file": "UI_ExpandAkfSpeed.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ExpandAutoResult": {
+      "file": "UI_ExpandAutoResult.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ExpandAutoTip": {
+      "file": "UI_ExpandAutoTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ExpandBattle": {
+      "file": "UI_ExpandBattle.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ExpandBuffResult": {
+      "file": "UI_ExpandBuffResult.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ExpandDispatch": {
+      "file": "UI_ExpandDispatch.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ExpandDispatchList": {
+      "file": "UI_ExpandDispatchList.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ExpandEventNew": {
+      "file": "UI_ExpandEventNew.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ExpandEventResult": {
+      "file": "UI_ExpandEventResult.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ExpandEventSelect": {
+      "file": "UI_ExpandEventSelect.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ExpandEventTip": {
+      "file": "UI_ExpandEventTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ExpandFogMap": {
+      "file": "UI_ExpandFogMap.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ExpandFogResult": {
+      "file": "UI_ExpandFogResult.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ExpandMap": {
+      "file": "UI_ExpandMap.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ExpandMapNewTip": {
+      "file": "UI_ExpandMapNewTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ExpandNameTip": {
+      "file": "UI_ExpandNameTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ExpandRank": {
+      "file": "UI_ExpandRank.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ExpandResult": {
+      "file": "UI_ExpandResult.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ExpandResultFail": {
+      "file": "UI_ExpandResultFail.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ExpandRoll": {
+      "file": "UI_ExpandRoll.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ExpandSeaFailResult": {
+      "file": "UI_ExpandSeaFailResult.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ExpandSeaResult": {
+      "file": "UI_ExpandSeaResult.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ExpandSidInfo": {
+      "file": "UI_ExpandSidInfo.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_FashionShop": {
+      "file": "UI_FashionShop.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_FashionShopBuySucc": {
+      "file": "UI_FashionShopBuySucc.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_FashionShopEff": {
+      "file": "UI_FashionShopEff.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_FirstChargeBonus": {
+      "file": "UI_FirstChargeBonus.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_FirstStarTips": {
+      "file": "UI_FirstStarTips.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_FloatCoinTips": {
+      "file": "UI_FloatCoinTips.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_FloatMoneyTips": {
+      "file": "UI_FloatMoneyTips.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_FloatStrTip": {
+      "file": "UI_FloatStrTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_FlyItem": {
+      "file": "UI_FlyItem.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_FlyItem1": {
+      "file": "UI_FlyItem1.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_FlyItem2": {
+      "file": "UI_FlyItem2.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_FriendsMain": {
+      "file": "UI_FriendsMain.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_FuLiDaTingWeiXin": {
+      "file": "UI_FuLiDaTingWeiXin.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_FullSceneTips": {
+      "file": "UI_FullSceneTips.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_FuncOpen": {
+      "file": "UI_FuncOpen.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_FuncOpenTip2": {
+      "file": "UI_FuncOpenTip2.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_FuncPreview": {
+      "file": "UI_FuncPreview.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_FuncUnlock": {
+      "file": "UI_FuncUnlock.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_Fund": {
+      "file": "UI_Fund.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_FundBeautyInfo": {
+      "file": "UI_FundBeautyInfo.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_FundGuestInfo": {
+      "file": "UI_FundGuestInfo.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_FundPreview": {
+      "file": "UI_FundPreview.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GachaAutoTypeSelect": {
+      "file": "UI_GachaAutoTypeSelect.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GachaCoinShop": {
+      "file": "UI_GachaCoinShop.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GachaExchange": {
+      "file": "UI_GachaExchange.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GachaExchangeConfirm": {
+      "file": "UI_GachaExchangeConfirm.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GachaJackpot": {
+      "file": "UI_GachaJackpot.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GachaLimitWish": {
+      "file": "UI_GachaLimitWish.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GachaLuckTips": {
+      "file": "UI_GachaLuckTips.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GachaMain": {
+      "file": "UI_GachaMain.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GachaPreview": {
+      "file": "UI_GachaPreview.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GachaResult": {
+      "file": "UI_GachaResult.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GachaSwitchBeautyPool": {
+      "file": "UI_GachaSwitchBeautyPool.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GachaSwitchPool": {
+      "file": "UI_GachaSwitchPool.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GetPaths": {
+      "file": "UI_GetPaths.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GetPaths2": {
+      "file": "UI_GetPaths2.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GetPaths3": {
+      "file": "UI_GetPaths3.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GoGuestTip": {
+      "file": "UI_GoGuestTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GoodsActive": {
+      "file": "UI_GoodsActive.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GrowSystem": {
+      "file": "UI_GrowSystem.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_Guest": {
+      "file": "UI_Guest.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuestATKUpPath": {
+      "file": "UI_GuestATKUpPath.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuestActive": {
+      "file": "UI_GuestActive.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuestActiveSkill": {
+      "file": "UI_GuestActiveSkill.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuestAttrUpTip": {
+      "file": "UI_GuestAttrUpTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuestAureole": {
+      "file": "UI_GuestAureole.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuestAureoleSkillSucc": {
+      "file": "UI_GuestAureoleSkillSucc.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuestAureoleTips": {
+      "file": "UI_GuestAureoleTips.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuestBuy": {
+      "file": "UI_GuestBuy.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuestCollect": {
+      "file": "UI_GuestCollect.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuestDivine": {
+      "file": "UI_GuestDivine.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuestDivineTips": {
+      "file": "UI_GuestDivineTips.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuestEquipMount": {
+      "file": "UI_GuestEquipMount.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuestFashionActive": {
+      "file": "UI_GuestFashionActive.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuestFetterAdd": {
+      "file": "UI_GuestFetterAdd.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuestGetPath": {
+      "file": "UI_GuestGetPath.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuestGetSkinItem": {
+      "file": "UI_GuestGetSkinItem.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuestInfo": {
+      "file": "UI_GuestInfo.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuestManagerSkinBuy": {
+      "file": "UI_GuestManagerSkinBuy.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuestNotActive": {
+      "file": "UI_GuestNotActive.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuestPath": {
+      "file": "UI_GuestPath.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuestPromote": {
+      "file": "UI_GuestPromote.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuestPromoteItem": {
+      "file": "UI_GuestPromoteItem.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuestPromoteSucc": {
+      "file": "UI_GuestPromoteSucc.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuestQueryAttr": {
+      "file": "UI_GuestQueryAttr.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuestRareTip": {
+      "file": "UI_GuestRareTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuestRechargeBuy": {
+      "file": "UI_GuestRechargeBuy.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuestSelectCard": {
+      "file": "UI_GuestSelectCard.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuestSetInfo": {
+      "file": "UI_GuestSetInfo.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuestSetMain": {
+      "file": "UI_GuestSetMain.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuestStarPreview": {
+      "file": "UI_GuestStarPreview.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuestStarSucc": {
+      "file": "UI_GuestStarSucc.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuestSupplyInfo": {
+      "file": "UI_GuestSupplyInfo.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuestSupplyPath": {
+      "file": "UI_GuestSupplyPath.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuestSupplyRecords": {
+      "file": "UI_GuestSupplyRecords.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuestTalentSkill": {
+      "file": "UI_GuestTalentSkill.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuestUp": {
+      "file": "UI_GuestUp.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuestUpQuality": {
+      "file": "UI_GuestUpQuality.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuestUseItem": {
+      "file": "UI_GuestUseItem.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_Guide": {
+      "file": "UI_Guide.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildActivity": {
+      "file": "UI_GuildActivity.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildApply": {
+      "file": "UI_GuildApply.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildApplyList": {
+      "file": "UI_GuildApplyList.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildBuild": {
+      "file": "UI_GuildBuild.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildChallangeLevel": {
+      "file": "UI_GuildChallangeLevel.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildChallengeContrib": {
+      "file": "UI_GuildChallengeContrib.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildColorCodeDesc": {
+      "file": "UI_GuildColorCodeDesc.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildCreate": {
+      "file": "UI_GuildCreate.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildDunChallengeRecord": {
+      "file": "UI_GuildDunChallengeRecord.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildDunExpReward": {
+      "file": "UI_GuildDunExpReward.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildDunGroupRankAndReward": {
+      "file": "UI_GuildDunGroupRankAndReward.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildDunLineUp": {
+      "file": "UI_GuildDunLineUp.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildDunRankAndReward": {
+      "file": "UI_GuildDunRankAndReward.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildDungeonBattle": {
+      "file": "UI_GuildDungeonBattle.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildDungeonBattlePhase": {
+      "file": "UI_GuildDungeonBattlePhase.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildDungeonBattleResult": {
+      "file": "UI_GuildDungeonBattleResult.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildDungeonBattleSucc": {
+      "file": "UI_GuildDungeonBattleSucc.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildDungeonBattleTail": {
+      "file": "UI_GuildDungeonBattleTail.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildDungeonChallenge": {
+      "file": "UI_GuildDungeonChallenge.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildDungeonEliteBattle": {
+      "file": "UI_GuildDungeonEliteBattle.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildDungeonsList": {
+      "file": "UI_GuildDungeonsList.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildDungeonsNew": {
+      "file": "UI_GuildDungeonsNew.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildEliteAttackUp": {
+      "file": "UI_GuildEliteAttackUp.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildGroupBuyNew": {
+      "file": "UI_GuildGroupBuyNew.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildHaggleRank": {
+      "file": "UI_GuildHaggleRank.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildHallOfHonor": {
+      "file": "UI_GuildHallOfHonor.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildHallOfHonorTips": {
+      "file": "UI_GuildHallOfHonorTips.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildHonorRecord": {
+      "file": "UI_GuildHonorRecord.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildHonorUnLock": {
+      "file": "UI_GuildHonorUnLock.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildList": {
+      "file": "UI_GuildList.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildLobby": {
+      "file": "UI_GuildLobby.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildMain": {
+      "file": "UI_GuildMain.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildManager": {
+      "file": "UI_GuildManager.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildMemberBattle": {
+      "file": "UI_GuildMemberBattle.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildMemberBattleResult": {
+      "file": "UI_GuildMemberBattleResult.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildMemberBattleTarget": {
+      "file": "UI_GuildMemberBattleTarget.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildMemberManager": {
+      "file": "UI_GuildMemberManager.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildMsgs": {
+      "file": "UI_GuildMsgs.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildNotic": {
+      "file": "UI_GuildNotic.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildNoticEditor": {
+      "file": "UI_GuildNoticEditor.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildNoticPreview": {
+      "file": "UI_GuildNoticPreview.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildNoticTemplate": {
+      "file": "UI_GuildNoticTemplate.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildOpenDungenon": {
+      "file": "UI_GuildOpenDungenon.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildOptPopup": {
+      "file": "UI_GuildOptPopup.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildParty": {
+      "file": "UI_GuildParty.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildPartyPreview": {
+      "file": "UI_GuildPartyPreview.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildPartyResult": {
+      "file": "UI_GuildPartyResult.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildPhaseReward": {
+      "file": "UI_GuildPhaseReward.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildPosition": {
+      "file": "UI_GuildPosition.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildPositionDesc": {
+      "file": "UI_GuildPositionDesc.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildSameNameSetting": {
+      "file": "UI_GuildSameNameSetting.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildSearch": {
+      "file": "UI_GuildSearch.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildSearchInfo": {
+      "file": "UI_GuildSearchInfo.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildSetFlags": {
+      "file": "UI_GuildSetFlags.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildSetting": {
+      "file": "UI_GuildSetting.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildUpgradeTips": {
+      "file": "UI_GuildUpgradeTips.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildWarAlliance": {
+      "file": "UI_GuildWarAlliance.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildWarAppoint": {
+      "file": "UI_GuildWarAppoint.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildWarAtkRandTip": {
+      "file": "UI_GuildWarAtkRandTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildWarAtkSum": {
+      "file": "UI_GuildWarAtkSum.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildWarAuthorize": {
+      "file": "UI_GuildWarAuthorize.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildWarBaseInfo": {
+      "file": "UI_GuildWarBaseInfo.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildWarBattle": {
+      "file": "UI_GuildWarBattle.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildWarCommander": {
+      "file": "UI_GuildWarCommander.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildWarGroup": {
+      "file": "UI_GuildWarGroup.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildWarMain": {
+      "file": "UI_GuildWarMain.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildWarOpTips": {
+      "file": "UI_GuildWarOpTips.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildWarPlan": {
+      "file": "UI_GuildWarPlan.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildWarProtactTips": {
+      "file": "UI_GuildWarProtactTips.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildWarRank": {
+      "file": "UI_GuildWarRank.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildWarRecord": {
+      "file": "UI_GuildWarRecord.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildWarRstFail": {
+      "file": "UI_GuildWarRstFail.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildWarRstMult": {
+      "file": "UI_GuildWarRstMult.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildWarRstWin": {
+      "file": "UI_GuildWarRstWin.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildWarSchedule": {
+      "file": "UI_GuildWarSchedule.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildWarStreet": {
+      "file": "UI_GuildWarStreet.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_GuildWarTask": {
+      "file": "UI_GuildWarTask.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_HistoryEvent": {
+      "file": "UI_HistoryEvent.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_HistoryEventGet": {
+      "file": "UI_HistoryEventGet.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_HistoryEventTip": {
+      "file": "UI_HistoryEventTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_HistoryStageLock": {
+      "file": "UI_HistoryStageLock.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_HistoryStageTip": {
+      "file": "UI_HistoryStageTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_InvestMarketUp": {
+      "file": "UI_InvestMarketUp.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_InvestmentBattle": {
+      "file": "UI_InvestmentBattle.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_InvestmentBidding": {
+      "file": "UI_InvestmentBidding.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_InvestmentBiddingResult": {
+      "file": "UI_InvestmentBiddingResult.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_InvestmentCancel": {
+      "file": "UI_InvestmentCancel.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_InvestmentCreateSucc": {
+      "file": "UI_InvestmentCreateSucc.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_InvestmentDetail": {
+      "file": "UI_InvestmentDetail.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_InvestmentFightTips": {
+      "file": "UI_InvestmentFightTips.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_InvestmentJoinAddTips": {
+      "file": "UI_InvestmentJoinAddTips.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_InvestmentMain": {
+      "file": "UI_InvestmentMain.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_InvestmentPropStop": {
+      "file": "UI_InvestmentPropStop.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_InvestmentPropsUse": {
+      "file": "UI_InvestmentPropsUse.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_InvestmentRecord": {
+      "file": "UI_InvestmentRecord.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_InvestmentResult": {
+      "file": "UI_InvestmentResult.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_InvestmentSkill": {
+      "file": "UI_InvestmentSkill.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_InvestmentSkillAddition": {
+      "file": "UI_InvestmentSkillAddition.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_InvestmentSkillUpgrade": {
+      "file": "UI_InvestmentSkillUpgrade.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_InvestmentUnlock": {
+      "file": "UI_InvestmentUnlock.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ItemTip": {
+      "file": "UI_ItemTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ItemUseTip": {
+      "file": "UI_ItemUseTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_LimitActRechargeGift": {
+      "file": "UI_LimitActRechargeGift.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_LimitActivity": {
+      "file": "UI_LimitActivity.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_LimitActivityPreview": {
+      "file": "UI_LimitActivityPreview.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_LimitExchange": {
+      "file": "UI_LimitExchange.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_LimitLottery": {
+      "file": "UI_LimitLottery.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_LimitLotteryGift": {
+      "file": "UI_LimitLotteryGift.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_LimitLotteryTask": {
+      "file": "UI_LimitLotteryTask.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_LimitWish": {
+      "file": "UI_LimitWish.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_LimitWishTip": {
+      "file": "UI_LimitWishTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_Loading": {
+      "file": "UI_Loading.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_Login": {
+      "file": "UI_Login.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_LotteryBigReward": {
+      "file": "UI_LotteryBigReward.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_LotterySkinItem": {
+      "file": "UI_LotterySkinItem.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_Mail": {
+      "file": "UI_Mail.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_Main": {
+      "file": "UI_Main.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MainPowerDetail": {
+      "file": "UI_MainPowerDetail.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_Market": {
+      "file": "UI_Market.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketActive": {
+      "file": "UI_MarketActive.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketActiveAdvanced": {
+      "file": "UI_MarketActiveAdvanced.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketActiveFloor": {
+      "file": "UI_MarketActiveFloor.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketAdvanced": {
+      "file": "UI_MarketAdvanced.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketAllBell": {
+      "file": "UI_MarketAllBell.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketAllBellResult": {
+      "file": "UI_MarketAllBellResult.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketAureoleTips": {
+      "file": "UI_MarketAureoleTips.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketAutoTip": {
+      "file": "UI_MarketAutoTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketBaseInfo": {
+      "file": "UI_MarketBaseInfo.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketBeauty": {
+      "file": "UI_MarketBeauty.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketBeautyAdd": {
+      "file": "UI_MarketBeautyAdd.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketBeautyBest": {
+      "file": "UI_MarketBeautyBest.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketBeautyDispatchSucc": {
+      "file": "UI_MarketBeautyDispatchSucc.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketChild": {
+      "file": "UI_MarketChild.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketCommodity": {
+      "file": "UI_MarketCommodity.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketFacilityTip": {
+      "file": "UI_MarketFacilityTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketGetSkinItem": {
+      "file": "UI_MarketGetSkinItem.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketGuest": {
+      "file": "UI_MarketGuest.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketHarvest": {
+      "file": "UI_MarketHarvest.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketLightInfo": {
+      "file": "UI_MarketLightInfo.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketList": {
+      "file": "UI_MarketList.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketOffer": {
+      "file": "UI_MarketOffer.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketQuality": {
+      "file": "UI_MarketQuality.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketRateTips": {
+      "file": "UI_MarketRateTips.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketRecommend": {
+      "file": "UI_MarketRecommend.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketRepresentAdd": {
+      "file": "UI_MarketRepresentAdd.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketRevenue": {
+      "file": "UI_MarketRevenue.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketRobotInfo": {
+      "file": "UI_MarketRobotInfo.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketSkin": {
+      "file": "UI_MarketSkin.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketSkinLook": {
+      "file": "UI_MarketSkinLook.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketSlotAdd": {
+      "file": "UI_MarketSlotAdd.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketStarActive": {
+      "file": "UI_MarketStarActive.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketStrategyActive": {
+      "file": "UI_MarketStrategyActive.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketStrength": {
+      "file": "UI_MarketStrength.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketSuggest": {
+      "file": "UI_MarketSuggest.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketSurvey": {
+      "file": "UI_MarketSurvey.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketTransfer": {
+      "file": "UI_MarketTransfer.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketWarAddVit": {
+      "file": "UI_MarketWarAddVit.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketWarAgentResult": {
+      "file": "UI_MarketWarAgentResult.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketWarAgentTip": {
+      "file": "UI_MarketWarAgentTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketWarBattle": {
+      "file": "UI_MarketWarBattle.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketWarCapture": {
+      "file": "UI_MarketWarCapture.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketWarCaptureNew": {
+      "file": "UI_MarketWarCaptureNew.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketWarEmployer": {
+      "file": "UI_MarketWarEmployer.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketWarRank": {
+      "file": "UI_MarketWarRank.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketWarRankReward": {
+      "file": "UI_MarketWarRankReward.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketWarReady": {
+      "file": "UI_MarketWarReady.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketWarReport": {
+      "file": "UI_MarketWarReport.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketWarRescure": {
+      "file": "UI_MarketWarRescure.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketWarResult": {
+      "file": "UI_MarketWarResult.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketWarSupport": {
+      "file": "UI_MarketWarSupport.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketWarTactic": {
+      "file": "UI_MarketWarTactic.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketWarTacticUse": {
+      "file": "UI_MarketWarTacticUse.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketWarTarget": {
+      "file": "UI_MarketWarTarget.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketWarTask": {
+      "file": "UI_MarketWarTask.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketWarTea": {
+      "file": "UI_MarketWarTea.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MarketWarUseItem": {
+      "file": "UI_MarketWarUseItem.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MessageTip1": {
+      "file": "UI_MessageTip1.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MessageTip2": {
+      "file": "UI_MessageTip2.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MountActive": {
+      "file": "UI_MountActive.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MountAureole": {
+      "file": "UI_MountAureole.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MountBuildInfo": {
+      "file": "UI_MountBuildInfo.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MountBuildSpeedUpTips": {
+      "file": "UI_MountBuildSpeedUpTips.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MountCharactersActive": {
+      "file": "UI_MountCharactersActive.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MountInfo": {
+      "file": "UI_MountInfo.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MountLevelUp": {
+      "file": "UI_MountLevelUp.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MountMain": {
+      "file": "UI_MountMain.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MountOneKeyUpdateTips": {
+      "file": "UI_MountOneKeyUpdateTips.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MountPartRemake": {
+      "file": "UI_MountPartRemake.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MountPartRemakeTip": {
+      "file": "UI_MountPartRemakeTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MountPreviewInfo": {
+      "file": "UI_MountPreviewInfo.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MountQualityUpgrade": {
+      "file": "UI_MountQualityUpgrade.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MountQueryAttr": {
+      "file": "UI_MountQueryAttr.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MountResolve": {
+      "file": "UI_MountResolve.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MountResolveTips": {
+      "file": "UI_MountResolveTips.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MountSelectUpStarMat": {
+      "file": "UI_MountSelectUpStarMat.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MountStarPreview": {
+      "file": "UI_MountStarPreview.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MountUpgradeResult": {
+      "file": "UI_MountUpgradeResult.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MulDayRechargeGift": {
+      "file": "UI_MulDayRechargeGift.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MultiAwardItemTips": {
+      "file": "UI_MultiAwardItemTips.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MultiAwardItemUse": {
+      "file": "UI_MultiAwardItemUse.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MuseumAntiqueHistory": {
+      "file": "UI_MuseumAntiqueHistory.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MuseumAntiqueList": {
+      "file": "UI_MuseumAntiqueList.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MuseumAntiquePut": {
+      "file": "UI_MuseumAntiquePut.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MuseumCollectionSucc": {
+      "file": "UI_MuseumCollectionSucc.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MuseumExhibition": {
+      "file": "UI_MuseumExhibition.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MuseumExhibitionList": {
+      "file": "UI_MuseumExhibitionList.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MuseumExhibitionSucc": {
+      "file": "UI_MuseumExhibitionSucc.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MuseumGacha": {
+      "file": "UI_MuseumGacha.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MuseumGachaResult": {
+      "file": "UI_MuseumGachaResult.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MuseumGachaShop": {
+      "file": "UI_MuseumGachaShop.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MuseumJackpot": {
+      "file": "UI_MuseumJackpot.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MuseumMain": {
+      "file": "UI_MuseumMain.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MuseumMedalInfo": {
+      "file": "UI_MuseumMedalInfo.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MuseumMedalWall": {
+      "file": "UI_MuseumMedalWall.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_MuseumStarUpSucc": {
+      "file": "UI_MuseumStarUpSucc.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_NetError": {
+      "file": "UI_NetError.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_Notice": {
+      "file": "UI_Notice.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_OpenCustomBox": {
+      "file": "UI_OpenCustomBox.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_OpenCustomSkin": {
+      "file": "UI_OpenCustomSkin.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_OtherRoleBattleAttr": {
+      "file": "UI_OtherRoleBattleAttr.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_OtherRoleGuest": {
+      "file": "UI_OtherRoleGuest.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_OtherRoleMarket": {
+      "file": "UI_OtherRoleMarket.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_OtherTechnoCup": {
+      "file": "UI_OtherTechnoCup.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_PanelGuideBtn": {
+      "file": "UI_PanelGuideBtn.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_PirateChallengeResult": {
+      "file": "UI_PirateChallengeResult.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_PirateEvent": {
+      "file": "UI_PirateEvent.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_PirateFightBattle": {
+      "file": "UI_PirateFightBattle.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_PirateIntelStation": {
+      "file": "UI_PirateIntelStation.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_PirateInvasion": {
+      "file": "UI_PirateInvasion.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_PirateInvasionMain": {
+      "file": "UI_PirateInvasionMain.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_PirateLottery": {
+      "file": "UI_PirateLottery.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_PiratePreview": {
+      "file": "UI_PiratePreview.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_PirateResultFail": {
+      "file": "UI_PirateResultFail.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_PirateServerBoss": {
+      "file": "UI_PirateServerBoss.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_PirateTask": {
+      "file": "UI_PirateTask.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_PirateTips": {
+      "file": "UI_PirateTips.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_PlayerSkinPreview": {
+      "file": "UI_PlayerSkinPreview.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_PreviewAwards": {
+      "file": "UI_PreviewAwards.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_PrivilegeCardInfo": {
+      "file": "UI_PrivilegeCardInfo.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_PrivilegeDayCard": {
+      "file": "UI_PrivilegeDayCard.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_PrivilegeMain": {
+      "file": "UI_PrivilegeMain.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_PrivilegeMonthlyCard": {
+      "file": "UI_PrivilegeMonthlyCard.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_PrivilegeMonthlyCard2": {
+      "file": "UI_PrivilegeMonthlyCard2.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_PurchaseBattleActivity": {
+      "file": "UI_PurchaseBattleActivity.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_PurchaseBattleExchange": {
+      "file": "UI_PurchaseBattleExchange.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_PurchaseBattleGuildRank": {
+      "file": "UI_PurchaseBattleGuildRank.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_PurchaseBattleInject": {
+      "file": "UI_PurchaseBattleInject.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_PurchaseBattleMain": {
+      "file": "UI_PurchaseBattleMain.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_PurchaseBattleRank": {
+      "file": "UI_PurchaseBattleRank.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_PurchaseBattleReward": {
+      "file": "UI_PurchaseBattleReward.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_PurchaseBattleSchedule": {
+      "file": "UI_PurchaseBattleSchedule.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RankAct": {
+      "file": "UI_RankAct.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RankActAd": {
+      "file": "UI_RankActAd.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RankActAddTip": {
+      "file": "UI_RankActAddTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RankActEntrance": {
+      "file": "UI_RankActEntrance.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RankActGift": {
+      "file": "UI_RankActGift.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RankActGuildMemberRank": {
+      "file": "UI_RankActGuildMemberRank.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RankActItem": {
+      "file": "UI_RankActItem.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RankActPath": {
+      "file": "UI_RankActPath.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RankActPreview": {
+      "file": "UI_RankActPreview.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RankActReward": {
+      "file": "UI_RankActReward.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RankActRewardGuild": {
+      "file": "UI_RankActRewardGuild.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RankActServerRank": {
+      "file": "UI_RankActServerRank.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RankActSingleServerRank": {
+      "file": "UI_RankActSingleServerRank.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RankActSpecifyAd": {
+      "file": "UI_RankActSpecifyAd.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RankActSprint": {
+      "file": "UI_RankActSprint.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RankActTask": {
+      "file": "UI_RankActTask.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RankActTaskMemberRank": {
+      "file": "UI_RankActTaskMemberRank.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RankActTwo": {
+      "file": "UI_RankActTwo.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RankEntry": {
+      "file": "UI_RankEntry.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RankGobal": {
+      "file": "UI_RankGobal.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RankGuildVoteReward": {
+      "file": "UI_RankGuildVoteReward.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RankLocal": {
+      "file": "UI_RankLocal.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RankPlayerVoteReward": {
+      "file": "UI_RankPlayerVoteReward.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RechargeGift": {
+      "file": "UI_RechargeGift.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RechargeMain": {
+      "file": "UI_RechargeMain.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RechargeTokens": {
+      "file": "UI_RechargeTokens.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RecruitConfirm": {
+      "file": "UI_RecruitConfirm.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RecruitMain": {
+      "file": "UI_RecruitMain.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RecruitProgressTips": {
+      "file": "UI_RecruitProgressTips.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RecruitTips": {
+      "file": "UI_RecruitTips.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RedPacketInfo": {
+      "file": "UI_RedPacketInfo.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RedPacketOpen": {
+      "file": "UI_RedPacketOpen.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RedPacketSetting": {
+      "file": "UI_RedPacketSetting.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RelayAddCar": {
+      "file": "UI_RelayAddCar.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RelayCommonEquip": {
+      "file": "UI_RelayCommonEquip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RelayCommonFleet": {
+      "file": "UI_RelayCommonFleet.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RelayRaceInfo": {
+      "file": "UI_RelayRaceInfo.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RelayRaceMain": {
+      "file": "UI_RelayRaceMain.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RelayRaceMap": {
+      "file": "UI_RelayRaceMap.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RelayRaceMapUI": {
+      "file": "UI_RelayRaceMapUI.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RelayRaceNpc": {
+      "file": "UI_RelayRaceNpc.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RelayRacePeakGraph": {
+      "file": "UI_RelayRacePeakGraph.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RelayRacePlayers": {
+      "file": "UI_RelayRacePlayers.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RelayRacePlayersMult": {
+      "file": "UI_RelayRacePlayersMult.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RelayRacePlayersRank": {
+      "file": "UI_RelayRacePlayersRank.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RelayRacePvpRank": {
+      "file": "UI_RelayRacePvpRank.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RelayRaceRecordRank": {
+      "file": "UI_RelayRaceRecordRank.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RelayRaceResult": {
+      "file": "UI_RelayRaceResult.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RelayRaceRwds": {
+      "file": "UI_RelayRaceRwds.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RelayRaceTab": {
+      "file": "UI_RelayRaceTab.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RelayRankDetail": {
+      "file": "UI_RelayRankDetail.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RelayTrainFightTips": {
+      "file": "UI_RelayTrainFightTips.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RelayTrainFleetUp": {
+      "file": "UI_RelayTrainFleetUp.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RelayTrainGradeUp": {
+      "file": "UI_RelayTrainGradeUp.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RelayTrainGradeUpSucc": {
+      "file": "UI_RelayTrainGradeUpSucc.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RelayTrainMain": {
+      "file": "UI_RelayTrainMain.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RelayTrainRstFail": {
+      "file": "UI_RelayTrainRstFail.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RelayTrainRstWin": {
+      "file": "UI_RelayTrainRstWin.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RelayTrainRwd": {
+      "file": "UI_RelayTrainRwd.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RelayTrainTask": {
+      "file": "UI_RelayTrainTask.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RelayTrainUpPath": {
+      "file": "UI_RelayTrainUpPath.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RelayUpgradePath": {
+      "file": "UI_RelayUpgradePath.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ResAddition": {
+      "file": "UI_ResAddition.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ResRetrieve": {
+      "file": "UI_ResRetrieve.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ResUpdateTip": {
+      "file": "UI_ResUpdateTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_Role": {
+      "file": "UI_Role.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RoleBeautyTip": {
+      "file": "UI_RoleBeautyTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RoleEvalEquipTips": {
+      "file": "UI_RoleEvalEquipTips.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RoleEvaluate": {
+      "file": "UI_RoleEvaluate.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RoleEvaluateSucc": {
+      "file": "UI_RoleEvaluateSucc.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RoleGuestsTip": {
+      "file": "UI_RoleGuestsTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RoleHeadTip": {
+      "file": "UI_RoleHeadTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RoleObtainingTitleTips": {
+      "file": "UI_RoleObtainingTitleTips.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RoleOthter": {
+      "file": "UI_RoleOthter.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RoleRenameTip": {
+      "file": "UI_RoleRenameTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RoleSkinTip": {
+      "file": "UI_RoleSkinTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RoleStageTip": {
+      "file": "UI_RoleStageTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RoleUpTip": {
+      "file": "UI_RoleUpTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RouteTrade": {
+      "file": "UI_RouteTrade.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RouteTradeAccelerate": {
+      "file": "UI_RouteTradeAccelerate.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RouteTradeAddition": {
+      "file": "UI_RouteTradeAddition.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RouteTradeBoss": {
+      "file": "UI_RouteTradeBoss.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RouteTradeBossResult": {
+      "file": "UI_RouteTradeBossResult.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RouteTradeDispatch": {
+      "file": "UI_RouteTradeDispatch.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RouteTradeDispatchSucc": {
+      "file": "UI_RouteTradeDispatchSucc.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RouteTradeItem": {
+      "file": "UI_RouteTradeItem.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RouteTradeTip": {
+      "file": "UI_RouteTradeTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_RuleTip": {
+      "file": "UI_RuleTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SDKLogin": {
+      "file": "UI_SDKLogin.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SeaEvidence": {
+      "file": "UI_SeaEvidence.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SeaEvidenceAdd": {
+      "file": "UI_SeaEvidenceAdd.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SeaEvidenceAddSucc": {
+      "file": "UI_SeaEvidenceAddSucc.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SeaEvidenceArea": {
+      "file": "UI_SeaEvidenceArea.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SeaEvidenceTip": {
+      "file": "UI_SeaEvidenceTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ServerList": {
+      "file": "UI_ServerList.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_Setting": {
+      "file": "UI_Setting.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SettingPush": {
+      "file": "UI_SettingPush.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_Shop": {
+      "file": "UI_Shop.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ShopCommonActShop": {
+      "file": "UI_ShopCommonActShop.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ShopGiftPurchase": {
+      "file": "UI_ShopGiftPurchase.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ShopPurchase": {
+      "file": "UI_ShopPurchase.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_ShopUnlockTips": {
+      "file": "UI_ShopUnlockTips.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_Sidebar": {
+      "file": "UI_Sidebar.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SilkCaravan": {
+      "file": "UI_SilkCaravan.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SilkroadAccelerate": {
+      "file": "UI_SilkroadAccelerate.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SilkroadActGift": {
+      "file": "UI_SilkroadActGift.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SilkroadAppraisal": {
+      "file": "UI_SilkroadAppraisal.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SilkroadAppraisalPreview": {
+      "file": "UI_SilkroadAppraisalPreview.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SilkroadAppraisalReward": {
+      "file": "UI_SilkroadAppraisalReward.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SilkroadAssistant": {
+      "file": "UI_SilkroadAssistant.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SilkroadBattleTailReward": {
+      "file": "UI_SilkroadBattleTailReward.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SilkroadBox": {
+      "file": "UI_SilkroadBox.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SilkroadBuffEvent": {
+      "file": "UI_SilkroadBuffEvent.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SilkroadBuffEventResult": {
+      "file": "UI_SilkroadBuffEventResult.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SilkroadCashGift": {
+      "file": "UI_SilkroadCashGift.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SilkroadDamageRank": {
+      "file": "UI_SilkroadDamageRank.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SilkroadEncourageReward": {
+      "file": "UI_SilkroadEncourageReward.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SilkroadFightSelectGuest": {
+      "file": "UI_SilkroadFightSelectGuest.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SilkroadGains": {
+      "file": "UI_SilkroadGains.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SilkroadGuestInfo": {
+      "file": "UI_SilkroadGuestInfo.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SilkroadInspire": {
+      "file": "UI_SilkroadInspire.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SilkroadMain": {
+      "file": "UI_SilkroadMain.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SilkroadManuals": {
+      "file": "UI_SilkroadManuals.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SilkroadMap": {
+      "file": "UI_SilkroadMap.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SilkroadMeetEvent": {
+      "file": "UI_SilkroadMeetEvent.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SilkroadMemberSelect": {
+      "file": "UI_SilkroadMemberSelect.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SilkroadMission": {
+      "file": "UI_SilkroadMission.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SilkroadMonsterFight": {
+      "file": "UI_SilkroadMonsterFight.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SilkroadMonsterSwitch": {
+      "file": "UI_SilkroadMonsterSwitch.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SilkroadOasisOverview": {
+      "file": "UI_SilkroadOasisOverview.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SilkroadQucikTeleport": {
+      "file": "UI_SilkroadQucikTeleport.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SilkroadQuickBuffResult": {
+      "file": "UI_SilkroadQuickBuffResult.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SilkroadRank": {
+      "file": "UI_SilkroadRank.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SilkroadRankReward": {
+      "file": "UI_SilkroadRankReward.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SilkroadRankServerRank": {
+      "file": "UI_SilkroadRankServerRank.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SilkroadRetreatRuleTip": {
+      "file": "UI_SilkroadRetreatRuleTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SilkroadTeleport": {
+      "file": "UI_SilkroadTeleport.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SilkroadTeleportReward": {
+      "file": "UI_SilkroadTeleportReward.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SilkroadTrade": {
+      "file": "UI_SilkroadTrade.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SilkroadTradeConfirm": {
+      "file": "UI_SilkroadTradeConfirm.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SilkroadTreasure": {
+      "file": "UI_SilkroadTreasure.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SingleMarketOut": {
+      "file": "UI_SingleMarketOut.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SkyscraperActivity": {
+      "file": "UI_SkyscraperActivity.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SkyscraperRank": {
+      "file": "UI_SkyscraperRank.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SkyscraperReco": {
+      "file": "UI_SkyscraperReco.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SkyscraperRedPacket": {
+      "file": "UI_SkyscraperRedPacket.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SkyscraperRedPacketTip": {
+      "file": "UI_SkyscraperRedPacketTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SoloMarket": {
+      "file": "UI_SoloMarket.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SpaceHonor": {
+      "file": "UI_SpaceHonor.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SpaceInfo": {
+      "file": "UI_SpaceInfo.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SpaceRank": {
+      "file": "UI_SpaceRank.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SpaceTop": {
+      "file": "UI_SpaceTop.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_StarWorks": {
+      "file": "UI_StarWorks.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_StarWorksChoiceBeauty": {
+      "file": "UI_StarWorksChoiceBeauty.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_StarWorksChoiceUp": {
+      "file": "UI_StarWorksChoiceUp.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_StarWorksEndorse": {
+      "file": "UI_StarWorksEndorse.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_StarWorksLevelInfo": {
+      "file": "UI_StarWorksLevelInfo.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_StarWorksLevelUp": {
+      "file": "UI_StarWorksLevelUp.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_StarWorksUpAni": {
+      "file": "UI_StarWorksUpAni.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_StarWorksUpResult": {
+      "file": "UI_StarWorksUpResult.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_StreetFight": {
+      "file": "UI_StreetFight.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_StreetFightAddVit": {
+      "file": "UI_StreetFightAddVit.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_StreetFightAttrTip": {
+      "file": "UI_StreetFightAttrTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_StreetFightBattle": {
+      "file": "UI_StreetFightBattle.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_StreetFightJumpResult": {
+      "file": "UI_StreetFightJumpResult.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_StreetFightMarket": {
+      "file": "UI_StreetFightMarket.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_StreetFightResult": {
+      "file": "UI_StreetFightResult.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_StreetFightSolo": {
+      "file": "UI_StreetFightSolo.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_StreetFightSweep": {
+      "file": "UI_StreetFightSweep.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_StreetFightSweepResult": {
+      "file": "UI_StreetFightSweepResult.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_StreetFightTarget": {
+      "file": "UI_StreetFightTarget.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_StreetFightTask": {
+      "file": "UI_StreetFightTask.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_StreetFightTip": {
+      "file": "UI_StreetFightTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_StreetFightWait": {
+      "file": "UI_StreetFightWait.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_StreetTreasureDetail": {
+      "file": "UI_StreetTreasureDetail.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_StreetTreasureFind": {
+      "file": "UI_StreetTreasureFind.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_StreetTreasureList": {
+      "file": "UI_StreetTreasureList.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SurpriseGift": {
+      "file": "UI_SurpriseGift.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_SurpriseSeriesGift": {
+      "file": "UI_SurpriseSeriesGift.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TalkReview": {
+      "file": "UI_TalkReview.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TalkSelect": {
+      "file": "UI_TalkSelect.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_Task": {
+      "file": "UI_Task.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TaskChapter": {
+      "file": "UI_TaskChapter.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TaskChapterTip": {
+      "file": "UI_TaskChapterTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TaskGroupReward": {
+      "file": "UI_TaskGroupReward.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TaskProgressTip": {
+      "file": "UI_TaskProgressTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TaskSprint": {
+      "file": "UI_TaskSprint.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TaskTalk": {
+      "file": "UI_TaskTalk.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TeamApplyList": {
+      "file": "UI_TeamApplyList.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TeamEnterFail": {
+      "file": "UI_TeamEnterFail.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TeamFriend": {
+      "file": "UI_TeamFriend.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TeamGuestTrial": {
+      "file": "UI_TeamGuestTrial.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TeamInfo": {
+      "file": "UI_TeamInfo.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TeamInviteList": {
+      "file": "UI_TeamInviteList.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TeamList": {
+      "file": "UI_TeamList.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TeamMarket": {
+      "file": "UI_TeamMarket.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TeamTip": {
+      "file": "UI_TeamTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_Techno": {
+      "file": "UI_Techno.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TechnoCourse": {
+      "file": "UI_TechnoCourse.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TechnoCourseTip": {
+      "file": "UI_TechnoCourseTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TechnoCup": {
+      "file": "UI_TechnoCup.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TechnoCupAchi": {
+      "file": "UI_TechnoCupAchi.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TechnoCupInfo": {
+      "file": "UI_TechnoCupInfo.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TechnoCupShow": {
+      "file": "UI_TechnoCupShow.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TechnoExam": {
+      "file": "UI_TechnoExam.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TechnoExam_backup": {
+      "file": "UI_TechnoExam_backup.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TechnoTips": {
+      "file": "UI_TechnoTips.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TestServer": {
+      "file": "UI_TestServer.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TimerTravel": {
+      "file": "UI_TimerTravel.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TimerTravelInfo": {
+      "file": "UI_TimerTravelInfo.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TitleTips": {
+      "file": "UI_TitleTips.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TokensError": {
+      "file": "UI_TokensError.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TokensLimit": {
+      "file": "UI_TokensLimit.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TopLeague": {
+      "file": "UI_TopLeague.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TopLeagueBattle": {
+      "file": "UI_TopLeagueBattle.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TopLeagueBetRank": {
+      "file": "UI_TopLeagueBetRank.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TopLeagueDesc": {
+      "file": "UI_TopLeagueDesc.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TopLeagueEvent": {
+      "file": "UI_TopLeagueEvent.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TopLeagueGetSign": {
+      "file": "UI_TopLeagueGetSign.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TopLeagueMarket": {
+      "file": "UI_TopLeagueMarket.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TopLeagueProgress": {
+      "file": "UI_TopLeagueProgress.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TopLeagueRank": {
+      "file": "UI_TopLeagueRank.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TopLeagueReady": {
+      "file": "UI_TopLeagueReady.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TopLeagueRecord": {
+      "file": "UI_TopLeagueRecord.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TopLeagueResult": {
+      "file": "UI_TopLeagueResult.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TopLeagueReward": {
+      "file": "UI_TopLeagueReward.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TopLeagueShop": {
+      "file": "UI_TopLeagueShop.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TopLeagueWager": {
+      "file": "UI_TopLeagueWager.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TradePvp": {
+      "file": "UI_TradePvp.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TradeWar": {
+      "file": "UI_TradeWar.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TradeWarAddVit": {
+      "file": "UI_TradeWarAddVit.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TradeWarAnnounce": {
+      "file": "UI_TradeWarAnnounce.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TradeWarBattle": {
+      "file": "UI_TradeWarBattle.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TradeWarBatttleSet": {
+      "file": "UI_TradeWarBatttleSet.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TradeWarBoss": {
+      "file": "UI_TradeWarBoss.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TradeWarBossJump": {
+      "file": "UI_TradeWarBossJump.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TradeWarConsume": {
+      "file": "UI_TradeWarConsume.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TradeWarFind": {
+      "file": "UI_TradeWarFind.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TradeWarFloor": {
+      "file": "UI_TradeWarFloor.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TradeWarGuests": {
+      "file": "UI_TradeWarGuests.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TradeWarItem": {
+      "file": "UI_TradeWarItem.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TradeWarMarket": {
+      "file": "UI_TradeWarMarket.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TradeWarPetition": {
+      "file": "UI_TradeWarPetition.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TradeWarPetitionUp": {
+      "file": "UI_TradeWarPetitionUp.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TradeWarPveResult": {
+      "file": "UI_TradeWarPveResult.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TradeWarReport": {
+      "file": "UI_TradeWarReport.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TradeWarResult": {
+      "file": "UI_TradeWarResult.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TradeWarSetting": {
+      "file": "UI_TradeWarSetting.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TradeWarTech": {
+      "file": "UI_TradeWarTech.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TradeWarTechGet": {
+      "file": "UI_TradeWarTechGet.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TradeWarTechTip": {
+      "file": "UI_TradeWarTechTip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TradingPort": {
+      "file": "UI_TradingPort.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TradingPortChangeShip": {
+      "file": "UI_TradingPortChangeShip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TradingPortCompose": {
+      "file": "UI_TradingPortCompose.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TradingPortComposeQuick": {
+      "file": "UI_TradingPortComposeQuick.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TradingPortDeCombine": {
+      "file": "UI_TradingPortDeCombine.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TradingPortDecorateBag": {
+      "file": "UI_TradingPortDecorateBag.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TradingPortDecorateResolve": {
+      "file": "UI_TradingPortDecorateResolve.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TradingPortDock": {
+      "file": "UI_TradingPortDock.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TradingPortDockUnlock": {
+      "file": "UI_TradingPortDockUnlock.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TradingPortFactory": {
+      "file": "UI_TradingPortFactory.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TradingPortFleet": {
+      "file": "UI_TradingPortFleet.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TradingPortNewShip": {
+      "file": "UI_TradingPortNewShip.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TradingPortQueryAttr": {
+      "file": "UI_TradingPortQueryAttr.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TradingPortShipPosUnlock": {
+      "file": "UI_TradingPortShipPosUnlock.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TradingPortSupplyInfo": {
+      "file": "UI_TradingPortSupplyInfo.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TradingPortSupplyLvUnlock": {
+      "file": "UI_TradingPortSupplyLvUnlock.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TradingPortSupplyRecords": {
+      "file": "UI_TradingPortSupplyRecords.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TradingPortUpPreview": {
+      "file": "UI_TradingPortUpPreview.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TradingPorttUseItem": {
+      "file": "UI_TradingPorttUseItem.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TrialSpacetime": {
+      "file": "UI_TrialSpacetime.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TrialSpacetimeBoss": {
+      "file": "UI_TrialSpacetimeBoss.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TrialSpacetimeHighResult": {
+      "file": "UI_TrialSpacetimeHighResult.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TrialSpacetimeMiddleResult": {
+      "file": "UI_TrialSpacetimeMiddleResult.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TrialSpacetimeRecord": {
+      "file": "UI_TrialSpacetimeRecord.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TrialSpacetimeRewardPreview": {
+      "file": "UI_TrialSpacetimeRewardPreview.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TrialSpacetimeSnatchResult": {
+      "file": "UI_TrialSpacetimeSnatchResult.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_TrialSpacetimeTradeWar": {
+      "file": "UI_TrialSpacetimeTradeWar.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_UpgradeCoatingSucc": {
+      "file": "UI_UpgradeCoatingSucc.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_UseMultItem": {
+      "file": "UI_UseMultItem.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_UseViceCurrency": {
+      "file": "UI_UseViceCurrency.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_VWo12": {
+      "file": "UI_VWo12.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_VipGift": {
+      "file": "UI_VipGift.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_VisitMain": {
+      "file": "UI_VisitMain.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_VisitPlayerTitle": {
+      "file": "UI_VisitPlayerTitle.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_VisitRecord": {
+      "file": "UI_VisitRecord.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_VisitUsePropsConfirm": {
+      "file": "UI_VisitUsePropsConfirm.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_WishMakingExchange": {
+      "file": "UI_WishMakingExchange.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_WishMakingGift": {
+      "file": "UI_WishMakingGift.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_WishMakingGiftTips": {
+      "file": "UI_WishMakingGiftTips.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_WishMakingLotteryTips": {
+      "file": "UI_WishMakingLotteryTips.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_WishMakingMain": {
+      "file": "UI_WishMakingMain.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_WishMakingPreview": {
+      "file": "UI_WishMakingPreview.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_WishMakingResetTips": {
+      "file": "UI_WishMakingResetTips.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_WishMakingSelectReward": {
+      "file": "UI_WishMakingSelectReward.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_WorldBuild": {
+      "file": "UI_WorldBuild.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_WorldBuildFinish": {
+      "file": "UI_WorldBuildFinish.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_WorldWonderBuildSucc": {
+      "file": "UI_WorldWonderBuildSucc.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_WorldWonders": {
+      "file": "UI_WorldWonders.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_XiaoZhuShou": {
+      "file": "UI_XiaoZhuShou.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_YardDispach": {
+      "file": "UI_YardDispach.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_YardDispachResult": {
+      "file": "UI_YardDispachResult.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_YardMeet": {
+      "file": "UI_YardMeet.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_YardMentInfo": {
+      "file": "UI_YardMentInfo.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_YardRankTips": {
+      "file": "UI_YardRankTips.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    },
+    "UI_YardResultTips": {
+      "file": "UI_YardResultTips.png",
+      "width": 1280,
+      "height": 720,
+      "aspect_ratio": 1.78
+    }
+  },
+  "layout_groups": {
+    "1280x720": [
+      "UI_ALiFirstVisit",
+      "UI_ALiPCLogIn",
+      "UI_Achievement",
+      "UI_AcitveAd",
+      "UI_ActApexPvp",
+      "UI_ActApexPvpBattle",
+      "UI_ActApexPvpDesc",
+      "UI_ActApexPvpEvent",
+      "UI_ActApexPvpGetSign",
+      "UI_ActApexPvpMarket",
+      "UI_ActApexPvpPreview",
+      "UI_ActApexPvpProgress",
+      "UI_ActApexPvpRank",
+      "UI_ActApexPvpReady",
+      "UI_ActApexPvpRecord",
+      "UI_ActApexPvpResult",
+      "UI_ActApexPvpReward",
+      "UI_ActApexPvpShop",
+      "UI_ActApexPvpWager",
+      "UI_ActArena",
+      "UI_ActArenaOtherMarket",
+      "UI_ActArenaOtherMarketInfo",
+      "UI_ActArenaRank",
+      "UI_ActArenaResult",
+      "UI_ActArenaSolo",
+      "UI_ActArenaSoloMarket",
+      "UI_ActArenaTarget",
+      "UI_ActCumulativeRecharge",
+      "UI_ActKingOfSnowBattle",
+      "UI_ActKingOfSnowBattleResult",
+      "UI_ActKingOfSnowLevel",
+      "UI_ActKingOfSnowMain",
+      "UI_ActKingOfSnowTask",
+      "UI_ActMoonSpurt",
+      "UI_ActSnowCityRedRain",
+      "UI_ActSnowCityRedRainReward",
+      "UI_ActSnowMain",
+      "UI_ActSnowMan",
+      "UI_ActSnowManPreview",
+      "UI_ActSnowManTask",
+      "UI_ActSnowWheel",
+      "UI_ActSnowWheelLimitAward",
+      "UI_ActSnowWheelPreview",
+      "UI_ActSnowWheelResult",
+      "UI_ActSpurtGift",
+      "UI_ActStreet",
+      "UI_ActStrengthSpurt",
+      "UI_ActivityBuyGuest",
+      "UI_ActivityBuyGuest2",
+      "UI_ActivityCalender",
+      "UI_ActivityLobby",
+      "UI_ActivityRank",
+      "UI_ActivityReward",
+      "UI_ActivityShop",
+      "UI_ActivitySubScribe",
+      "UI_ActivityUpRedTip",
+      "UI_AddShortCut",
+      "UI_AgeTips",
+      "UI_AgreementDesc",
+      "UI_AgreementTips",
+      "UI_AirRoutePrivilege",
+      "UI_AliMinGameClub",
+      "UI_AliRepetitionVisit",
+      "UI_AssistantGuildSetting",
+      "UI_AssistantPanel",
+      "UI_AssistantReward",
+      "UI_AssistantRouteTrade",
+      "UI_AssistantShop",
+      "UI_AssistantShopPurchase",
+      "UI_AuthSelect",
+      "UI_AuthTips",
+      "UI_Bag",
+      "UI_BagComposeTips",
+      "UI_BanquetAddTips",
+      "UI_BanquetAdvancedList",
+      "UI_BanquetFinish",
+      "UI_BanquetGiftSelect",
+      "UI_BanquetGuest",
+      "UI_BanquetJoinSetting",
+      "UI_BanquetJoinSucc",
+      "UI_BanquetMain",
+      "UI_BanquetNormalList",
+      "UI_BanquetObtainingTimes",
+      "UI_BanquetOfBaiFuDetail",
+      "UI_BanquetOfBaiFuList",
+      "UI_BanquetOfBaiFuSelectV2",
+      "UI_BanquetOfFamilyDetail",
+      "UI_BanquetOfFamilyLimit",
+      "UI_BanquetOfFamilyOpen",
+      "UI_BanquetOfFamilySelect",
+      "UI_BanquetOfOfficialDetail",
+      "UI_BanquetOfOfficialList",
+      "UI_BanquetOfOfficialSelect",
+      "UI_BanquetOpenSucc",
+      "UI_BanquetPopularityReward",
+      "UI_BanquetRank",
+      "UI_BanquetRecord",
+      "UI_BattleBaseStart",
+      "UI_BattlePass",
+      "UI_BattlePassBigRewardPreview",
+      "UI_BattlePassBuyExp",
+      "UI_BattlePassBuyLicense",
+      "UI_BattlePassRewardOverview",
+      "UI_BattlePassTask",
+      "UI_BattlePassUpgradeAni",
+      "UI_Beauty",
+      "UI_BeautyBook",
+      "UI_BeautyBookGet",
+      "UI_BeautyBookInfo",
+      "UI_BeautyCompAwardPreview",
+      "UI_BeautyCompBuy",
+      "UI_BeautyCompEnter",
+      "UI_BeautyCompMap",
+      "UI_BeautyCompRank",
+      "UI_BeautyCompRecord",
+      "UI_BeautyCompResult",
+      "UI_BeautyCompRewardTips",
+      "UI_BeautyCompTitleChange",
+      "UI_BeautyCompUpgrade",
+      "UI_BeautyCompView",
+      "UI_BeautyEditor",
+      "UI_BeautyFame",
+      "UI_BeautyFameUpSuc",
+      "UI_BeautyGetting",
+      "UI_BeautyInfo",
+      "UI_BeautyOutings",
+      "UI_BeautyPromoteSucc",
+      "UI_BeautyPropsUseSucc",
+      "UI_BeautySelect",
+      "UI_BeautyShow",
+      "UI_BeautyTalentSkillTips",
+      "UI_BeautyTalk",
+      "UI_BeautyTalkMore",
+      "UI_BeautyTalkTip",
+      "UI_BeautyTransform",
+      "UI_BeautyTransformPreview",
+      "UI_BeautyTransformResult",
+      "UI_BeautyTravel",
+      "UI_BeautyTravelSharedGift",
+      "UI_BeautyTravelTip",
+      "UI_BeautyUpQuality",
+      "UI_BeautyUpSkillSucc",
+      "UI_Billionaires",
+      "UI_BillionairesRank",
+      "UI_Black",
+      "UI_BlockBattleActFinish",
+      "UI_BlockBattleMap",
+      "UI_BlockBattleMinMap",
+      "UI_BlockBattleRecord",
+      "UI_BlockBattleResult",
+      "UI_BlockBattleTarget",
+      "UI_BlockBattleTask",
+      "UI_BossRedPacket",
+      "UI_BossRedPacketGetReward",
+      "UI_Chat",
+      "UI_ChildBeauty",
+      "UI_ChildCultivateVit",
+      "UI_ChildFamily",
+      "UI_ChildGetTip",
+      "UI_ChildGraduateTip",
+      "UI_ChildInfo",
+      "UI_ChildMail",
+      "UI_ChildMarry",
+      "UI_ChildMarryFailTip",
+      "UI_ChildMessageTip",
+      "UI_ChildPublicPropose",
+      "UI_ChildRecoverVit",
+      "UI_ChildRecoverVitSucc",
+      "UI_ChildRenameSuccTip",
+      "UI_ChildRenameTip",
+      "UI_ChildResume",
+      "UI_ChildSchool",
+      "UI_ChildSchoolUp",
+      "UI_ChildSpecialSuitors",
+      "UI_ChildSpecifiedPropose",
+      "UI_ChildSuitorInfo",
+      "UI_ChildSuitors",
+      "UI_ChildTravelApply",
+      "UI_ChildTravelFailTip",
+      "UI_ChildTravelList",
+      "UI_ChildTravelSuccTip",
+      "UI_ChildTravelTip",
+      "UI_ChildUpSchoolTip",
+      "UI_ChildUpgradeSuccTip",
+      "UI_ChildWaitPropose",
+      "UI_ChoosingCar",
+      "UI_CoatingActiveTips",
+      "UI_CoatingInfo",
+      "UI_CoatingMain",
+      "UI_CoatingPreview2",
+      "UI_CoatingResolveTips",
+      "UI_CoatingSelectUpLevelMat",
+      "UI_CoatingSelectUpStarMat",
+      "UI_CoatingTask",
+      "UI_CoatingUpgrade",
+      "UI_CombineAccounting",
+      "UI_CombineLeader",
+      "UI_CombineMain",
+      "UI_CombineManager",
+      "UI_CombineManagerStar",
+      "UI_CombinePersonnel",
+      "UI_CombinePersonnelGuest",
+      "UI_CombinePublicity",
+      "UI_CombinePublicityCup",
+      "UI_CombineRemould",
+      "UI_CombineRemouldSucc",
+      "UI_CombineRemouldTips",
+      "UI_CombineTactic",
+      "UI_CombineTacticInfo",
+      "UI_CombineUpSucc",
+      "UI_CombineUpgradeCond",
+      "UI_CommandMonitor",
+      "UI_CommonComposite",
+      "UI_CommonGetItems",
+      "UI_CommonPurchase",
+      "UI_CommonRoleInfo",
+      "UI_CommonSkin",
+      "UI_CommonUseSucc",
+      "UI_ContinueRechargeAct",
+      "UI_CreateRole",
+      "UI_CupGetting",
+      "UI_CupInfo",
+      "UI_CyberIllusionAuto",
+      "UI_CyberIllusionBreakThrough",
+      "UI_CyberIllusionEquip",
+      "UI_CyberIllusionEquipMessage",
+      "UI_CyberIllusionMain",
+      "UI_CyberIllusionRemouldSucc",
+      "UI_CyberIllusionRoleUp",
+      "UI_CyberIllusionSelectMarket",
+      "UI_CyberIllusionSkill",
+      "UI_CyberIllusionUpSucc",
+      "UI_CyberPve",
+      "UI_CyberPveResult",
+      "UI_DailyGift",
+      "UI_DailyRefreshTips",
+      "UI_DailySign",
+      "UI_DailySignBadInfo",
+      "UI_DailySystem",
+      "UI_DebugLogPanel",
+      "UI_DivineTip",
+      "UI_ExpGetPath",
+      "UI_Expand",
+      "UI_ExpandAgentResult",
+      "UI_ExpandAgentStart",
+      "UI_ExpandAgentStop",
+      "UI_ExpandAisleMap",
+      "UI_ExpandAisleResult",
+      "UI_ExpandAkfPreview",
+      "UI_ExpandAkfReward",
+      "UI_ExpandAkfSpeed",
+      "UI_ExpandAutoResult",
+      "UI_ExpandAutoTip",
+      "UI_ExpandBattle",
+      "UI_ExpandBuffResult",
+      "UI_ExpandDispatch",
+      "UI_ExpandDispatchList",
+      "UI_ExpandEventNew",
+      "UI_ExpandEventResult",
+      "UI_ExpandEventSelect",
+      "UI_ExpandEventTip",
+      "UI_ExpandFogMap",
+      "UI_ExpandFogResult",
+      "UI_ExpandMap",
+      "UI_ExpandMapNewTip",
+      "UI_ExpandNameTip",
+      "UI_ExpandRank",
+      "UI_ExpandResult",
+      "UI_ExpandResultFail",
+      "UI_ExpandRoll",
+      "UI_ExpandSeaFailResult",
+      "UI_ExpandSeaResult",
+      "UI_ExpandSidInfo",
+      "UI_FashionShop",
+      "UI_FashionShopBuySucc",
+      "UI_FashionShopEff",
+      "UI_FirstChargeBonus",
+      "UI_FirstStarTips",
+      "UI_FloatCoinTips",
+      "UI_FloatMoneyTips",
+      "UI_FloatStrTip",
+      "UI_FlyItem",
+      "UI_FlyItem1",
+      "UI_FlyItem2",
+      "UI_FriendsMain",
+      "UI_FuLiDaTingWeiXin",
+      "UI_FullSceneTips",
+      "UI_FuncOpen",
+      "UI_FuncOpenTip2",
+      "UI_FuncPreview",
+      "UI_FuncUnlock",
+      "UI_Fund",
+      "UI_FundBeautyInfo",
+      "UI_FundGuestInfo",
+      "UI_FundPreview",
+      "UI_GachaAutoTypeSelect",
+      "UI_GachaCoinShop",
+      "UI_GachaExchange",
+      "UI_GachaExchangeConfirm",
+      "UI_GachaJackpot",
+      "UI_GachaLimitWish",
+      "UI_GachaLuckTips",
+      "UI_GachaMain",
+      "UI_GachaPreview",
+      "UI_GachaResult",
+      "UI_GachaSwitchBeautyPool",
+      "UI_GachaSwitchPool",
+      "UI_GetPaths",
+      "UI_GetPaths2",
+      "UI_GetPaths3",
+      "UI_GoGuestTip",
+      "UI_GoodsActive",
+      "UI_GrowSystem",
+      "UI_Guest",
+      "UI_GuestATKUpPath",
+      "UI_GuestActive",
+      "UI_GuestActiveSkill",
+      "UI_GuestAttrUpTip",
+      "UI_GuestAureole",
+      "UI_GuestAureoleSkillSucc",
+      "UI_GuestAureoleTips",
+      "UI_GuestBuy",
+      "UI_GuestCollect",
+      "UI_GuestDivine",
+      "UI_GuestDivineTips",
+      "UI_GuestEquipMount",
+      "UI_GuestFashionActive",
+      "UI_GuestFetterAdd",
+      "UI_GuestGetPath",
+      "UI_GuestGetSkinItem",
+      "UI_GuestInfo",
+      "UI_GuestManagerSkinBuy",
+      "UI_GuestNotActive",
+      "UI_GuestPath",
+      "UI_GuestPromote",
+      "UI_GuestPromoteItem",
+      "UI_GuestPromoteSucc",
+      "UI_GuestQueryAttr",
+      "UI_GuestRareTip",
+      "UI_GuestRechargeBuy",
+      "UI_GuestSelectCard",
+      "UI_GuestSetInfo",
+      "UI_GuestSetMain",
+      "UI_GuestStarPreview",
+      "UI_GuestStarSucc",
+      "UI_GuestSupplyInfo",
+      "UI_GuestSupplyPath",
+      "UI_GuestSupplyRecords",
+      "UI_GuestTalentSkill",
+      "UI_GuestUp",
+      "UI_GuestUpQuality",
+      "UI_GuestUseItem",
+      "UI_Guide",
+      "UI_GuildActivity",
+      "UI_GuildApply",
+      "UI_GuildApplyList",
+      "UI_GuildBuild",
+      "UI_GuildChallangeLevel",
+      "UI_GuildChallengeContrib",
+      "UI_GuildColorCodeDesc",
+      "UI_GuildCreate",
+      "UI_GuildDunChallengeRecord",
+      "UI_GuildDunExpReward",
+      "UI_GuildDunGroupRankAndReward",
+      "UI_GuildDunLineUp",
+      "UI_GuildDunRankAndReward",
+      "UI_GuildDungeonBattle",
+      "UI_GuildDungeonBattlePhase",
+      "UI_GuildDungeonBattleResult",
+      "UI_GuildDungeonBattleSucc",
+      "UI_GuildDungeonBattleTail",
+      "UI_GuildDungeonChallenge",
+      "UI_GuildDungeonEliteBattle",
+      "UI_GuildDungeonsList",
+      "UI_GuildDungeonsNew",
+      "UI_GuildEliteAttackUp",
+      "UI_GuildGroupBuyNew",
+      "UI_GuildHaggleRank",
+      "UI_GuildHallOfHonor",
+      "UI_GuildHallOfHonorTips",
+      "UI_GuildHonorRecord",
+      "UI_GuildHonorUnLock",
+      "UI_GuildList",
+      "UI_GuildLobby",
+      "UI_GuildMain",
+      "UI_GuildManager",
+      "UI_GuildMemberBattle",
+      "UI_GuildMemberBattleResult",
+      "UI_GuildMemberBattleTarget",
+      "UI_GuildMemberManager",
+      "UI_GuildMsgs",
+      "UI_GuildNotic",
+      "UI_GuildNoticEditor",
+      "UI_GuildNoticPreview",
+      "UI_GuildNoticTemplate",
+      "UI_GuildOpenDungenon",
+      "UI_GuildOptPopup",
+      "UI_GuildParty",
+      "UI_GuildPartyPreview",
+      "UI_GuildPartyResult",
+      "UI_GuildPhaseReward",
+      "UI_GuildPosition",
+      "UI_GuildPositionDesc",
+      "UI_GuildSameNameSetting",
+      "UI_GuildSearch",
+      "UI_GuildSearchInfo",
+      "UI_GuildSetFlags",
+      "UI_GuildSetting",
+      "UI_GuildUpgradeTips",
+      "UI_GuildWarAlliance",
+      "UI_GuildWarAppoint",
+      "UI_GuildWarAtkRandTip",
+      "UI_GuildWarAtkSum",
+      "UI_GuildWarAuthorize",
+      "UI_GuildWarBaseInfo",
+      "UI_GuildWarBattle",
+      "UI_GuildWarCommander",
+      "UI_GuildWarGroup",
+      "UI_GuildWarMain",
+      "UI_GuildWarOpTips",
+      "UI_GuildWarPlan",
+      "UI_GuildWarProtactTips",
+      "UI_GuildWarRank",
+      "UI_GuildWarRecord",
+      "UI_GuildWarRstFail",
+      "UI_GuildWarRstMult",
+      "UI_GuildWarRstWin",
+      "UI_GuildWarSchedule",
+      "UI_GuildWarStreet",
+      "UI_GuildWarTask",
+      "UI_HistoryEvent",
+      "UI_HistoryEventGet",
+      "UI_HistoryEventTip",
+      "UI_HistoryStageLock",
+      "UI_HistoryStageTip",
+      "UI_InvestMarketUp",
+      "UI_InvestmentBattle",
+      "UI_InvestmentBidding",
+      "UI_InvestmentBiddingResult",
+      "UI_InvestmentCancel",
+      "UI_InvestmentCreateSucc",
+      "UI_InvestmentDetail",
+      "UI_InvestmentFightTips",
+      "UI_InvestmentJoinAddTips",
+      "UI_InvestmentMain",
+      "UI_InvestmentPropStop",
+      "UI_InvestmentPropsUse",
+      "UI_InvestmentRecord",
+      "UI_InvestmentResult",
+      "UI_InvestmentSkill",
+      "UI_InvestmentSkillAddition",
+      "UI_InvestmentSkillUpgrade",
+      "UI_InvestmentUnlock",
+      "UI_ItemTip",
+      "UI_ItemUseTip",
+      "UI_LimitActRechargeGift",
+      "UI_LimitActivity",
+      "UI_LimitActivityPreview",
+      "UI_LimitExchange",
+      "UI_LimitLottery",
+      "UI_LimitLotteryGift",
+      "UI_LimitLotteryTask",
+      "UI_LimitWish",
+      "UI_LimitWishTip",
+      "UI_Loading",
+      "UI_Login",
+      "UI_LotteryBigReward",
+      "UI_LotterySkinItem",
+      "UI_Mail",
+      "UI_Main",
+      "UI_MainPowerDetail",
+      "UI_Market",
+      "UI_MarketActive",
+      "UI_MarketActiveAdvanced",
+      "UI_MarketActiveFloor",
+      "UI_MarketAdvanced",
+      "UI_MarketAllBell",
+      "UI_MarketAllBellResult",
+      "UI_MarketAureoleTips",
+      "UI_MarketAutoTip",
+      "UI_MarketBaseInfo",
+      "UI_MarketBeauty",
+      "UI_MarketBeautyAdd",
+      "UI_MarketBeautyBest",
+      "UI_MarketBeautyDispatchSucc",
+      "UI_MarketChild",
+      "UI_MarketCommodity",
+      "UI_MarketFacilityTip",
+      "UI_MarketGetSkinItem",
+      "UI_MarketGuest",
+      "UI_MarketHarvest",
+      "UI_MarketLightInfo",
+      "UI_MarketList",
+      "UI_MarketOffer",
+      "UI_MarketQuality",
+      "UI_MarketRateTips",
+      "UI_MarketRecommend",
+      "UI_MarketRepresentAdd",
+      "UI_MarketRevenue",
+      "UI_MarketRobotInfo",
+      "UI_MarketSkin",
+      "UI_MarketSkinLook",
+      "UI_MarketSlotAdd",
+      "UI_MarketStarActive",
+      "UI_MarketStrategyActive",
+      "UI_MarketStrength",
+      "UI_MarketSuggest",
+      "UI_MarketSurvey",
+      "UI_MarketTransfer",
+      "UI_MarketWarAddVit",
+      "UI_MarketWarAgentResult",
+      "UI_MarketWarAgentTip",
+      "UI_MarketWarBattle",
+      "UI_MarketWarCapture",
+      "UI_MarketWarCaptureNew",
+      "UI_MarketWarEmployer",
+      "UI_MarketWarRank",
+      "UI_MarketWarRankReward",
+      "UI_MarketWarReady",
+      "UI_MarketWarReport",
+      "UI_MarketWarRescure",
+      "UI_MarketWarResult",
+      "UI_MarketWarSupport",
+      "UI_MarketWarTactic",
+      "UI_MarketWarTacticUse",
+      "UI_MarketWarTarget",
+      "UI_MarketWarTask",
+      "UI_MarketWarTea",
+      "UI_MarketWarUseItem",
+      "UI_MessageTip1",
+      "UI_MessageTip2",
+      "UI_MountActive",
+      "UI_MountAureole",
+      "UI_MountBuildInfo",
+      "UI_MountBuildSpeedUpTips",
+      "UI_MountCharactersActive",
+      "UI_MountInfo",
+      "UI_MountLevelUp",
+      "UI_MountMain",
+      "UI_MountOneKeyUpdateTips",
+      "UI_MountPartRemake",
+      "UI_MountPartRemakeTip",
+      "UI_MountPreviewInfo",
+      "UI_MountQualityUpgrade",
+      "UI_MountQueryAttr",
+      "UI_MountResolve",
+      "UI_MountResolveTips",
+      "UI_MountSelectUpStarMat",
+      "UI_MountStarPreview",
+      "UI_MountUpgradeResult",
+      "UI_MulDayRechargeGift",
+      "UI_MultiAwardItemTips",
+      "UI_MultiAwardItemUse",
+      "UI_MuseumAntiqueHistory",
+      "UI_MuseumAntiqueList",
+      "UI_MuseumAntiquePut",
+      "UI_MuseumCollectionSucc",
+      "UI_MuseumExhibition",
+      "UI_MuseumExhibitionList",
+      "UI_MuseumExhibitionSucc",
+      "UI_MuseumGacha",
+      "UI_MuseumGachaResult",
+      "UI_MuseumGachaShop",
+      "UI_MuseumJackpot",
+      "UI_MuseumMain",
+      "UI_MuseumMedalInfo",
+      "UI_MuseumMedalWall",
+      "UI_MuseumStarUpSucc",
+      "UI_NetError",
+      "UI_Notice",
+      "UI_OpenCustomBox",
+      "UI_OpenCustomSkin",
+      "UI_OtherRoleBattleAttr",
+      "UI_OtherRoleGuest",
+      "UI_OtherRoleMarket",
+      "UI_OtherTechnoCup",
+      "UI_PanelGuideBtn",
+      "UI_PirateChallengeResult",
+      "UI_PirateEvent",
+      "UI_PirateFightBattle",
+      "UI_PirateIntelStation",
+      "UI_PirateInvasion",
+      "UI_PirateInvasionMain",
+      "UI_PirateLottery",
+      "UI_PiratePreview",
+      "UI_PirateResultFail",
+      "UI_PirateServerBoss",
+      "UI_PirateTask",
+      "UI_PirateTips",
+      "UI_PlayerSkinPreview",
+      "UI_PreviewAwards",
+      "UI_PrivilegeCardInfo",
+      "UI_PrivilegeDayCard",
+      "UI_PrivilegeMain",
+      "UI_PrivilegeMonthlyCard",
+      "UI_PrivilegeMonthlyCard2",
+      "UI_PurchaseBattleActivity",
+      "UI_PurchaseBattleExchange",
+      "UI_PurchaseBattleGuildRank",
+      "UI_PurchaseBattleInject",
+      "UI_PurchaseBattleMain",
+      "UI_PurchaseBattleRank",
+      "UI_PurchaseBattleReward",
+      "UI_PurchaseBattleSchedule",
+      "UI_RankAct",
+      "UI_RankActAd",
+      "UI_RankActAddTip",
+      "UI_RankActEntrance",
+      "UI_RankActGift",
+      "UI_RankActGuildMemberRank",
+      "UI_RankActItem",
+      "UI_RankActPath",
+      "UI_RankActPreview",
+      "UI_RankActReward",
+      "UI_RankActRewardGuild",
+      "UI_RankActServerRank",
+      "UI_RankActSingleServerRank",
+      "UI_RankActSpecifyAd",
+      "UI_RankActSprint",
+      "UI_RankActTask",
+      "UI_RankActTaskMemberRank",
+      "UI_RankActTwo",
+      "UI_RankEntry",
+      "UI_RankGobal",
+      "UI_RankGuildVoteReward",
+      "UI_RankLocal",
+      "UI_RankPlayerVoteReward",
+      "UI_RechargeGift",
+      "UI_RechargeMain",
+      "UI_RechargeTokens",
+      "UI_RecruitConfirm",
+      "UI_RecruitMain",
+      "UI_RecruitProgressTips",
+      "UI_RecruitTips",
+      "UI_RedPacketInfo",
+      "UI_RedPacketOpen",
+      "UI_RedPacketSetting",
+      "UI_RelayAddCar",
+      "UI_RelayCommonEquip",
+      "UI_RelayCommonFleet",
+      "UI_RelayRaceInfo",
+      "UI_RelayRaceMain",
+      "UI_RelayRaceMap",
+      "UI_RelayRaceMapUI",
+      "UI_RelayRaceNpc",
+      "UI_RelayRacePeakGraph",
+      "UI_RelayRacePlayers",
+      "UI_RelayRacePlayersMult",
+      "UI_RelayRacePlayersRank",
+      "UI_RelayRacePvpRank",
+      "UI_RelayRaceRecordRank",
+      "UI_RelayRaceResult",
+      "UI_RelayRaceRwds",
+      "UI_RelayRaceTab",
+      "UI_RelayRankDetail",
+      "UI_RelayTrainFightTips",
+      "UI_RelayTrainFleetUp",
+      "UI_RelayTrainGradeUp",
+      "UI_RelayTrainGradeUpSucc",
+      "UI_RelayTrainMain",
+      "UI_RelayTrainRstFail",
+      "UI_RelayTrainRstWin",
+      "UI_RelayTrainRwd",
+      "UI_RelayTrainTask",
+      "UI_RelayTrainUpPath",
+      "UI_RelayUpgradePath",
+      "UI_ResAddition",
+      "UI_ResRetrieve",
+      "UI_ResUpdateTip",
+      "UI_Role",
+      "UI_RoleBeautyTip",
+      "UI_RoleEvalEquipTips",
+      "UI_RoleEvaluate",
+      "UI_RoleEvaluateSucc",
+      "UI_RoleGuestsTip",
+      "UI_RoleHeadTip",
+      "UI_RoleObtainingTitleTips",
+      "UI_RoleOthter",
+      "UI_RoleRenameTip",
+      "UI_RoleSkinTip",
+      "UI_RoleStageTip",
+      "UI_RoleUpTip",
+      "UI_RouteTrade",
+      "UI_RouteTradeAccelerate",
+      "UI_RouteTradeAddition",
+      "UI_RouteTradeBoss",
+      "UI_RouteTradeBossResult",
+      "UI_RouteTradeDispatch",
+      "UI_RouteTradeDispatchSucc",
+      "UI_RouteTradeItem",
+      "UI_RouteTradeTip",
+      "UI_RuleTip",
+      "UI_SDKLogin",
+      "UI_SeaEvidence",
+      "UI_SeaEvidenceAdd",
+      "UI_SeaEvidenceAddSucc",
+      "UI_SeaEvidenceArea",
+      "UI_SeaEvidenceTip",
+      "UI_ServerList",
+      "UI_Setting",
+      "UI_SettingPush",
+      "UI_Shop",
+      "UI_ShopCommonActShop",
+      "UI_ShopGiftPurchase",
+      "UI_ShopPurchase",
+      "UI_ShopUnlockTips",
+      "UI_Sidebar",
+      "UI_SilkCaravan",
+      "UI_SilkroadAccelerate",
+      "UI_SilkroadActGift",
+      "UI_SilkroadAppraisal",
+      "UI_SilkroadAppraisalPreview",
+      "UI_SilkroadAppraisalReward",
+      "UI_SilkroadAssistant",
+      "UI_SilkroadBattleTailReward",
+      "UI_SilkroadBox",
+      "UI_SilkroadBuffEvent",
+      "UI_SilkroadBuffEventResult",
+      "UI_SilkroadCashGift",
+      "UI_SilkroadDamageRank",
+      "UI_SilkroadEncourageReward",
+      "UI_SilkroadFightSelectGuest",
+      "UI_SilkroadGains",
+      "UI_SilkroadGuestInfo",
+      "UI_SilkroadInspire",
+      "UI_SilkroadMain",
+      "UI_SilkroadManuals",
+      "UI_SilkroadMap",
+      "UI_SilkroadMeetEvent",
+      "UI_SilkroadMemberSelect",
+      "UI_SilkroadMission",
+      "UI_SilkroadMonsterFight",
+      "UI_SilkroadMonsterSwitch",
+      "UI_SilkroadOasisOverview",
+      "UI_SilkroadQucikTeleport",
+      "UI_SilkroadQuickBuffResult",
+      "UI_SilkroadRank",
+      "UI_SilkroadRankReward",
+      "UI_SilkroadRankServerRank",
+      "UI_SilkroadRetreatRuleTip",
+      "UI_SilkroadTeleport",
+      "UI_SilkroadTeleportReward",
+      "UI_SilkroadTrade",
+      "UI_SilkroadTradeConfirm",
+      "UI_SilkroadTreasure",
+      "UI_SingleMarketOut",
+      "UI_SkyscraperActivity",
+      "UI_SkyscraperRank",
+      "UI_SkyscraperReco",
+      "UI_SkyscraperRedPacket",
+      "UI_SkyscraperRedPacketTip",
+      "UI_SoloMarket",
+      "UI_SpaceHonor",
+      "UI_SpaceInfo",
+      "UI_SpaceRank",
+      "UI_SpaceTop",
+      "UI_StarWorks",
+      "UI_StarWorksChoiceBeauty",
+      "UI_StarWorksChoiceUp",
+      "UI_StarWorksEndorse",
+      "UI_StarWorksLevelInfo",
+      "UI_StarWorksLevelUp",
+      "UI_StarWorksUpAni",
+      "UI_StarWorksUpResult",
+      "UI_StreetFight",
+      "UI_StreetFightAddVit",
+      "UI_StreetFightAttrTip",
+      "UI_StreetFightBattle",
+      "UI_StreetFightJumpResult",
+      "UI_StreetFightMarket",
+      "UI_StreetFightResult",
+      "UI_StreetFightSolo",
+      "UI_StreetFightSweep",
+      "UI_StreetFightSweepResult",
+      "UI_StreetFightTarget",
+      "UI_StreetFightTask",
+      "UI_StreetFightTip",
+      "UI_StreetFightWait",
+      "UI_StreetTreasureDetail",
+      "UI_StreetTreasureFind",
+      "UI_StreetTreasureList",
+      "UI_SurpriseGift",
+      "UI_SurpriseSeriesGift",
+      "UI_TalkReview",
+      "UI_TalkSelect",
+      "UI_Task",
+      "UI_TaskChapter",
+      "UI_TaskChapterTip",
+      "UI_TaskGroupReward",
+      "UI_TaskProgressTip",
+      "UI_TaskSprint",
+      "UI_TaskTalk",
+      "UI_TeamApplyList",
+      "UI_TeamEnterFail",
+      "UI_TeamFriend",
+      "UI_TeamGuestTrial",
+      "UI_TeamInfo",
+      "UI_TeamInviteList",
+      "UI_TeamList",
+      "UI_TeamMarket",
+      "UI_TeamTip",
+      "UI_Techno",
+      "UI_TechnoCourse",
+      "UI_TechnoCourseTip",
+      "UI_TechnoCup",
+      "UI_TechnoCupAchi",
+      "UI_TechnoCupInfo",
+      "UI_TechnoCupShow",
+      "UI_TechnoExam",
+      "UI_TechnoExam_backup",
+      "UI_TechnoTips",
+      "UI_TestServer",
+      "UI_TimerTravel",
+      "UI_TimerTravelInfo",
+      "UI_TitleTips",
+      "UI_TokensError",
+      "UI_TokensLimit",
+      "UI_TopLeague",
+      "UI_TopLeagueBattle",
+      "UI_TopLeagueBetRank",
+      "UI_TopLeagueDesc",
+      "UI_TopLeagueEvent",
+      "UI_TopLeagueGetSign",
+      "UI_TopLeagueMarket",
+      "UI_TopLeagueProgress",
+      "UI_TopLeagueRank",
+      "UI_TopLeagueReady",
+      "UI_TopLeagueRecord",
+      "UI_TopLeagueResult",
+      "UI_TopLeagueReward",
+      "UI_TopLeagueShop",
+      "UI_TopLeagueWager",
+      "UI_TradePvp",
+      "UI_TradeWar",
+      "UI_TradeWarAddVit",
+      "UI_TradeWarAnnounce",
+      "UI_TradeWarBattle",
+      "UI_TradeWarBatttleSet",
+      "UI_TradeWarBoss",
+      "UI_TradeWarBossJump",
+      "UI_TradeWarConsume",
+      "UI_TradeWarFind",
+      "UI_TradeWarFloor",
+      "UI_TradeWarGuests",
+      "UI_TradeWarItem",
+      "UI_TradeWarMarket",
+      "UI_TradeWarPetition",
+      "UI_TradeWarPetitionUp",
+      "UI_TradeWarPveResult",
+      "UI_TradeWarReport",
+      "UI_TradeWarResult",
+      "UI_TradeWarSetting",
+      "UI_TradeWarTech",
+      "UI_TradeWarTechGet",
+      "UI_TradeWarTechTip",
+      "UI_TradingPort",
+      "UI_TradingPortChangeShip",
+      "UI_TradingPortCompose",
+      "UI_TradingPortComposeQuick",
+      "UI_TradingPortDeCombine",
+      "UI_TradingPortDecorateBag",
+      "UI_TradingPortDecorateResolve",
+      "UI_TradingPortDock",
+      "UI_TradingPortDockUnlock",
+      "UI_TradingPortFactory",
+      "UI_TradingPortFleet",
+      "UI_TradingPortNewShip",
+      "UI_TradingPortQueryAttr",
+      "UI_TradingPortShipPosUnlock",
+      "UI_TradingPortSupplyInfo",
+      "UI_TradingPortSupplyLvUnlock",
+      "UI_TradingPortSupplyRecords",
+      "UI_TradingPortUpPreview",
+      "UI_TradingPorttUseItem",
+      "UI_TrialSpacetime",
+      "UI_TrialSpacetimeBoss",
+      "UI_TrialSpacetimeHighResult",
+      "UI_TrialSpacetimeMiddleResult",
+      "UI_TrialSpacetimeRecord",
+      "UI_TrialSpacetimeRewardPreview",
+      "UI_TrialSpacetimeSnatchResult",
+      "UI_TrialSpacetimeTradeWar",
+      "UI_UpgradeCoatingSucc",
+      "UI_UseMultItem",
+      "UI_UseViceCurrency",
+      "UI_VWo12",
+      "UI_VipGift",
+      "UI_VisitMain",
+      "UI_VisitPlayerTitle",
+      "UI_VisitRecord",
+      "UI_VisitUsePropsConfirm",
+      "UI_WishMakingExchange",
+      "UI_WishMakingGift",
+      "UI_WishMakingGiftTips",
+      "UI_WishMakingLotteryTips",
+      "UI_WishMakingMain",
+      "UI_WishMakingPreview",
+      "UI_WishMakingResetTips",
+      "UI_WishMakingSelectReward",
+      "UI_WorldBuild",
+      "UI_WorldBuildFinish",
+      "UI_WorldWonderBuildSucc",
+      "UI_WorldWonders",
+      "UI_XiaoZhuShou",
+      "UI_YardDispach",
+      "UI_YardDispachResult",
+      "UI_YardMeet",
+      "UI_YardMentInfo",
+      "UI_YardRankTips",
+      "UI_YardResultTips"
+    ]
+  },
+  "size_stats": {
+    "1280x720": 910
+  }
+}

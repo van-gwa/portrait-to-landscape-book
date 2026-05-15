@@ -1,0 +1,23 @@
+{
+  "id": "conv-1777436617265-hb1hg14vi",
+  "providerId": "claude",
+  "title": "整理并分类Prefab分析笔记",
+  "titleGenerationStatus": "success",
+  "createdAt": 1777436617265,
+  "updatedAt": 1777438661495,
+  "lastResponseAt": 1777437111259,
+  "sessionId": "93bc5f44-614c-4650-bb2d-c15123b65a04",
+  "providerState": {
+    "providerSessionId": "93bc5f44-614c-4650-bb2d-c15123b65a04"
+  },
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 1,
+    "cacheCreationInputTokens": 5178,
+    "cacheReadInputTokens": 93674,
+    "contextWindow": 200000,
+    "contextTokens": 98853,
+    "percentage": 49,
+    "contextWindowIsAuthoritative": true
+  }
+}

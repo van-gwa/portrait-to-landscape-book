@@ -1,0 +1,23 @@
+{
+  "id": "conv-1777563621092-lnxxjvq9d",
+  "providerId": "claude",
+  "title": "Extract image metadata from Unity UI prefabs",
+  "titleGenerationStatus": "success",
+  "createdAt": 1777563621092,
+  "updatedAt": 1777572895898,
+  "lastResponseAt": 1777572737112,
+  "sessionId": "43b70053-d075-4997-9c8c-ee4f2fd45b57",
+  "providerState": {
+    "providerSessionId": "43b70053-d075-4997-9c8c-ee4f2fd45b57"
+  },
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 5,
+    "cacheCreationInputTokens": 2554,
+    "cacheReadInputTokens": 73921,
+    "contextWindow": 200000,
+    "contextTokens": 76480,
+    "percentage": 38,
+    "contextWindowIsAuthoritative": true
+  }
+}

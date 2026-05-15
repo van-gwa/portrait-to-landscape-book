@@ -1,0 +1,23 @@
+{
+  "id": "conv-1778729658026-le3k6s609",
+  "providerId": "claude",
+  "title": "处理模型相关指令",
+  "titleGenerationStatus": "success",
+  "createdAt": 1778729658026,
+  "updatedAt": 1778729711785,
+  "lastResponseAt": 1778729681111,
+  "sessionId": "b4a35891-4d99-4cd0-9e48-78127e765149",
+  "providerState": {
+    "providerSessionId": "b4a35891-4d99-4cd0-9e48-78127e765149"
+  },
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 127961,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 0,
+    "contextWindow": 200000,
+    "contextTokens": 127961,
+    "percentage": 64,
+    "contextWindowIsAuthoritative": true
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"C:\\\\Users\\\\guowe\\\\.claude\\\\skills\\\\gen-prefab-notes\")",
+      "Edit(~/.claude/skills/gen-prefab-notes/**)"
+    ]
+  }
+}

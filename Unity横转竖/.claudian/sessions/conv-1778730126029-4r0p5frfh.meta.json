@@ -1,0 +1,23 @@
+{
+  "id": "conv-1778730126029-4r0p5frfh",
+  "providerId": "claude",
+  "title": "生成UI截图明细清单",
+  "titleGenerationStatus": "success",
+  "createdAt": 1778730126030,
+  "updatedAt": 1778745350698,
+  "lastResponseAt": 1778745350698,
+  "sessionId": "e2433db1-7783-4dea-ae13-b0e1b57f605f",
+  "providerState": {
+    "providerSessionId": "e2433db1-7783-4dea-ae13-b0e1b57f605f"
+  },
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 55,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 144512,
+    "contextWindow": 200000,
+    "contextTokens": 144567,
+    "percentage": 72,
+    "contextWindowIsAuthoritative": true
+  }
+}

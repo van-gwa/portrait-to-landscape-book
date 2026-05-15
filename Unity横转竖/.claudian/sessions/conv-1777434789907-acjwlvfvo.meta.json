@@ -1,0 +1,23 @@
+{
+  "id": "conv-1777434789907-acjwlvfvo",
+  "providerId": "claude",
+  "title": "实现UI预制体分析笔记批量生成",
+  "titleGenerationStatus": "success",
+  "createdAt": 1777434789907,
+  "updatedAt": 1777436534036,
+  "lastResponseAt": 1777436421464,
+  "sessionId": "8a73f3dc-d596-4f33-8ef9-43efc0f2a1ca",
+  "providerState": {
+    "providerSessionId": "8a73f3dc-d596-4f33-8ef9-43efc0f2a1ca"
+  },
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 1,
+    "cacheCreationInputTokens": 763,
+    "cacheReadInputTokens": 160672,
+    "contextWindow": 200000,
+    "contextTokens": 161436,
+    "percentage": 81,
+    "contextWindowIsAuthoritative": true
+  }
+}

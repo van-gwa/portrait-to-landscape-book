@@ -1,0 +1,23 @@
+{
+  "id": "conv-1777443204823-8f4v9xnmr",
+  "providerId": "claude",
+  "title": "分析UI相似度分组逻辑",
+  "titleGenerationStatus": "success",
+  "createdAt": 1777443204823,
+  "updatedAt": 1777563123182,
+  "lastResponseAt": 1777450189649,
+  "sessionId": "726b9811-bd07-4679-858b-6710aa1c0689",
+  "providerState": {
+    "providerSessionId": "726b9811-bd07-4679-858b-6710aa1c0689"
+  },
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 10,
+    "cacheCreationInputTokens": 50961,
+    "cacheReadInputTokens": 0,
+    "contextWindow": 200000,
+    "contextTokens": 50971,
+    "percentage": 25,
+    "contextWindowIsAuthoritative": true
+  }
+}

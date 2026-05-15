@@ -1,0 +1,225 @@
+{
+  "total_uis": 1401,
+  "classification": {
+    "type_a": {
+      "type": "TYPE_A",
+      "count": 365,
+      "percentage": 26.1,
+      "size": {
+        "width": {
+          "min": 602.8,
+          "max": 1198.7,
+          "avg": 862.4
+        },
+        "height": {
+          "min": 47.3,
+          "max": 1442.0,
+          "avg": 484.4
+        }
+      },
+      "nodes": {
+        "min": 6,
+        "max": 206,
+        "avg": 42.3
+      },
+      "features": {
+        "has_list": 365,
+        "has_image_bg": 98,
+        "has_spine": 363
+      },
+      "x_distribution": {
+        "left-center-right": 365
+      },
+      "sample_uis": [
+        "UI_ActApexPvpBattle",
+        "UI_ActApexPvpComment",
+        "UI_ActApexPvpPreview",
+        "UI_ActApexPvpRank",
+        "UI_ActApexPvpRecord",
+        "UI_ActApexPvpShop",
+        "UI_ActArena",
+        "UI_ActArenaResult",
+        "UI_ActArenaSoloMarket",
+        "UI_ActCumulativeRecharge"
+      ]
+    },
+    "type_b": {
+      "type": "TYPE_B",
+      "count": 788,
+      "percentage": 56.2,
+      "size": {
+        "width": {
+          "min": 0.0,
+          "max": 598.2,
+          "avg": 220.2
+        },
+        "height": {
+          "min": 0.0,
+          "max": 1189.0,
+          "avg": 195.9
+        }
+      },
+      "nodes": {
+        "min": 1,
+        "max": 29,
+        "avg": 8.9
+      },
+      "features": {
+        "has_list": 179,
+        "has_image_bg": 58,
+        "has_spine": 499
+      },
+      "x_distribution": {
+        "left-center": 51,
+        "left-center-right": 325,
+        "center": 370,
+        "center-right": 42
+      },
+      "sample_uis": [
+        "UI_ActApexPvpProgress",
+        "UI_ActApexPvpReady",
+        "UI_ActApexPvpReward",
+        "UI_ActApexPvpSignTip",
+        "UI_ActApexPvpWager",
+        "UI_ActArenaOtherMarket",
+        "UI_ActArenaOtherMarketInfo",
+        "UI_ActArenaTarget",
+        "UI_ActivitySubScribe",
+        "UI_BillionairesRank"
+      ]
+    },
+    "type_c": {
+      "type": "TYPE_C",
+      "count": 134,
+      "percentage": 9.6,
+      "size": {
+        "width": {
+          "min": 502.3,
+          "max": 1108.0,
+          "avg": 821.0
+        },
+        "height": {
+          "min": 0.0,
+          "max": 835.7,
+          "avg": 440.8
+        }
+      },
+      "nodes": {
+        "min": 4,
+        "max": 69,
+        "avg": 21.4
+      },
+      "features": {
+        "has_list": 0,
+        "has_image_bg": 33,
+        "has_spine": 134
+      },
+      "x_distribution": {
+        "left-center-right": 127,
+        "center-right": 7
+      },
+      "sample_uis": [
+        "UI_ActApexPvpDesc",
+        "UI_ActApexPvpGetSign",
+        "UI_ActApexPvpResult",
+        "UI_AcitveAd",
+        "UI_ActivityBuyGuest",
+        "UI_ActivityBuyGuest2",
+        "UI_ActivityUpRedTip",
+        "UI_ContinueRechargeAct",
+        "UI_LimitActivity",
+        "UI_LimitLottery"
+      ]
+    },
+    "type_d": {
+      "type": "TYPE_D",
+      "count": 30,
+      "percentage": 2.1,
+      "size": {
+        "width": {
+          "min": 1536.0,
+          "max": 6393.9,
+          "avg": 2676.0
+        },
+        "height": {
+          "min": 0.0,
+          "max": 2744.5,
+          "avg": 606.9
+        }
+      },
+      "nodes": {
+        "min": 3,
+        "max": 191,
+        "avg": 40.4
+      },
+      "features": {
+        "has_list": 12,
+        "has_image_bg": 7,
+        "has_spine": 30
+      },
+      "x_distribution": {
+        "center-right": 4,
+        "left-center-right": 24,
+        "center": 1,
+        "left-center": 1
+      },
+      "sample_uis": [
+        "UI_PirateInvasion",
+        "UI_Chat",
+        "UI_Expand",
+        "ExpandMap_bg_main_03_matou",
+        "ExpandMap_bg_reuse_dongjihaiyang_03",
+        "ExpandMap_bg_reuse_dongjihaiyang_05",
+        "ExpandMap_bg_reuse_dongjihaiyang_06",
+        "ExpandMap_bg_reuse_dongjihaiyang_09",
+        "ExpandMap_bg_reuse_dongjihaiyang_10",
+        "ExpandMap_bg_reuse_heianhaidao"
+      ]
+    },
+    "others": {
+      "type": "OTHERS",
+      "count": 84,
+      "percentage": 6.0,
+      "size": {
+        "width": {
+          "min": 334.4,
+          "max": 1441.2,
+          "avg": 870.8
+        },
+        "height": {
+          "min": 220.9,
+          "max": 1448.8,
+          "avg": 530.5
+        }
+      },
+      "nodes": {
+        "min": 3,
+        "max": 138,
+        "avg": 42.5
+      },
+      "features": {
+        "has_list": 68,
+        "has_image_bg": 17,
+        "has_spine": 84
+      },
+      "x_distribution": {
+        "left-center-right": 67,
+        "left-center": 9,
+        "center": 3,
+        "center-right": 5
+      },
+      "sample_uis": [
+        "UI_ActApexPvp",
+        "UI_ActApexPvpEvent",
+        "UI_ActApexPvpMarket",
+        "UI_ActArenaRank",
+        "UI_ActArenaSolo",
+        "UI_GuestCollect",
+        "UI_LimitExchange",
+        "UI_LimitLotteryGift",
+        "UI_PirateEvent",
+        "UI_PirateIntelStation"
+      ]
+    }
+  }
+}

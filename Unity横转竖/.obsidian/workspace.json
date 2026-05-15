@@ -192,8 +192,9 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "aa993f686e1ac38e",
+  "active": "6bda6fc903ad6325",
   "lastOpenFiles": [
+    "未命名",
     "llm_wiki/wiki/concepts/layout-types/分析进度日志.md.tmp.27800.36093ee9d315",
     "llm_wiki/wiki/concepts/layout-types/分析进度日志.md",
     "llm_wiki/wiki/concepts/layout-types/分析进度日志.md.tmp.27800.541d04025fb5",
@@ -237,7 +238,6 @@
     "attachments/UI_Images/UI_TopLeagueSignTip.png",
     "attachments/UI_Images/UI_TopLeagueComment.png",
     "attachments/UI_Images/UI_TimeLineOption.png",
-    "qa/generate_final.py",
     "llm_wiki/wiki/qa/execution_logs/2026-05-14.md",
     "llm_wiki/wiki/qa/execution_logs/2026-05-13.md",
     "llm_wiki/wiki/qa/execution_logs/2026-05-12.md",

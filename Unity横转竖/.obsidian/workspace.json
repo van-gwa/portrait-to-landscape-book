@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "3ce574cd77eb79ac",
+        "id": "d00af2e1d80f2240",
         "type": "tabs",
         "children": [
           {
-            "id": "a23f03106beed0fc",
+            "id": "3792bc6f7b8d39dc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "llm_wiki/qa/execution_logs/2026-05-15.md",
+                "file": "llm_wiki/wiki/concepts/layout-types/抽屉.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-05-15"
+              "title": "抽屉"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "2026-05-15",
+                "query": "抽屉",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -192,21 +193,33 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "a23f03106beed0fc",
+  "active": "3792bc6f7b8d39dc",
   "lastOpenFiles": [
-    "llm_wiki/wiki/concepts/layout-types/分析进度日志.md.tmp.22532.e25e95b387bb",
-    "llm_wiki/wiki/concepts/layout-types/分析进度日志.md.tmp.22532.1d564ee0a125",
-    "llm_wiki/wiki/concepts/layout-types/分析进度日志.md.tmp.22532.304a932ff8c1",
-    "llm_wiki/wiki/concepts/layout-types/分析进度日志.md.tmp.22532.3dd38a54d9cf",
-    "llm_wiki/wiki/concepts/layout-types/分析进度日志.md.tmp.22532.740404348e25",
-    "llm_wiki/wiki/concepts/layout-types/分析进度日志.md.tmp.22532.5ae027ee97ac",
-    "llm_wiki/wiki/concepts/layout-types/战斗.md.tmp.22532.85174815972d",
-    "llm_wiki/wiki/concepts/layout-types/分析进度日志.md.tmp.22532.7f01b76bb25f",
+    "llm_wiki/wiki/concepts/layout-types/分析进度日志.md.tmp.9252.3fce2c9c66e2",
+    "llm_wiki/wiki/concepts/layout-types/待补读清单.md.tmp.9252.985a274b67ab",
+    "llm_wiki/wiki/concepts/layout-types/tips.md.tmp.9252.c01f3c0c2344",
+    "llm_wiki/wiki/concepts/layout-types/上标题-中竖列表-下信息.md.tmp.9252.d9895558f80d",
+    "llm_wiki/wiki/concepts/layout-types/tips.md.tmp.9252.f4ed4a475d99",
+    "llm_wiki/wiki/concepts/layout-types/tips.md.tmp.9252.454198ff0e39",
+    "llm_wiki/wiki/concepts/layout-types/分析进度日志.md.tmp.9252.8759b348b44f",
+    "llm_wiki/wiki/concepts/layout-types/分析进度日志.md.tmp.9252.a26cfe5e948a",
+    "llm_wiki/wiki/concepts/layout-types/四边木栏+左右-宽列表.md.tmp.9252.052ea159081a",
+    "llm_wiki/wiki/concepts/layout-types/赛程.md.tmp.9252.3c27be684557",
+    "llm_wiki/wiki/concepts/layout-types/四边木栏（蒸笼标签）+格子排.md.tmp.9252.786a042272cb",
+    "prefab_final_analysis/UI_MarketGuest.md",
+    "llm_wiki/wiki/concepts/layout-types/抽屉.md",
+    "UI_Layout_Classification/抽屉.md",
+    "UI_Layout_Classification_Quick_Reference.md",
+    "prefab_final_analysis/UI_RankEntry.md",
+    "UI_Layout_Classification/横列表.md",
+    "llm_wiki/wiki/indexes/Index_All_UIs.md",
+    "qa/deepseek_cheek_ui_type_log/ui_type_analysis.md",
+    "background_image_list.md",
+    "llm_wiki/wiki/indexes/Index_Layout_Types.md",
+    "UI_Layout_Classification/一体框.md",
+    "llm_wiki/qa/execution_logs/2026-05-15.md",
     "llm_wiki/wiki/concepts/layout-types/待补读清单.md",
-    "llm_wiki/wiki/concepts/layout-types/待补读清单.md.tmp.22532.26c45b67263f",
     "llm_wiki/wiki/concepts/layout-types/T型-上标题-左标签-右竖列表.md",
-    "llm_wiki/wiki/concepts/layout-types/分析进度日志.md.tmp.22532.77601dee88c1",
-    "llm_wiki/wiki/concepts/layout-types/分析进度日志.md.tmp.22532.9556c44ee7cf",
     "llm_wiki/wiki/concepts/layout-types/展示-横条-横列表.md",
     "llm_wiki/wiki/concepts/layout-types/一体框.md",
     "llm_wiki/wiki/concepts/layout-types/四边木栏+左右-宽列表.md",
@@ -218,18 +231,6 @@
     "llm_wiki/wiki/concepts/layout-types/四边木栏（蒸笼标签）+格子排.md",
     "llm_wiki/wiki/concepts/layout-types/横列表.md",
     "llm_wiki/wiki/concepts/layout-types/灯笼标签+彩带+全屏.md",
-    "llm_wiki/wiki/concepts/layout-types/地图底.md",
-    "llm_wiki/wiki/concepts/layout-types/待确认.md",
-    "llm_wiki/wiki/concepts/layout-types/大背景-展示.md",
-    "llm_wiki/wiki/concepts/layout-types/打开书页.md",
-    "llm_wiki/wiki/concepts/layout-types/抽屉.md",
-    "llm_wiki/wiki/concepts/layout-types/测试界面.md",
-    "llm_wiki/wiki/concepts/layout-groups/T型布局.md",
-    "llm_wiki/qa/execution_logs/2026-05-15.md",
-    "系统启动-快速检查清单.md",
-    "UI_Layout_Classification_Quick_Reference.md",
-    "UI_Layout_Classification_Guide.md",
-    "UI_Images_Index.md",
     "未命名.canvas",
     "未命名 3.canvas",
     "未命名 2.canvas",

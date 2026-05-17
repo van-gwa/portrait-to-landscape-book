@@ -1,9 +1,9 @@
 ---
 type: concept
 created: 2026-05-04
-updated: 2026-05-04
-tags: [concept, layout-type, layout]
-related: [[[llm_wiki/wiki/concepts/UI_Layout]], [[llm_wiki/wiki/concepts/layout-groups/基础控件]], [[llm_wiki/wiki/indexes/Index_Layout_Types]]]
+updated: 2026-05-15
+tags: [concept, layout-type, layout, 判断方法]
+related: [[llm_wiki/wiki/concepts/UI_Layout]], [[llm_wiki/wiki/concepts/layout-groups/基础控件]]
 ui_count: 8
 group: 基础控件
 ---
@@ -12,48 +12,23 @@ group: 基础控件
 
 ## 定义
 
-该布局通过**mainUI**的空间组织方式，实现内容的有效展示和交互。
+游戏核心主界面——场景背景+多入口图标/按钮的主城/大厅界面。玩家在此进入各子系统。与「panel」的区别：mainUI是顶层入口集合，panel是次层功能面板。8个UI。
 
-## 布局结构
+## 判断口诀
 
-```
-┌──────────────────────┐
-│    布局内容区      │
-│    [item 1]       │
-│    [item 2]       │ ↕ 可滚动
-│    [item 3]       │
-└──────────────────────┘
-```
+> **主城大厅入口集，场景+UI多图标。**
 
-## 主要特征
-
-- 清晰的空间分区方式
-- 合理的内容排列逻辑
-- 基础控件类型的特征表现
-
-## 包含的 UI（共 8 个）
-
-- [[prefab_final_analysis/UI_TradingPort|UI_TradingPort]]
-- [[prefab_final_analysis/UI_VisitMain|UI_VisitMain]]
-- [[prefab_final_analysis/UI_StarWorks|UI_StarWorks]]
-- [[prefab_final_analysis/UI_MuseumMain|UI_MuseumMain]]
-- [[prefab_final_analysis/UI_Market|UI_Market]]
-- [[prefab_final_analysis/UI_Main|UI_Main]]
-- [[prefab_final_analysis/UI_CombineMain|UI_CombineMain]]
-- [[prefab_final_analysis/UI_MountMain|UI_MountMain]]
-
-
-## 横竖屏适配要点
-
-- 布局在横竖屏转换时需要调整各区域的宽高比
-- 关键信息应优先保证可见性
-- 可根据屏幕方向调整内容的流向方式
+| # | UI名称 | 主题 |
+|---|--------|------|
+| 1 | UI_TradingPort | 航海贸易港 |
+| 2 | UI_VisitMain | 拜访主界面 |
+| 3 | UI_StarWorks | 华莱坞星工场 |
+| 4 | UI_MuseumMain | 博物馆主界面 |
+| 5 | UI_Market | 商铺主界面 |
+| 6 | UI_Main | 城主界面 |
+| 7 | UI_CombineMain | 集团管理总部 |
+| 8 | UI_MountMain | 座驾主界面 |
 
 ## 所属大类
 
 [[llm_wiki/wiki/concepts/layout-groups/基础控件]]
-
-## 相关资源
-
-- [[llm_wiki/wiki/concepts/UI_Layout|UI 布局总览]]
-- [[llm_wiki/wiki/indexes/Index_Layout_Types|布局类型完整索引]]

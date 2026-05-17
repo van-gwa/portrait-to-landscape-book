@@ -1,7 +1,8 @@
 ---
 type: concept
 created: 2026-05-04
-updated: 2026-05-15
+updated: 2026-05-16
+验证: 全量100张MCP读取通过
 tags: [concept, layout-type, layout, 判断方法]
 related: [[llm_wiki/wiki/concepts/UI_Layout]], [[llm_wiki/wiki/concepts/layout-groups/基础控件]], [[llm_wiki/wiki/indexes/Index_Layout_Types]]
 ui_count: 100
